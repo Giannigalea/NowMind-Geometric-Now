@@ -209,7 +209,7 @@ def test_g2_3_3_openrouter_backend_rejects_random_free_router() -> None:
 
 def test_g2_3_3_openrouter_backend_request_shape_and_secret_redaction(monkeypatch) -> None:
     captured = {}
-    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-or-v1-test-secret-not-real")
+    monkeypatch.setenv("OPENROUTER_API_KEY", "TEST_OPENROUTER_API_KEY")
 
     class FakeResponse:
         def __enter__(self):
@@ -273,12 +273,12 @@ def test_g2_3_3_openrouter_backend_request_shape_and_secret_redaction(monkeypatc
     assert response.input_token_estimate == 10
     assert response.output_token_estimate == 7
     serialized = json.dumps(response.to_dict())
-    assert "sk-or-v1-test-secret-not-real" not in serialized
+    assert "TEST_OPENROUTER_API_KEY" not in serialized
 
 
 def test_g2_3_3_openrouter_prompt_only_json_keeps_provider_guardrails(monkeypatch) -> None:
     captured = {}
-    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-or-v1-test-secret-not-real")
+    monkeypatch.setenv("OPENROUTER_API_KEY", "TEST_OPENROUTER_API_KEY")
 
     class FakeResponse:
         def __enter__(self):
@@ -571,7 +571,7 @@ def test_g2_3_3_output_schema_guard_rejects_invalid_status() -> None:
 
 def test_g2_3_4_openrouter_provider_pinning_allows_collection(monkeypatch) -> None:
     captured = {}
-    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-or-v1-test-secret-not-real")
+    monkeypatch.setenv("OPENROUTER_API_KEY", "TEST_OPENROUTER_API_KEY")
 
     class FakeResponse:
         def __enter__(self):
@@ -727,12 +727,14 @@ def test_g2_3_4_uses_live_endpoint_context_and_provider_display_name() -> None:
 
 
 def test_openrouter_backend_redacts_provider_user_ids() -> None:
-    text = '{"user_id":"user_3F5AY8boz6KCXHiZ6POliD4yG7k","key":"sk-or-v1-real-looking"}'
+    fake_user_id = "user_" + ("x" * 28)
+    fake_key = "sk-or-v1-" + ("x" * 28)
+    text = f'{{"user_id":"{fake_user_id}","key":"{fake_key}"}}'
 
     redacted = backend_module._redact_sensitive_text(text)
 
-    assert "user_3F5AY8boz6KCXHiZ6POliD4yG7k" not in redacted
-    assert "sk-or-v1-real-looking" not in redacted
+    assert fake_user_id not in redacted
+    assert fake_key not in redacted
     assert '"user_id":"[REDACTED]"' in redacted
 
 
