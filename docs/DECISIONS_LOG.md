@@ -930,4 +930,26 @@ Git metadata was initialized but moved to
 `tmp/git_disabled_due_codex_refresh_20260828_full_g/` because an active `.git/`
 directory caused Codex desktop setup-refresh failures on this machine. After
 local Git identity was configured, the Full-G baseline commit was created as
-the current preserved Git `HEAD`.
+`8f4ef9742a90fbb11301d1f66b4d65e5a4efb78e`. Later cleanup commits may be
+added on top without rewriting or squashing that baseline.
+
+### D-055 - Archive historical Codex tasks outside the repository root
+**Date:** 2026-08-29
+**Status:** Accepted
+
+**Decision:**
+Move historical Codex task specifications and obsolete setup/task notes from
+the repository root into `docs/development_history/codex_tasks/`, while keeping
+current reviewer and reproduction entry points in the root.
+
+**Reason:**
+The root directory should present the current project clearly to reviewers and
+future contributors without losing the development record that explains how the
+G1 through Full-G milestones were built.
+
+**Consequences:**
+The archived task files remain in Git history and in the working tree under the
+development-history folder. Internal references in current root/reviewer docs
+were updated where needed. The Full-G baseline commit
+`8f4ef9742a90fbb11301d1f66b4d65e5a4efb78e` is preserved unchanged; this cleanup
+is committed separately on top of it.

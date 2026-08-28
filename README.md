@@ -520,3 +520,9 @@ The state-change scenario is the central invariant check:
 - `docs/G2_3_PROMPT_FAIRNESS_AUDIT.md`
 - `docs/G2_3_STATISTICAL_METHOD.md`
 - `docs/G2_3_LOCALITY_AUDIT.md`
+
+## Development History
+
+Historical Codex task specifications and obsolete setup/task notes are archived
+under `docs/development_history/codex_tasks/` so the repository root remains
+focused on current reviewer and reproduction entry points.

@@ -20,8 +20,10 @@ git --git-dir=tmp\git_disabled_due_codex_refresh_20260828_full_g --work-tree=. s
 Current state:
 
 - Branch renamed from the default `master` to `main`.
-- Baseline commit created after local Git identity was configured. Inspect the
-  current `HEAD` of the preserved Git directory for the exact commit hash.
+- Baseline commit created after local Git identity was configured:
+  `8f4ef9742a90fbb11301d1f66b4d65e5a4efb78e`.
+- Later cleanup commits may appear on top of that baseline without rewriting
+  or squashing it.
 - Commit author identity:
   `Giannigalea <205990347+Giannigalea@users.noreply.github.com>`.
 - The repository root intentionally does not contain an active `.git/`
@@ -30,8 +32,7 @@ Current state:
 To inspect the baseline commit:
 
 ```powershell
-git --git-dir=tmp\git_disabled_due_codex_refresh_20260828_full_g --work-tree=. rev-parse HEAD
-git --git-dir=tmp\git_disabled_due_codex_refresh_20260828_full_g --work-tree=. show --stat --oneline HEAD
+git --git-dir=tmp\git_disabled_due_codex_refresh_20260828_full_g --work-tree=. show --stat --oneline 8f4ef9742a90fbb11301d1f66b4d65e5a4efb78e
 ```
 
 If Codex desktop no longer fails on active Git metadata, the preserved Git

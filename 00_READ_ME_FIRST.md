@@ -33,8 +33,8 @@ G1 is intended to establish the computational foundation on which later PCT/NowM
 8. `docs/EXPERIMENTS.md`
 9. `docs/ROADMAP.md`
 10. `docs/DECISIONS_LOG.md`
-11. `SOURCE_MATERIALS_CHECKLIST.md`
-12. `FIRST_CODEX_TASK.md`
+11. `docs/development_history/codex_tasks/SOURCE_MATERIALS_CHECKLIST.md`
+12. `docs/development_history/codex_tasks/FIRST_CODEX_TASK.md`
 
 ## Authority order
 

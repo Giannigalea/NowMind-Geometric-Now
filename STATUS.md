@@ -1,5 +1,34 @@
 # Status - 2026-08-23
 
+## 2026-08-29 Root Cleanup and GitHub Structure
+
+Historical Codex task specifications and obsolete setup/task notes were moved
+from the repository root to `docs/development_history/codex_tasks/`. The root
+now keeps only the current project/reviewer entry points:
+
+```text
+.gitignore
+00_READ_ME_FIRST.md
+AGENTS.md
+pyproject.toml
+README.md
+REPRODUCE_FULL_G.md
+run_full_g_demo.ps1
+STATUS.md
+```
+
+The move preserves development/scientific history through Git renames and does
+not rewrite or squash the Full-G baseline commit
+`8f4ef9742a90fbb11301d1f66b4d65e5a4efb78e`.
+
+Verification:
+
+```text
+pytest: 138 passed in 71.88s (0:01:11)
+secret-pattern scan: no live OpenRouter key pattern or unredacted provider user_id found
+root task-note link scan: no stale root task-note links outside the archive
+```
+
 ## 2026-08-28 Full-G Milestone Freeze and Reviewer Package
 
 Full-G is frozen for this milestone as a local reviewer/reproducibility
@@ -17,8 +46,9 @@ required for review or reproduction.
 - Git was initialized, but the active `.git/` directory caused a Codex desktop
   setup-refresh failure on this machine. The initialized Git metadata was
   preserved at `tmp/git_disabled_due_codex_refresh_20260828_full_g/`; see
-  `docs/FULL_G_GIT_STATUS.md`. The current preserved Git `HEAD` is the
-  baseline commit for the Full-G freeze.
+  `docs/FULL_G_GIT_STATUS.md`. The Full-G baseline commit is
+  `8f4ef9742a90fbb11301d1f66b4d65e5a4efb78e`; later cleanup commits are kept
+  on top without rewriting that history.
 
 Fresh verification:
 
@@ -759,7 +789,7 @@ gemma3:1b structured smoke still failed before message.content existed.
 Files created/updated:
 
 ```text
-OLLAMA_SETUP_REQUIRED.md
+docs/development_history/codex_tasks/OLLAMA_SETUP_REQUIRED.md
 artifacts/g2_3_1/hardware_manifest.json
 artifacts/g2_3_1/ollama_setup_manifest.json
 artifacts/g2_3_1/model_install_log.md
