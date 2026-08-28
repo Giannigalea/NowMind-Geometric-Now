@@ -37,7 +37,7 @@ After G1 tests are stable:
 - demonstrate that the cognitive reasoner cannot access that history.
 
 Purpose:
-make the idea easy to inspect and eventually show to researchers such as Julian Michels / Sophontic AI.
+make the idea easy to inspect and review with external researchers.
 
 ## G2 — Temporal Now
 

@@ -1,12 +1,16 @@
-# Julian Technical Brief Draft
+# External Technical Brief
 
-Do not send this draft without separate review.
+This brief is written for a technically competent external reviewer: an AI
+researcher, cognitive-architecture researcher, geometric-reasoning researcher,
+engineer, or potential research collaborator.
 
 ## What Was Built
 
 NowMind Full-G is a local Python research architecture for explicit present-state reconstruction and source-aware reasoning. It implements stages from G1 through G2.3.4: Present Geometry, Temporal Geometry, Possibility Geometry, Epistemic Geometry, recovery/retrieval efficiency, model-integration infrastructure, local real-model evaluation, and frozen free-provider replication attempts.
 
-The project is deliberately inspectable. Relations, observations, inferences, reconstructed memories, hypothetical futures, model proposals, validator decisions, and external researcher history are kept separate.
+The project is deliberately inspectable. Relations, observations, inferences,
+reconstructed memories, hypothetical futures, model proposals, validator
+decisions, and experiment history are kept separate.
 
 ## Why "Geometry"
 
@@ -48,6 +52,8 @@ Strong chronological controls frequently match NowMind. The local `qwen3:0.6b` m
 
 The only completed real-model benchmark is one very small local model. The result should be treated as weak model evidence and strong infrastructure evidence.
 
-## Open Question for Julian
+## Open Research Question
 
-Do you see a meaningful connection between explicit present-state relational geometry like this and the latent/internal geometry of reasoning you are studying, or do you see them as fundamentally separate levels?
+An open question is whether explicit present-state relational geometry and
+learned internal reasoning geometry are complementary levels of representation,
+or whether they should be treated as fundamentally separate modeling layers.

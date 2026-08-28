@@ -71,7 +71,7 @@ docs/FULL_G_REVIEWER_NARRATIVE.md
 docs/FULL_G_ARCHITECTURE_DIAGRAM_SPEC.md
 docs/FULL_G_NEGATIVE_RESULTS.md
 docs/FULL_G_OPEN_QUESTIONS.md
-docs/JULIAN_TECHNICAL_BRIEF_DRAFT.md
+docs/EXTERNAL_TECHNICAL_BRIEF.md
 docs/FULL_G_REVIEW_CHECKLIST.md
 docs/FULL_G_GIT_STATUS.md
 REPRODUCE_FULL_G.md
@@ -1197,11 +1197,10 @@ O_OraclePlanner:
 ## Next Recommended Task
 
 Do not begin identity, dreaming, Veto Gate, or later stages from this state.
-Before external technical packaging / Julian-style review, package G2.3.2 as
-completed local benchmark evidence with a weak ultra-small model, corrected
-Regime-B fixed-budget fairness, preserved frozen Regime-A evidence, and no
-demonstrated NowMind-over-chronology advantage. The residual E22-style
-collision/scaling limitations also remain visible and should be named in any
-external briefing. A stronger later result would require the unchanged benchmark
-on a larger local machine or an explicitly authorized local runtime/model
-change.
+For external technical review, present G2.3.2 as completed local benchmark
+evidence with a weak ultra-small model, corrected Regime-B fixed-budget
+fairness, preserved frozen Regime-A evidence, and no demonstrated
+NowMind-over-chronology advantage. The residual E22-style collision/scaling
+limitations also remain visible and should be named in any external briefing.
+A stronger later result would require the unchanged benchmark on a larger local
+machine or an explicitly authorized local runtime/model change.
