@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-08-28T10:55:34.809091+00:00",
+  "errors": 0,
+  "model": "liquid/lfm-2.5-2.6b:free",
+  "parse_success": 0,
+  "provider_manifest": {
+    "model": "liquid/lfm-2.5-2.6b:free",
+    "pinned_provider": "liquid/fp8",
+    "provider_counts": {},
+    "provider_request": {
+      "allow_fallbacks": false,
+      "data_collection": "allow",
+      "only": [
+        "liquid/fp8"
+      ],
+      "order": [
+        "liquid/fp8"
+      ],
+      "require_parameters": true
+    },
+    "schema": "nowmind.g2_3_4.provider_manifest.v1"
+  },
+  "row_count": 0,
+  "schema": "nowmind.g2_3_4.calibration.v1",
+  "schema_success": 0,
+  "split": "calibration"
+}

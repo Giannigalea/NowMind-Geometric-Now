@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "detail": "3000",
+      "name": "G2.2.1-v1-trial-count",
+      "passed": true
+    },
+    {
+      "detail": "20260823",
+      "name": "G2.2.1-v1-seed",
+      "passed": true
+    },
+    {
+      "detail": "2000",
+      "name": "G2.2.1-holdout-minimum",
+      "passed": true
+    },
+    {
+      "detail": "202608231",
+      "name": "G2.2.1-holdout-seed-differs",
+      "passed": true
+    },
+    {
+      "detail": "0",
+      "name": "G2.2.1-non-overlapping-trial-ids",
+      "passed": true
+    },
+    {
+      "detail": "2000",
+      "name": "G2.2.1-holdout-trial-ids",
+      "passed": true
+    },
+    {
+      "detail": "24",
+      "name": "G2.2.1-holdout-families",
+      "passed": true
+    },
+    {
+      "detail": "C_ChronologicalEpistemicPlanner,N_NowMindEpistemicGeometry,O_OraclePlanner,R_ReactiveCurrentOnlyPlanner",
+      "name": "G2.2.1-systems",
+      "passed": true
+    },
+    {
+      "detail": "0 expected",
+      "name": "G2.2.1-memory-not-observation",
+      "passed": true
+    },
+    {
+      "detail": "0 expected",
+      "name": "G2.2.1-prediction-not-fact",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "failed": 0,
+    "passed": 10
+  }
+}

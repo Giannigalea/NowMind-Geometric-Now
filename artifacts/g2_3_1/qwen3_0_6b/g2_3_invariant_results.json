@@ -1,0 +1,38 @@
+{
+  "checks": [
+    {
+      "detail": "no cloud backend configured",
+      "name": "G2.3-local-only",
+      "passed": true
+    },
+    {
+      "detail": "{'checked_pairs': 500, 'failed': 166}",
+      "name": "G2.3-fairness",
+      "passed": false
+    },
+    {
+      "detail": "N/C/R plus symbolic S reference",
+      "name": "G2.3-paired-conditions",
+      "passed": true
+    },
+    {
+      "detail": "raw and parsed outputs retained",
+      "name": "G2.3-json-recorded",
+      "passed": true
+    },
+    {
+      "detail": "model proposals remain proposals",
+      "name": "G2.3-no-observed-now-write",
+      "passed": true
+    },
+    {
+      "detail": "model proposals are not MemoryTrace",
+      "name": "G2.3-no-memorytrace-write",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "failed": 1,
+    "passed": 5
+  }
+}

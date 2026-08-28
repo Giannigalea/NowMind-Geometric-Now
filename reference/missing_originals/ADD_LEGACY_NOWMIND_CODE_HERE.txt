@@ -1,0 +1,2 @@
+Missing original: latest legacy NowMind source repository/ZIP.
+When available, place source files under reference/legacy_nowmind/ or add a ZIP named legacy_nowmind_latest.zip.

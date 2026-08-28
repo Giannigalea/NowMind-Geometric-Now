@@ -1,0 +1,44 @@
+{
+  "calibration_count": 50,
+  "conditions": [
+    "N_NOWMIND_STRUCTURED",
+    "C_CHRONOLOGICAL",
+    "R_CURRENT_ONLY",
+    "S_SYMBOLIC_NOWMIND"
+  ],
+  "families": [
+    "temporal_present_vs_stale_memory",
+    "temporal_current_unknown_memory",
+    "temporal_future_vs_current",
+    "temporal_false_memory",
+    "temporal_contradictory_present",
+    "temporal_long_history_source_confusion",
+    "spatial_relative_position",
+    "spatial_containment",
+    "spatial_reachability",
+    "spatial_obstacle_state",
+    "action_choose_next_move",
+    "action_safe_vs_conditional_route",
+    "action_verify_scan_vs_act",
+    "action_after_hidden_change_observed",
+    "explain_identify_evidence_source",
+    "explain_memory_not_current",
+    "explain_conditional_assumptions"
+  ],
+  "final_count": 250,
+  "fixed_token_budget": 1600,
+  "history_cohorts": [
+    "H0",
+    "H10",
+    "H50",
+    "H100",
+    "H500",
+    "H1000"
+  ],
+  "regimes": [
+    "A_EQUAL_INFORMATION",
+    "B_FIXED_BUDGET"
+  ],
+  "seed": 20260823,
+  "system_instruction_hash": "dc1caf57900ee0e0eb418a2ddf20ccd0c49fe4524f40474f5e3ec3dba2d8a394"
+}

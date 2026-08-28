@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-08-28T10:55:36.675044+00:00",
+  "errors": 0,
+  "model": "google/gemma-4-26b-a4b-it:free",
+  "parse_success": 0,
+  "provider_manifest": {
+    "model": "google/gemma-4-26b-a4b-it:free",
+    "pinned_provider": "google-ai-studio",
+    "provider_counts": {},
+    "provider_request": {
+      "allow_fallbacks": false,
+      "data_collection": "allow",
+      "only": [
+        "google-ai-studio"
+      ],
+      "order": [
+        "google-ai-studio"
+      ],
+      "require_parameters": true
+    },
+    "schema": "nowmind.g2_3_4.provider_manifest.v1"
+  },
+  "row_count": 0,
+  "schema": "nowmind.g2_3_4.calibration.v1",
+  "schema_success": 0,
+  "split": "calibration"
+}

@@ -1,0 +1,22 @@
+{
+  "mock-deterministic-g2.3|A_EQUAL_INFORMATION|proposal": {
+    "c_better": 0,
+    "n_better": 0,
+    "tied": 1000
+  },
+  "mock-deterministic-g2.3|A_EQUAL_INFORMATION|validated": {
+    "c_better": 0,
+    "n_better": 0,
+    "tied": 1000
+  },
+  "mock-deterministic-g2.3|B_FIXED_BUDGET|proposal": {
+    "c_better": 0,
+    "n_better": 0,
+    "tied": 1000
+  },
+  "mock-deterministic-g2.3|B_FIXED_BUDGET|validated": {
+    "c_better": 0,
+    "n_better": 0,
+    "tied": 1000
+  }
+}

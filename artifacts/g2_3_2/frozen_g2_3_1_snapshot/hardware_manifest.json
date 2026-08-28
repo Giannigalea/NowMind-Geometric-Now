@@ -1,0 +1,82 @@
+{
+  "schema": "nowmind.g2_3_1.hardware_manifest.v1",
+  "created_for": "G2.3.1 real local Ollama model evaluation",
+  "created_at_date": "2026-08-23",
+  "windows": {
+    "product_name": "Windows 10 Home",
+    "display_version": "25H2",
+    "current_build": "26200",
+    "ubr": 9168,
+    "edition_id": "Core"
+  },
+  "cpu": {
+    "name": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+    "logical_processors": 8,
+    "architecture": "AMD64"
+  },
+  "ram": {
+    "total_gb": 7.88,
+    "available_gb_at_audit": 0.59
+  },
+  "gpu": [
+    {
+      "name": "Intel(R) UHD Graphics 620",
+      "vram_gb": null,
+      "vram_detected": false
+    }
+  ],
+  "disks": [
+    {
+      "drive": "C",
+      "free_gb": 18.02,
+      "used_gb": 85.02
+    },
+    {
+      "drive": "D",
+      "free_gb": 497.97,
+      "used_gb": 433.41
+    },
+    {
+      "drive": "E",
+      "free_gb": 0.0,
+      "used_gb": 0.0
+    }
+  ],
+  "ollama": {
+    "available": true,
+    "version": "0.32.15",
+    "api_endpoint": "http://127.0.0.1:11434",
+    "executable_path": "C:\\Users\\jonat\\AppData\\Local\\Programs\\Ollama\\ollama.exe",
+    "model_storage_path": "D:\\OllamaModels",
+    "installed_models": [
+      {
+        "name": "gemma3:1b",
+        "digest": "8648f39daa8fbf5b18c7b4e6a8fb4990c692751d49917417b8842ca5758e7ffc",
+        "size_bytes": 815319791,
+        "parameter_size": "999.89M",
+        "quantization_level": "Q4_K_M",
+        "smoke_status": "failed"
+      },
+      {
+        "name": "qwen3:1.7b",
+        "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+        "size_bytes": 1359293444,
+        "parameter_size": "2.0B",
+        "quantization_level": "Q4_K_M",
+        "smoke_status": "failed"
+      }
+    ],
+    "version_command_error": null,
+    "list_command_error": null
+  },
+  "collection_notes": {
+    "cim_access": "denied in sandbox, so registry and .NET fallbacks were used",
+    "gpu_vram_source": "registry HardwareInformation.qwMemorySize when present",
+    "excluded": "host names, serial numbers, machine IDs, usernames, and unrelated personal data"
+  },
+  "evaluation_status": {
+    "can_begin_real_model_evaluation": false,
+    "reason": "Ollama is installed and local models were pulled, but no approved model passed the required JSON smoke test on this machine.",
+    "benchmarking_performed": false
+  }
+}

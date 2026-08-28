@@ -1,0 +1,42 @@
+{
+  "families": [
+    "E1_hidden_target_recent_accurate_memory",
+    "E2_hidden_target_stale_memory",
+    "E3_hidden_obstacle_accurate_memory",
+    "E4_hidden_obstacle_stale_false_memory",
+    "E5_known_safe_long_vs_remembered_shortcut",
+    "E6_verify_first_is_optimal",
+    "E7_verification_wasteful_safe_route_better",
+    "E8_memory_shortcut_worth_taking",
+    "E9_unseen_door_remembered_open",
+    "E10_unseen_door_remembered_closed",
+    "E11_dynamic_hidden_obstacle_changes",
+    "E12_dynamic_hidden_target_moves",
+    "E13_no_useful_memory_explore",
+    "E14_contradictory_current_sensors",
+    "E15_high_confidence_memory_weak_current",
+    "E16_long_history_many_stale_states",
+    "E17_long_history_temporal_distractors",
+    "E18_prediction_intercept_confirms",
+    "E19_prediction_route_falsifies",
+    "E20_multiple_remembered_candidate_locations",
+    "E21_information_action_avoids_trap",
+    "E22_partial_observability_multiple_replans",
+    "E23_false_positive_obstacle_observation",
+    "E24_false_negative_obstacle_observation"
+  ],
+  "history_cohorts": [
+    "H0",
+    "H10",
+    "H50",
+    "H100",
+    "H500",
+    "H1000"
+  ],
+  "note": "Config written before holdout evaluation; runtime code must not inspect seed, trial id, family, or expected answer.",
+  "seed": 202608231,
+  "trial_count": 2000,
+  "trial_id_prefix": "g2_2_1_holdout_",
+  "v1_seed": 20260823,
+  "v1_trial_count": 3000
+}

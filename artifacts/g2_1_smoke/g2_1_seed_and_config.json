@@ -1,0 +1,72 @@
+{
+  "difficulties": [
+    {
+      "band": "D1",
+      "height": 8,
+      "hidden_count": 0,
+      "max_steps": 40,
+      "obstacle_density": 0.04,
+      "width": 8
+    },
+    {
+      "band": "D2",
+      "height": 10,
+      "hidden_count": 2,
+      "max_steps": 55,
+      "obstacle_density": 0.07,
+      "width": 10
+    },
+    {
+      "band": "D3",
+      "height": 12,
+      "hidden_count": 5,
+      "max_steps": 75,
+      "obstacle_density": 0.1,
+      "width": 12
+    },
+    {
+      "band": "D4",
+      "height": 16,
+      "hidden_count": 8,
+      "max_steps": 115,
+      "obstacle_density": 0.13,
+      "width": 16
+    },
+    {
+      "band": "D5",
+      "height": 20,
+      "hidden_count": 12,
+      "max_steps": 160,
+      "obstacle_density": 0.16,
+      "width": 20
+    }
+  ],
+  "families": [
+    "P1_static_shortest_path",
+    "P2_stale_remembered_obstacle_current_free",
+    "P3_stale_remembered_free_current_blocked",
+    "P4_false_remembered_shortcut",
+    "P5_occluded_remembered_corridor",
+    "P6_dynamic_obstacle_appears",
+    "P7_dynamic_obstacle_disappears",
+    "P8_target_moves",
+    "P9_future_target_hypothesis_true",
+    "P10_future_target_hypothesis_false",
+    "P11_short_conditional_vs_long_observed",
+    "P12_dead_end",
+    "P13_multiple_dynamic_changes",
+    "P14_contradictory_current_geometry",
+    "P15_contained_goal_access_cell",
+    "P16_long_history_many_traces"
+  ],
+  "minimum_trial_count": 2000,
+  "seed": 20260823,
+  "systems": [
+    "N_NowMindPossibilityGeometry",
+    "C_ChronologicalGeometricPlanner",
+    "R_ReactiveCurrentOnlyPlanner",
+    "O_OraclePlanner"
+  ],
+  "target_trial_count": 3000,
+  "trial_count": 32
+}

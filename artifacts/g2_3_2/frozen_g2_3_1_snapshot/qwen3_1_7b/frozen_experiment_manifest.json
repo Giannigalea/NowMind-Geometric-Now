@@ -1,0 +1,100 @@
+{
+  "benchmark_constants": {
+    "calibration_count": 50,
+    "conditions": [
+      "N_NOWMIND_STRUCTURED",
+      "C_CHRONOLOGICAL",
+      "R_CURRENT_ONLY",
+      "S_SYMBOLIC_NOWMIND"
+    ],
+    "families": [
+      "temporal_present_vs_stale_memory",
+      "temporal_current_unknown_memory",
+      "temporal_future_vs_current",
+      "temporal_false_memory",
+      "temporal_contradictory_present",
+      "temporal_long_history_source_confusion",
+      "spatial_relative_position",
+      "spatial_containment",
+      "spatial_reachability",
+      "spatial_obstacle_state",
+      "action_choose_next_move",
+      "action_safe_vs_conditional_route",
+      "action_verify_scan_vs_act",
+      "action_after_hidden_change_observed",
+      "explain_identify_evidence_source",
+      "explain_memory_not_current",
+      "explain_conditional_assumptions"
+    ],
+    "final_count": 250,
+    "fixed_token_budget": 1600,
+    "history_cohorts": [
+      "H0",
+      "H10",
+      "H50",
+      "H100",
+      "H500",
+      "H1000"
+    ],
+    "regimes": [
+      "A_EQUAL_INFORMATION",
+      "B_FIXED_BUDGET"
+    ],
+    "seed": 20260823,
+    "system_instruction_hash": "dc1caf57900ee0e0eb418a2ddf20ccd0c49fe4524f40474f5e3ec3dba2d8a394"
+  },
+  "calibration_artifact": "artifacts/g2_3_1/qwen3_1_7b/calibration_results.json",
+  "created_at": "2026-08-24T07:50:18.091649+00:00",
+  "evaluation_seed": 20260824,
+  "freeze_policy": "Written after calibration and before final evaluation rows for this count.",
+  "model_manifest": {
+    "available_backends": {
+      "mock": true,
+      "ollama": true,
+      "symbolic_reference": true
+    },
+    "local_model_runtime_prerequisite": null,
+    "ollama": {
+      "api_path": "/api/chat",
+      "available": true,
+      "base_url": "http://127.0.0.1:11434",
+      "executable": "ollama.exe",
+      "models": [
+        {
+          "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+          "name": "qwen3:1.7b"
+        }
+      ],
+      "note": "Temporary CPU/AVX2 diagnostic server; no cloud backend."
+    },
+    "selected": {
+      "api_path": "/api/chat",
+      "backend": "ollama",
+      "base_url": "http://127.0.0.1:11434",
+      "context_size": 2048,
+      "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+      "model": "qwen3:1.7b",
+      "num_predict": 256,
+      "response_format": "json_schema",
+      "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+      "seed": 20260823,
+      "temperature": 0.0,
+      "think": false,
+      "top_p": 1.0
+    },
+    "symbolic_reference": {
+      "backend": "symbolic",
+      "context_size": 100000,
+      "digest": "deterministic-local-symbolic",
+      "model": "symbolic-nowmind-g2.3-reference",
+      "seed": 20260823,
+      "temperature": 0.0,
+      "top_p": 1.0
+    }
+  },
+  "prompt_templates_hash": "3a8023cc7cab936428f3fdf3f23b42848db6ade7191544b6a60050cdc8626565",
+  "schema": "nowmind.g2_3_1.frozen_experiment_manifest.v1",
+  "seed": 20260823,
+  "selected_final_paired_trial_count": 250,
+  "system_instruction_hash": "dc1caf57900ee0e0eb418a2ddf20ccd0c49fe4524f40474f5e3ec3dba2d8a394"
+}

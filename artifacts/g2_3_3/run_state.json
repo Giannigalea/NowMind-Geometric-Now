@@ -1,0 +1,96 @@
+{
+  "models": {
+    "cohere/north-mini-code:free": {
+      "detail": "Smoke stopped on basic_structured_json: missing_parsed_output/parse_failure or schema-invalid output",
+      "status": "stopped_schema_invalid",
+      "updated_at": "2026-08-28T10:10:41.3780196Z"
+    },
+    "dots-studio/dots-3-note-preview:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T11:51:24.618377+02:00"
+    },
+    "google/gemma-4-26b-a4b-it:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T11:48:11.685973+02:00"
+    },
+    "google/gemma-4-31b-it:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T11:52:02.511513+02:00"
+    },
+    "inclusionai/ling-3.0-flash-fin:free": {
+      "detail": "Smoke stopped on basic_structured_json: invalid_status",
+      "status": "stopped_schema_invalid",
+      "updated_at": "2026-08-28T10:10:41.4001927Z"
+    },
+    "liquid/lfm-2.5-2.6b:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found matching your data policy (Free model training). Configure: https://openrouter.ai/settings/privacy\",\"code\":404}}",
+      "status": "stopped_privacy_policy",
+      "updated_at": "2026-08-28T11:51:44.057354+02:00"
+    },
+    "minimax/minimax-m2.7:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T11:51:08.098314+02:00"
+    },
+    "minimax/minimax-m3:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T11:50:51.024231+02:00"
+    },
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found matching your data policy (Free model training). Configure: https://openrouter.ai/settings/privacy\",\"code\":404}}",
+      "status": "stopped_privacy_policy",
+      "updated_at": "2026-08-28T12:04:20.170856+02:00"
+    },
+    "nvidia/nemotron-3-super-120b-a12b:free": {
+      "detail": "Smoke stopped on basic_structured_json: strict data_collection=deny had no matching free endpoint",
+      "status": "stopped_privacy_policy",
+      "updated_at": "2026-08-28T11:46:34.65728+02:00"
+    },
+    "nvidia/nemotron-3-ultra-550b-a55b:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found matching your data policy (Free model training). Configure: https://openrouter.ai/settings/privacy\",\"code\":404}}",
+      "status": "stopped_privacy_policy",
+      "updated_at": "2026-08-28T12:04:40.218441+02:00"
+    },
+    "nvidia/nemotron-3.5-content-safety:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found matching your data policy (Free model training). Configure: https://openrouter.ai/settings/privacy\",\"code\":404}}",
+      "status": "stopped_privacy_policy",
+      "updated_at": "2026-08-28T12:05:02.633625+02:00"
+    },
+    "nvidia/nemotron-3.5-lightning:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found matching your data policy (Free model training). Configure: https://openrouter.ai/settings/privacy\",\"code\":404}}",
+      "status": "stopped_privacy_policy",
+      "updated_at": "2026-08-28T12:05:20.923927+02:00"
+    },
+    "poolside/laguna-s-2.1:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T12:05:42.683933+02:00"
+    },
+    "poolside/laguna-xs-2.1:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T12:06:00.804604+02:00"
+    },
+    "thinkingmachines/inkling-small:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 403: {\"error\":{\"message\":\"thinkingmachines/inkling-small:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":403}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T12:06:39.447843+02:00"
+    },
+    "thinkingmachines/inkling:free": {
+      "detail": "Smoke stopped on basic_structured_json: HTTP 403: {\"error\":{\"message\":\"thinkingmachines/inkling:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":403}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T12:06:20.677857+02:00"
+    },
+    "z-ai/glm-5.2:free": {
+      "detail": "Smoke stopped on basic_structured_json",
+      "status": "paused_rate_limit",
+      "updated_at": "2026-08-28T11:45:19.559486+02:00"
+    }
+  },
+  "schema": "nowmind.g2_3_3.run_state.v1",
+  "updated_at": "2026-08-28T10:10:41.4022313Z"
+}

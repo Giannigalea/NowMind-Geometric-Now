@@ -1,0 +1,38 @@
+{
+  "mock-deterministic-g2.3|A_EQUAL_INFORMATION|C_CHRONOLOGICAL": {
+    "count": 24,
+    "proposal_correct": 24,
+    "validated_correct": 24,
+    "validator_prevented_error": 0
+  },
+  "mock-deterministic-g2.3|A_EQUAL_INFORMATION|N_NOWMIND_STRUCTURED": {
+    "count": 24,
+    "proposal_correct": 24,
+    "validated_correct": 24,
+    "validator_prevented_error": 0
+  },
+  "mock-deterministic-g2.3|A_EQUAL_INFORMATION|R_CURRENT_ONLY": {
+    "count": 24,
+    "proposal_correct": 22,
+    "validated_correct": 22,
+    "validator_prevented_error": 0
+  },
+  "mock-deterministic-g2.3|B_FIXED_BUDGET|C_CHRONOLOGICAL": {
+    "count": 24,
+    "proposal_correct": 24,
+    "validated_correct": 24,
+    "validator_prevented_error": 0
+  },
+  "mock-deterministic-g2.3|B_FIXED_BUDGET|N_NOWMIND_STRUCTURED": {
+    "count": 24,
+    "proposal_correct": 24,
+    "validated_correct": 24,
+    "validator_prevented_error": 0
+  },
+  "mock-deterministic-g2.3|B_FIXED_BUDGET|R_CURRENT_ONLY": {
+    "count": 24,
+    "proposal_correct": 22,
+    "validated_correct": 22,
+    "validator_prevented_error": 0
+  }
+}

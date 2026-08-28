@@ -1,0 +1,105 @@
+{
+  "created_at": "2026-08-24T18:05:00Z",
+  "default_server_before_override": {
+    "gpu_discovery": {
+      "available_vram": "1.7 GiB",
+      "default_num_ctx": 4096,
+      "integrated_gpu_dropped": "Intel(R) UHD Graphics 620",
+      "selected_device": "Radeon (TM) 520",
+      "selected_library": "Vulkan",
+      "total_vram": "2.0 GiB"
+    },
+    "llm_library": "",
+    "ollama_version": "0.32.15",
+    "vulkan_enabled": true
+  },
+  "diagnosis": {
+    "benchmark_or_architecture_changed_to_improve_results": false,
+    "machine_viable_for_reliable_g2_3_1": "viable_for_qwen3_0_6b_after_pagefile_not_proven_for_larger_models",
+    "pagefile_workaround_superseded_machine_viability_for_qwen3_0_6b": true,
+    "primary_blocker": "local RAM/swap allocation headroom",
+    "secondary_blocker": "default Vulkan/GPU autodetection path"
+  },
+  "forced_cpu_server": {
+    "compute": "cpu",
+    "cpu_avx2_confirmed_by_runner": true,
+    "gpu_libraries_skipped_at_user_request": true,
+    "temporary_environment": {
+      "OLLAMA_DEBUG": "1",
+      "OLLAMA_HOST": "127.0.0.1:11434",
+      "OLLAMA_LLM_LIBRARY": "cpu_avx2",
+      "OLLAMA_MODELS": "D:\\OllamaModels"
+    },
+    "vram": "0 B"
+  },
+  "g2_3_1_resume": {
+    "calibration_paired_trials": 50,
+    "calibration_rows": 400,
+    "calibration_wall_clock_seconds": 15975.324,
+    "final_failure": "failed to allocate CPU buffer of size 692725760",
+    "final_real_model_evidence_valid": false,
+    "final_rows_written": 2000,
+    "qwen3_0_6b_calibration_completed": true,
+    "qwen3_0_6b_calibration_rows": 400,
+    "qwen3_0_6b_final_completed": true,
+    "qwen3_0_6b_final_real_model_evidence_valid": true,
+    "qwen3_0_6b_final_rows": 2000,
+    "qwen3_0_6b_pairwise_n_vs_c": {
+      "qwen3:0.6b|A_EQUAL_INFORMATION|proposal": {
+        "c_better": 8,
+        "n_better": 0,
+        "tied": 242
+      },
+      "qwen3:0.6b|A_EQUAL_INFORMATION|validated": {
+        "c_better": 8,
+        "n_better": 0,
+        "tied": 242
+      },
+      "qwen3:0.6b|B_FIXED_BUDGET|proposal": {
+        "c_better": 0,
+        "n_better": 12,
+        "tied": 238
+      },
+      "qwen3:0.6b|B_FIXED_BUDGET|validated": {
+        "c_better": 0,
+        "n_better": 0,
+        "tied": 250
+      }
+    },
+    "qwen3_1_7b_calibration_completed": true,
+    "qwen3_1_7b_final_attempted": true,
+    "selected_final_paired_trials": 250
+  },
+  "schema": "nowmind.g2_3_1.cpu_backend_diagnostic.v2",
+  "smoke_results": {
+    "gemma3_1b": {
+      "contexts_passed": [
+        512,
+        1024,
+        2048
+      ],
+      "structured_json_schema_succeeded": true
+    },
+    "qwen3_0_6b": {
+      "post_pagefile_contexts_passed": [
+        512,
+        1024,
+        2048,
+        4096
+      ],
+      "pre_pagefile_error": "failed to allocate CPU buffer of size 310250496",
+      "pre_pagefile_failed_context": 512,
+      "pulled": true,
+      "structured_json_schema_succeeded_after_pagefile": true
+    },
+    "qwen3_1_7b": {
+      "contexts_passed": [
+        512,
+        1024,
+        2048
+      ],
+      "structured_json_schema_succeeded": true
+    }
+  },
+  "updated_at": "2026-08-26T18:47:11.195329+00:00"
+}

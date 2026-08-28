@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-08-28T10:55:35.416141+00:00",
+  "errors": 0,
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "parse_success": 0,
+  "provider_manifest": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "pinned_provider": "nvidia",
+    "provider_counts": {},
+    "provider_request": {
+      "allow_fallbacks": false,
+      "data_collection": "allow",
+      "only": [
+        "nvidia"
+      ],
+      "order": [
+        "nvidia"
+      ],
+      "require_parameters": true
+    },
+    "schema": "nowmind.g2_3_4.provider_manifest.v1"
+  },
+  "row_count": 0,
+  "schema": "nowmind.g2_3_4.calibration.v1",
+  "schema_success": 0,
+  "split": "calibration"
+}

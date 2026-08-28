@@ -1,0 +1,4196 @@
+{
+  "ChronologicalRecordReasoner": [],
+  "NaivePersistentState": [
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00000-F1_stale_memory_after_update:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00000-F1_stale_memory_after_update:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F1_stale_memory_after_update",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00000-F1_stale_memory_after_update:b990182d-a82b-5290-adb2-cddc1ae8b93b",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1367848849,
+        "trial_id": "g2-00000-F1_stale_memory_after_update",
+        "world_event_sequence": [
+          "cycle 1: ball in box_a",
+          "cycle 2: ball moved to box_b"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_d",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_d",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00001-F2_false_memory:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00001-F2_false_memory:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [
+          "box_d"
+        ],
+        "family_id": "F2_false_memory",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": true,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00001-F2_false_memory:3f1df0c7-55ad-5142-9933-2573574aa7c8",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1884840837,
+        "trial_id": "g2-00001-F2_false_memory",
+        "world_event_sequence": [
+          "current: ball in box_b",
+          "injected false memory: ball in box_d"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.955469384777157,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 0.6424547471956911,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00002-F3_confidence_inversion:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 0.6424547471956911,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00002-F3_confidence_inversion:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F3_confidence_inversion",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.955469384777157,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00002-F3_confidence_inversion:b7ccc0f7-e6b0-54c9-a04a-267a6032836b",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1070596090,
+        "trial_id": "g2-00002-F3_confidence_inversion",
+        "world_event_sequence": [
+          "current observation moderate confidence: B",
+          "memory high confidence: A"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [],
+        "expected_propositions": [],
+        "expected_source": "none",
+        "expected_status": "unknown",
+        "false_memory_targets": [],
+        "family_id": "F4_no_current_visibility",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00003-F4_no_current_visibility:d377e535-95f9-5f1e-b6be-0cd10765b824",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1634455163,
+        "trial_id": "g2-00003-F4_no_current_visibility",
+        "world_event_sequence": [
+          "current observation hidden",
+          "memory reconstructs A"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.6,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "hypothetical_future",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00004-F5_future_conflict:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00004-F5_future_conflict:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F5_future_conflict",
+        "future_hypotheses": [
+          {
+            "confidence": 0.6,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00004-F5_future_conflict:6a0651a3-b0bc-57f4-b1c1-765d9a96a999",
+            "source": "hypothetical_future"
+          }
+        ],
+        "memory_reconstructions": [],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 296116829,
+        "trial_id": "g2-00004-F5_future_conflict",
+        "world_event_sequence": [
+          "current: B",
+          "hypothesis: C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00006-F7_multiple_old_memories:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_c CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_c",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00006-F7_multiple_old_memories:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F7_multiple_old_memories",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00006-F7_multiple_old_memories:a6860019-b788-5c69-8f44-12b5b4c9f97e",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 2,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00006-F7_multiple_old_memories:12b67135-0123-5c41-839c-8dd936d24f23",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 629392903,
+        "trial_id": "g2-00006-F7_multiple_old_memories",
+        "world_event_sequence": [
+          "past: A",
+          "past: B",
+          "current: C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00007-F8_distractors:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "spoon INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "spoon",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00007-F8_distractors:o0001",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00007-F8_distractors:i0002",
+            "source": "inferred_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_d CONTAINS spoon",
+              "relation_type": "contains",
+              "source_id": "box_d",
+              "target_id": "spoon",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00007-F8_distractors:i0003",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F8_distractors",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00007-F8_distractors:243eca86-9867-539e-9382-7f775adc429f",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 125107876,
+        "trial_id": "g2-00007-F8_distractors",
+        "world_event_sequence": [
+          "current: B",
+          "irrelevant distractor relations present"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00008-F9_contradictory_current_evidence:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00008-F9_contradictory_current_evidence:o0001",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00008-F9_contradictory_current_evidence:i0002",
+            "source": "inferred_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_c CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_c",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00008-F9_contradictory_current_evidence:i0003",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [],
+        "expected_source": "observed_now",
+        "expected_status": "contradictory",
+        "false_memory_targets": [],
+        "family_id": "F9_contradictory_current_evidence",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00008-F9_contradictory_current_evidence:09fe9454-60ba-5101-9313-4f17e0abfce9",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 652103165,
+        "trial_id": "g2-00008-F9_contradictory_current_evidence",
+        "world_event_sequence": [
+          "c",
+          "u",
+          "r",
+          "r",
+          "e",
+          "n",
+          "t",
+          " ",
+          "c",
+          "o",
+          "n",
+          "f",
+          "l",
+          "i",
+          "c",
+          "t",
+          "i",
+          "n",
+          "g",
+          " ",
+          "o",
+          "b",
+          "s",
+          "e",
+          "r",
+          "v",
+          "a",
+          "t",
+          "i",
+          "o",
+          "n",
+          "s",
+          ":",
+          " ",
+          "B",
+          " ",
+          "a",
+          "n",
+          "d",
+          " ",
+          "C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_d",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_d",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00013-F14_multiple_moves:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_c CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_c",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00013-F14_multiple_moves:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F14_multiple_moves",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00013-F14_multiple_moves:7e714ac6-c879-59a8-a0b7-a1e7f651bf23",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 2,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00013-F14_multiple_moves:31725c6b-3623-57b6-864e-b76cf82c08f9",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 3,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00013-F14_multiple_moves:36af55c4-c68a-59f4-a5ca-6151c8631a01",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 4,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00013-F14_multiple_moves:e1012791-8992-5df3-a48f-4f3d84723bfb",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 583833122,
+        "trial_id": "g2-00013-F14_multiple_moves",
+        "world_event_sequence": [
+          "cycle 1: ball in box_d",
+          "cycle 2: ball in box_a",
+          "cycle 3: ball in box_c",
+          "cycle 4: ball in box_d",
+          "cycle 5: ball in box_c"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [],
+        "expected_propositions": [],
+        "expected_source": "none",
+        "expected_status": "unknown",
+        "false_memory_targets": [],
+        "family_id": "F16_occlusion",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00015-F16_occlusion:8da388ca-d6ba-544f-8061-67e75acbec4b",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 327598082,
+        "trial_id": "g2-00015-F16_occlusion",
+        "world_event_sequence": [
+          "current fact removed from visibility",
+          "latest memory says B"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.6,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "hypothetical_future",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00016-F17_prediction_later_confirmed:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_c CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_c",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00016-F17_prediction_later_confirmed:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F17_prediction_later_confirmed",
+        "future_hypotheses": [
+          {
+            "confidence": 0.6,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00016-F17_prediction_later_confirmed:08fb2ac6-d2da-5989-b7b1-488f418a8d25",
+            "source": "hypothetical_future"
+          }
+        ],
+        "memory_reconstructions": [],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 831480064,
+        "trial_id": "g2-00016-F17_prediction_later_confirmed",
+        "world_event_sequence": [
+          "previous hypothesis: C",
+          "later real observation confirms C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.6,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "hypothetical_future",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00017-F18_prediction_later_falsified:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_d CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_d",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00017-F18_prediction_later_falsified:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_d",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_d",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F18_prediction_later_falsified",
+        "future_hypotheses": [
+          {
+            "confidence": 0.6,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00017-F18_prediction_later_falsified:92f89975-a237-5164-bb97-cd929575740f",
+            "source": "hypothetical_future"
+          }
+        ],
+        "memory_reconstructions": [],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1887122005,
+        "trial_id": "g2-00017-F18_prediction_later_falsified",
+        "world_event_sequence": [
+          "previous hypothesis: C",
+          "actual later observation: D"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00018-F1_stale_memory_after_update:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00018-F1_stale_memory_after_update:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F1_stale_memory_after_update",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00018-F1_stale_memory_after_update:da34026e-d1d2-5105-be56-182719f5dd94",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1452213086,
+        "trial_id": "g2-00018-F1_stale_memory_after_update",
+        "world_event_sequence": [
+          "cycle 1: ball in box_a",
+          "cycle 2: ball moved to box_b"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_d",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_d",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00019-F2_false_memory:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00019-F2_false_memory:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [
+          "box_d"
+        ],
+        "family_id": "F2_false_memory",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": true,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00019-F2_false_memory:115b4adc-925f-5605-982d-e749a5ada802",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1781545752,
+        "trial_id": "g2-00019-F2_false_memory",
+        "world_event_sequence": [
+          "current: ball in box_b",
+          "injected false memory: ball in box_d"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.8678752761433768,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 0.6401490611442349,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00020-F3_confidence_inversion:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 0.6401490611442349,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00020-F3_confidence_inversion:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F3_confidence_inversion",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.8678752761433768,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00020-F3_confidence_inversion:8e59ef71-a05e-564d-9dc1-051a3d1f2d4c",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 35446961,
+        "trial_id": "g2-00020-F3_confidence_inversion",
+        "world_event_sequence": [
+          "current observation moderate confidence: B",
+          "memory high confidence: A"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [],
+        "expected_propositions": [],
+        "expected_source": "none",
+        "expected_status": "unknown",
+        "false_memory_targets": [],
+        "family_id": "F4_no_current_visibility",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00021-F4_no_current_visibility:7d89af34-ff7c-588f-a66e-86cb8763a4ed",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1279561185,
+        "trial_id": "g2-00021-F4_no_current_visibility",
+        "world_event_sequence": [
+          "current observation hidden",
+          "memory reconstructs A"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.6,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "hypothetical_future",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00022-F5_future_conflict:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00022-F5_future_conflict:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F5_future_conflict",
+        "future_hypotheses": [
+          {
+            "confidence": 0.6,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00022-F5_future_conflict:94c3a247-f59c-5330-b121-fa435518d694",
+            "source": "hypothetical_future"
+          }
+        ],
+        "memory_reconstructions": [],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1417894151,
+        "trial_id": "g2-00022-F5_future_conflict",
+        "world_event_sequence": [
+          "current: B",
+          "hypothesis: C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00024-F7_multiple_old_memories:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_c CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_c",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00024-F7_multiple_old_memories:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F7_multiple_old_memories",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00024-F7_multiple_old_memories:f5b46eae-9a45-5cdc-b32d-70cb4f4457e2",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 2,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00024-F7_multiple_old_memories:f5aaf874-094c-540f-a5ad-800146c774e5",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1404947994,
+        "trial_id": "g2-00024-F7_multiple_old_memories",
+        "world_event_sequence": [
+          "past: A",
+          "past: B",
+          "current: C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00025-F8_distractors:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "spoon INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "spoon",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00025-F8_distractors:o0001",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00025-F8_distractors:i0002",
+            "source": "inferred_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_d CONTAINS spoon",
+              "relation_type": "contains",
+              "source_id": "box_d",
+              "target_id": "spoon",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00025-F8_distractors:i0003",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F8_distractors",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00025-F8_distractors:386fb238-bc87-5ec8-8689-db8fcc9ea718",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 675131241,
+        "trial_id": "g2-00025-F8_distractors",
+        "world_event_sequence": [
+          "current: B",
+          "irrelevant distractor relations present"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00026-F9_contradictory_current_evidence:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00026-F9_contradictory_current_evidence:o0001",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00026-F9_contradictory_current_evidence:i0002",
+            "source": "inferred_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_c CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_c",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00026-F9_contradictory_current_evidence:i0003",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [],
+        "expected_source": "observed_now",
+        "expected_status": "contradictory",
+        "false_memory_targets": [],
+        "family_id": "F9_contradictory_current_evidence",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00026-F9_contradictory_current_evidence:5b36fa64-6455-5e34-b9a1-5a2b390b0311",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 14946772,
+        "trial_id": "g2-00026-F9_contradictory_current_evidence",
+        "world_event_sequence": [
+          "c",
+          "u",
+          "r",
+          "r",
+          "e",
+          "n",
+          "t",
+          " ",
+          "c",
+          "o",
+          "n",
+          "f",
+          "l",
+          "i",
+          "c",
+          "t",
+          "i",
+          "n",
+          "g",
+          " ",
+          "o",
+          "b",
+          "s",
+          "e",
+          "r",
+          "v",
+          "a",
+          "t",
+          "i",
+          "o",
+          "n",
+          "s",
+          ":",
+          " ",
+          "B",
+          " ",
+          "a",
+          "n",
+          "d",
+          " ",
+          "C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00031-F14_multiple_moves:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_d CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_d",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00031-F14_multiple_moves:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_d",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_d",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F14_multiple_moves",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00031-F14_multiple_moves:be50d36e-91fd-5851-a835-693e219fd68b",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 2,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00031-F14_multiple_moves:10e00f39-ba5e-565f-b394-d8c4678ca524",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 3,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00031-F14_multiple_moves:94b2d9d5-24b5-5e88-b615-0b87f6892032",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 4,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00031-F14_multiple_moves:269729c6-f12f-5593-9bb2-e16aba54816b",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1071966093,
+        "trial_id": "g2-00031-F14_multiple_moves",
+        "world_event_sequence": [
+          "cycle 1: ball in box_a",
+          "cycle 2: ball in box_a",
+          "cycle 3: ball in box_d",
+          "cycle 4: ball in box_b",
+          "cycle 5: ball in box_d"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [],
+        "expected_propositions": [],
+        "expected_source": "none",
+        "expected_status": "unknown",
+        "false_memory_targets": [],
+        "family_id": "F16_occlusion",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00033-F16_occlusion:37f2e31a-fc5a-521e-8762-dcccdcce5544",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1038298766,
+        "trial_id": "g2-00033-F16_occlusion",
+        "world_event_sequence": [
+          "current fact removed from visibility",
+          "latest memory says B"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.6,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "hypothetical_future",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00034-F17_prediction_later_confirmed:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_c CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_c",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00034-F17_prediction_later_confirmed:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F17_prediction_later_confirmed",
+        "future_hypotheses": [
+          {
+            "confidence": 0.6,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00034-F17_prediction_later_confirmed:1bc9665d-9c27-5e61-a695-765b9594145a",
+            "source": "hypothetical_future"
+          }
+        ],
+        "memory_reconstructions": [],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1145486002,
+        "trial_id": "g2-00034-F17_prediction_later_confirmed",
+        "world_event_sequence": [
+          "previous hypothesis: C",
+          "later real observation confirms C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.6,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "hypothetical_future",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00035-F18_prediction_later_falsified:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_d CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_d",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00035-F18_prediction_later_falsified:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_d",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_d",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F18_prediction_later_falsified",
+        "future_hypotheses": [
+          {
+            "confidence": 0.6,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00035-F18_prediction_later_falsified:682086e5-1454-5ae9-803b-6b231660bdb8",
+            "source": "hypothetical_future"
+          }
+        ],
+        "memory_reconstructions": [],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 425525839,
+        "trial_id": "g2-00035-F18_prediction_later_falsified",
+        "world_event_sequence": [
+          "previous hypothesis: C",
+          "actual later observation: D"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00036-F1_stale_memory_after_update:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00036-F1_stale_memory_after_update:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F1_stale_memory_after_update",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00036-F1_stale_memory_after_update:1a73468a-6c64-5493-874c-ebea30e243a8",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1066916640,
+        "trial_id": "g2-00036-F1_stale_memory_after_update",
+        "world_event_sequence": [
+          "cycle 1: ball in box_a",
+          "cycle 2: ball moved to box_b"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_d",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_d",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00037-F2_false_memory:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00037-F2_false_memory:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [
+          "box_d"
+        ],
+        "family_id": "F2_false_memory",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": true,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00037-F2_false_memory:7f8dc029-111f-5bf5-b288-15d624d488c1",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 987697474,
+        "trial_id": "g2-00037-F2_false_memory",
+        "world_event_sequence": [
+          "current: ball in box_b",
+          "injected false memory: ball in box_d"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.924795750889908,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 0.6661834879666635,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00038-F3_confidence_inversion:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 0.6661834879666635,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00038-F3_confidence_inversion:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F3_confidence_inversion",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.924795750889908,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00038-F3_confidence_inversion:d8a89446-b46e-563c-a549-8610729d388e",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 900037531,
+        "trial_id": "g2-00038-F3_confidence_inversion",
+        "world_event_sequence": [
+          "current observation moderate confidence: B",
+          "memory high confidence: A"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [],
+        "expected_propositions": [],
+        "expected_source": "none",
+        "expected_status": "unknown",
+        "false_memory_targets": [],
+        "family_id": "F4_no_current_visibility",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00039-F4_no_current_visibility:22c87cb5-1bf5-5655-9b71-d3816d0ca367",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 86320363,
+        "trial_id": "g2-00039-F4_no_current_visibility",
+        "world_event_sequence": [
+          "current observation hidden",
+          "memory reconstructs A"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.6,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "hypothetical_future",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00040-F5_future_conflict:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00040-F5_future_conflict:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F5_future_conflict",
+        "future_hypotheses": [
+          {
+            "confidence": 0.6,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00040-F5_future_conflict:e5962319-43e1-58ab-845d-0688a276da09",
+            "source": "hypothetical_future"
+          }
+        ],
+        "memory_reconstructions": [],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 242583011,
+        "trial_id": "g2-00040-F5_future_conflict",
+        "world_event_sequence": [
+          "current: B",
+          "hypothesis: C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00042-F7_multiple_old_memories:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_c CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_c",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00042-F7_multiple_old_memories:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F7_multiple_old_memories",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00042-F7_multiple_old_memories:df7d9b51-9ed6-5afc-9c1c-aec8cab398b8",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 2,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00042-F7_multiple_old_memories:f17d31e2-6f50-5727-abb7-f31212a111ec",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1491215766,
+        "trial_id": "g2-00042-F7_multiple_old_memories",
+        "world_event_sequence": [
+          "past: A",
+          "past: B",
+          "current: C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00043-F8_distractors:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "spoon INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "spoon",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00043-F8_distractors:o0001",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00043-F8_distractors:i0002",
+            "source": "inferred_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_d CONTAINS spoon",
+              "relation_type": "contains",
+              "source_id": "box_d",
+              "target_id": "spoon",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00043-F8_distractors:i0003",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F8_distractors",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00043-F8_distractors:6d8c08af-a0df-523f-b779-5d22a5b9bd0a",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 499967508,
+        "trial_id": "g2-00043-F8_distractors",
+        "world_event_sequence": [
+          "current: B",
+          "irrelevant distractor relations present"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00044-F9_contradictory_current_evidence:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00044-F9_contradictory_current_evidence:o0001",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00044-F9_contradictory_current_evidence:i0002",
+            "source": "inferred_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_c CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_c",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00044-F9_contradictory_current_evidence:i0003",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [],
+        "expected_source": "observed_now",
+        "expected_status": "contradictory",
+        "false_memory_targets": [],
+        "family_id": "F9_contradictory_current_evidence",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00044-F9_contradictory_current_evidence:e649eacf-f1c2-5813-a9d3-a1d2b8fea27e",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 1866049030,
+        "trial_id": "g2-00044-F9_contradictory_current_evidence",
+        "world_event_sequence": [
+          "c",
+          "u",
+          "r",
+          "r",
+          "e",
+          "n",
+          "t",
+          " ",
+          "c",
+          "o",
+          "n",
+          "f",
+          "l",
+          "i",
+          "c",
+          "t",
+          "i",
+          "n",
+          "g",
+          " ",
+          "o",
+          "b",
+          "s",
+          "e",
+          "r",
+          "v",
+          "a",
+          "t",
+          "i",
+          "o",
+          "n",
+          "s",
+          ":",
+          " ",
+          "B",
+          " ",
+          "a",
+          "n",
+          "d",
+          " ",
+          "C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_d",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_d",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00049-F14_multiple_moves:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_c CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_c",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00049-F14_multiple_moves:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F14_multiple_moves",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00049-F14_multiple_moves:ba4fa508-9ca7-5eee-a5f3-b7465bd000d8",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 2,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00049-F14_multiple_moves:c7f22d02-21a2-5099-9dec-f1b983dece36",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 3,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00049-F14_multiple_moves:fb303566-d2f2-5538-b8e1-cdec3de5c381",
+            "source": "reconstructed_memory"
+          },
+          {
+            "confidence": 0.95,
+            "cycle_id": 4,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00049-F14_multiple_moves:e794d58f-aa43-5e0e-b22b-7869e8e5e590",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 254220510,
+        "trial_id": "g2-00049-F14_multiple_moves",
+        "world_event_sequence": [
+          "cycle 1: ball in box_a",
+          "cycle 2: ball in box_a",
+          "cycle 3: ball in box_b",
+          "cycle 4: ball in box_d",
+          "cycle 5: ball in box_c"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [],
+        "expected_propositions": [],
+        "expected_source": "none",
+        "expected_status": "unknown",
+        "false_memory_targets": [],
+        "family_id": "F16_occlusion",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00051-F16_occlusion:449884ce-6793-5a53-b1ed-c2b43b0d2cef",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 151770940,
+        "trial_id": "g2-00051-F16_occlusion",
+        "world_event_sequence": [
+          "current fact removed from visibility",
+          "latest memory says B"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.6,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "hypothetical_future",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00052-F17_prediction_later_confirmed:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_c CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_c",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00052-F17_prediction_later_confirmed:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F17_prediction_later_confirmed",
+        "future_hypotheses": [
+          {
+            "confidence": 0.6,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00052-F17_prediction_later_confirmed:fcea1060-b8af-5a5b-9cee-000f201acfab",
+            "source": "hypothetical_future"
+          }
+        ],
+        "memory_reconstructions": [],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 483069453,
+        "trial_id": "g2-00052-F17_prediction_later_confirmed",
+        "world_event_sequence": [
+          "previous hypothesis: C",
+          "later real observation confirms C"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.6,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_c",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_c",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "hypothetical_future",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00053-F18_prediction_later_falsified:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_d CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_d",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00053-F18_prediction_later_falsified:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_d",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_d",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F18_prediction_later_falsified",
+        "future_hypotheses": [
+          {
+            "confidence": 0.6,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_c",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_c",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00053-F18_prediction_later_falsified:c105ef28-9f1c-5c14-8c12-a65ed7ae6c26",
+            "source": "hypothetical_future"
+          }
+        ],
+        "memory_reconstructions": [],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 620951154,
+        "trial_id": "g2-00053-F18_prediction_later_falsified",
+        "world_event_sequence": [
+          "previous hypothesis: C",
+          "actual later observation: D"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00054-F1_stale_memory_after_update:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00054-F1_stale_memory_after_update:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F1_stale_memory_after_update",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00054-F1_stale_memory_after_update:d3e99031-1825-5e09-bbc0-b969dc17a2e7",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 135925099,
+        "trial_id": "g2-00054-F1_stale_memory_after_update",
+        "world_event_sequence": [
+          "cycle 1: ball in box_a",
+          "cycle 2: ball moved to box_b"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_d",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_d",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00055-F2_false_memory:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 1.0,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00055-F2_false_memory:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [
+          "box_d"
+        ],
+        "family_id": "F2_false_memory",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": true,
+            "proposition": {
+              "display": "ball INSIDE box_d",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_d",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00055-F2_false_memory:6a02ca19-9ba1-5b4d-8914-7d5596db7021",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 144222516,
+        "trial_id": "g2-00055-F2_false_memory",
+        "world_event_sequence": [
+          "current: ball in box_b",
+          "injected false memory: ball in box_d"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.9440454187113066,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [
+          {
+            "confidence": 0.5762164433913489,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_b",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_b",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00056-F3_confidence_inversion:o0000",
+            "source": "observed_now"
+          },
+          {
+            "confidence": 0.5762164433913489,
+            "cycle_id": 10,
+            "false_memory": false,
+            "proposition": {
+              "display": "box_b CONTAINS ball",
+              "relation_type": "contains",
+              "source_id": "box_b",
+              "target_id": "ball",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00056-F3_confidence_inversion:i0001",
+            "source": "inferred_now"
+          }
+        ],
+        "expected_propositions": [
+          {
+            "display": "ball INSIDE box_b",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_b",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "expected_source": "observed_now",
+        "expected_status": "true",
+        "false_memory_targets": [],
+        "family_id": "F3_confidence_inversion",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.9440454187113066,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00056-F3_confidence_inversion:44f3545d-af0c-5864-91f5-79e29c41803c",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 225460027,
+        "trial_id": "g2-00056-F3_confidence_inversion",
+        "world_event_sequence": [
+          "current observation moderate confidence: B",
+          "memory high confidence: A"
+        ]
+      }
+    },
+    {
+      "actual": {
+        "confidence": 0.95,
+        "explanation": "Deliberately simple persistent belief chose the latest matching incoming record.",
+        "propositions": [
+          {
+            "display": "ball INSIDE box_a",
+            "relation_type": "inside",
+            "source_id": "ball",
+            "target_id": "box_a",
+            "unit": null,
+            "value": null
+          }
+        ],
+        "source": "reconstructed_memory",
+        "status": "true",
+        "system_id": "NaivePersistentState"
+      },
+      "reason": "Output did not match expected status/source/proposition set.",
+      "trial": {
+        "current_observation": [],
+        "expected_propositions": [],
+        "expected_source": "none",
+        "expected_status": "unknown",
+        "false_memory_targets": [],
+        "family_id": "F4_no_current_visibility",
+        "future_hypotheses": [],
+        "memory_reconstructions": [
+          {
+            "confidence": 0.95,
+            "cycle_id": 1,
+            "false_memory": false,
+            "proposition": {
+              "display": "ball INSIDE box_a",
+              "relation_type": "inside",
+              "source_id": "ball",
+              "target_id": "box_a",
+              "unit": null,
+              "value": null
+            },
+            "record_id": "g2-00057-F4_no_current_visibility:7e0dfb69-c216-5d81-9ce7-a2232193a1c7",
+            "source": "reconstructed_memory"
+          }
+        ],
+        "query": {
+          "display": "now: ball INSIDE ?",
+          "intent": "now",
+          "relation_type": "inside",
+          "source_id": "ball",
+          "target_cycle_id": null,
+          "target_id": null
+        },
+        "seed": 744961660,
+        "trial_id": "g2-00057-F4_no_current_visibility",
+        "world_event_sequence": [
+          "current observation hidden",
+          "memory reconstructs A"
+        ]
+      }
+    }
+  ],
+  "NowMindTemporalGeometry": []
+}

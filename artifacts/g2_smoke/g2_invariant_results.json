@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "name": "Minimum 1,000 trials generated",
+      "status": "FAIL"
+    },
+    {
+      "name": "All required families represented",
+      "status": "PASS"
+    },
+    {
+      "name": "Both baselines evaluated",
+      "status": "PASS"
+    },
+    {
+      "name": "Metrics derive from trial outputs",
+      "status": "PASS"
+    },
+    {
+      "name": "Temporal runtime does not import evaluation",
+      "status": "PASS"
+    }
+  ],
+  "generated_at": "2026-08-23T00:23:10.231035+00:00",
+  "schema": "nowmind.g2.invariant_results.v1",
+  "summary": {
+    "failed": 1,
+    "passed": 4,
+    "total": 5
+  }
+}

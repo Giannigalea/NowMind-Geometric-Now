@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-08-27T19:45:38.878294+00:00",
+  "errors": 0,
+  "model": "google/gemma-4-26b-a4b-it:free",
+  "parse_success": 0,
+  "provider_manifest": {
+    "model": "google/gemma-4-26b-a4b-it:free",
+    "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+    "paired_provider_mismatches": 0,
+    "provider_counts": {},
+    "provider_request": {
+      "allow_fallbacks": false,
+      "data_collection": "deny",
+      "require_parameters": true
+    },
+    "schema": "nowmind.g2_3_3.provider_manifest.v1"
+  },
+  "row_count": 0,
+  "schema": "nowmind.g2_3_3.calibration.v1",
+  "split": "calibration"
+}

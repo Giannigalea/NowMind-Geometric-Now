@@ -1,0 +1,840 @@
+{
+  "completed_checks": 4,
+  "created_at": "2026-08-28T10:51:50.372748+00:00",
+  "model": "liquid/lfm-2.5-2.6b:free",
+  "parse_success": 1,
+  "pinned_provider": "liquid/fp8",
+  "rows": [
+    {
+      "backend": "openrouter",
+      "condition": "N_NOWMIND_STRUCTURED",
+      "context_overflow": false,
+      "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"liquid/lfm-2.5-2.6b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Liquid\",\"is_byok\":false,\"provider_error_code\":\"rate_limit_exceeded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\",\"retry_after_seconds\":51,\"retry_after_seconds_raw\":51,\"headers\":{\"Retry-After\":\"51\"}}},\"user_[REDACTED]\":\"user_[REDACTED]\"}",
+      "expected": {
+        "action": null,
+        "answer": "box_b",
+        "source_used": "observed_now",
+        "status": "ANSWER"
+      },
+      "g2_3_4": {
+        "context_size": 65536,
+        "data_collection": "allow",
+        "effective_provider": "unreported_provider",
+        "json_compatibility_mode": "native_json_schema",
+        "output_schema_guard": {
+          "issues": [
+            "json_parse_failure:Expecting value: line 1 column 1 (char 0)"
+          ],
+          "passed": false
+        },
+        "pinned_provider": "liquid/fp8",
+        "price_gate": {
+          "input": "0",
+          "output": "0",
+          "passed": true
+        },
+        "privacy_relaxation_scope": "synthetic_benchmark_only",
+        "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+        "provider_fallback_disabled": true,
+        "provider_match_required": true,
+        "reasoning_config": {
+          "exclude": true
+        },
+        "row_key": "liquid/lfm-2.5-2.6b:free|liquid/fp8|A_EQUAL_INFORMATION|g2_3_eval_00000_temporal_present_vs_stale_memory|N_NOWMIND_STRUCTURED",
+        "smoke_check": "basic_json",
+        "synthetic_payload_guard": {
+          "forbidden_hits": [],
+          "passed": true
+        }
+      },
+      "input_tokens": 370,
+      "latency_ms": 888.4943000011845,
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "model_config": {
+        "backend": "openrouter",
+        "context_size": 65536,
+        "model": "liquid/lfm-2.5-2.6b:free",
+        "num_predict": null,
+        "response_format": "json_schema",
+        "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+        "seed": 20260823,
+        "temperature": 0.0,
+        "think": null,
+        "top_p": 1.0
+      },
+      "model_response": {
+        "backend": "openrouter",
+        "config": {
+          "allow_fallbacks": false,
+          "context_size": 65536,
+          "data_collection": "allow",
+          "model": "liquid/lfm-2.5-2.6b:free",
+          "native_json_schema": true,
+          "num_predict": 2048,
+          "provider": "liquid/fp8",
+          "reasoning": {
+            "exclude": true
+          },
+          "require_parameters": true,
+          "response_format": "json_schema",
+          "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+          "seed": 20260823,
+          "temperature": 0.0,
+          "think": null,
+          "top_p": 1.0
+        },
+        "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"liquid/lfm-2.5-2.6b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Liquid\",\"is_byok\":false,\"provider_error_code\":\"rate_limit_exceeded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\",\"retry_after_seconds\":51,\"retry_after_seconds_raw\":51,\"headers\":{\"Retry-After\":\"51\"}}},\"user_[REDACTED]\":\"user_[REDACTED]\"}",
+        "input_token_estimate": 370,
+        "latency_ms": 888.4943000011845,
+        "model": "liquid/lfm-2.5-2.6b:free",
+        "output_token_estimate": 1,
+        "provider_metadata": {
+          "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+          "error_body": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"liquid/lfm-2.5-2.6b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Liquid\",\"is_byok\":false,\"provider_error_code\":\"rate_limit_exceeded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\",\"retry_after_seconds\":51,\"retry_after_seconds_raw\":51,\"headers\":{\"Retry-After\":\"51\"}}},\"user_[REDACTED]\":\"user_[REDACTED]\"}",
+          "http_status": 429,
+          "provider_request": {
+            "allow_fallbacks": false,
+            "data_collection": "allow",
+            "only": [
+              "liquid/fp8"
+            ],
+            "order": [
+              "liquid/fp8"
+            ],
+            "require_parameters": true
+          },
+          "rate_limited": true
+        },
+        "raw_text": ""
+      },
+      "output_tokens": 1,
+      "parse_success": false,
+      "parsed_output": null,
+      "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0
+      },
+      "raw_output": "",
+      "regime": "A_EQUAL_INFORMATION",
+      "repair_retry_count": 0,
+      "repair_skipped_budget_gate": false,
+      "representation": {
+        "budget": null,
+        "budget_accounting": {
+          "budgeted_input_tokens": 463,
+          "counter": "estimate_tokens(system_instruction + newline + final_prompt)",
+          "declared_budget": null,
+          "dropped_counts": {
+            "future_hypotheses": 0,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 0,
+            "uncertainties": 0
+          },
+          "exact_tokenizer_available": false,
+          "final_input_token_estimate": 370,
+          "original_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 1,
+            "uncertainties": 0
+          },
+          "retained_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 1,
+            "uncertainties": 0
+          },
+          "retained_policy": "preserve current observation/query/source labels; trim reconstructed memories, hypotheses, assumptions, and uncertainties by existing order",
+          "safety_multiplier": 1.25,
+          "unused_budget": null
+        },
+        "condition": "N_NOWMIND_STRUCTURED",
+        "context_overflow": false,
+        "fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+        "final_input_token_estimate": 370,
+        "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+        "regime": "A_EQUAL_INFORMATION",
+        "token_estimate": 370,
+        "truncated": false
+      },
+      "same_admissible_fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+      "trial": {
+        "fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+        "family": "temporal_present_vs_stale_memory",
+        "history_cohort": "H0",
+        "seed": 20260824,
+        "split": "evaluation",
+        "task_group": "temporal_qa",
+        "trial_id": "g2_3_eval_00000_temporal_present_vs_stale_memory"
+      },
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 1,
+        "validator_rejected": 1
+      },
+      "validator": {
+        "accepted": false,
+        "final_action": null,
+        "final_answer": "",
+        "final_source_used": "none",
+        "final_status": "UNKNOWN",
+        "prevented_error": true,
+        "rejection_reason": "parse_failure"
+      }
+    },
+    {
+      "backend": "openrouter",
+      "condition": "N_NOWMIND_STRUCTURED",
+      "context_overflow": false,
+      "error": null,
+      "expected": {
+        "action": null,
+        "answer": "box_b",
+        "source_used": "observed_now",
+        "status": "ANSWER"
+      },
+      "g2_3_4": {
+        "context_size": 65536,
+        "data_collection": "allow",
+        "effective_provider": "Liquid",
+        "json_compatibility_mode": "native_json_schema",
+        "output_schema_guard": {
+          "issues": [],
+          "passed": true
+        },
+        "pinned_provider": "liquid/fp8",
+        "price_gate": {
+          "input": "0",
+          "output": "0",
+          "passed": true
+        },
+        "privacy_relaxation_scope": "synthetic_benchmark_only",
+        "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+        "provider_fallback_disabled": true,
+        "provider_match_required": true,
+        "reasoning_config": {
+          "exclude": true
+        },
+        "row_key": "liquid/lfm-2.5-2.6b:free|liquid/fp8|A_EQUAL_INFORMATION|g2_3_eval_00000_temporal_present_vs_stale_memory|N_NOWMIND_STRUCTURED",
+        "smoke_check": "basic_json",
+        "synthetic_payload_guard": {
+          "forbidden_hits": [],
+          "passed": true
+        }
+      },
+      "input_tokens": 432,
+      "latency_ms": 4699.105899999267,
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "model_config": {
+        "backend": "openrouter",
+        "context_size": 65536,
+        "model": "liquid/lfm-2.5-2.6b:free",
+        "num_predict": null,
+        "response_format": "json_schema",
+        "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+        "seed": 20260823,
+        "temperature": 0.0,
+        "think": null,
+        "top_p": 1.0
+      },
+      "model_response": {
+        "backend": "openrouter",
+        "config": {
+          "allow_fallbacks": false,
+          "context_size": 65536,
+          "data_collection": "allow",
+          "model": "liquid/lfm-2.5-2.6b:free",
+          "native_json_schema": true,
+          "num_predict": 2048,
+          "provider": "liquid/fp8",
+          "reasoning": {
+            "exclude": true
+          },
+          "require_parameters": true,
+          "response_format": "json_schema",
+          "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+          "seed": 20260823,
+          "temperature": 0.0,
+          "think": null,
+          "top_p": 1.0
+        },
+        "error": null,
+        "input_token_estimate": 432,
+        "latency_ms": 4699.105899999267,
+        "model": "liquid/lfm-2.5-2.6b:free",
+        "output_token_estimate": 1742,
+        "provider_metadata": {
+          "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+          "finish_reason": "stop",
+          "message_reasoning_omitted_from_scoring": false,
+          "message_reasoning_present": false,
+          "native_finish_reason": "stop",
+          "provider": "Liquid",
+          "provider_request": {
+            "allow_fallbacks": false,
+            "data_collection": "allow",
+            "only": [
+              "liquid/fp8"
+            ],
+            "order": [
+              "liquid/fp8"
+            ],
+            "require_parameters": true
+          },
+          "response_id": "gen-1787914210-lZHG5hOgfgeypKd9dcbl",
+          "response_model": "liquid/lfm-2.5-2.6b:free",
+          "usage": {
+            "completion_tokens": 1742,
+            "completion_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "reasoning_tokens": 1567
+            },
+            "cost": 0,
+            "cost_details": {
+              "upstream_inference_completions_cost": 0,
+              "upstream_inference_cost": 0,
+              "upstream_inference_prompt_cost": 0
+            },
+            "is_byok": false,
+            "prompt_tokens": 432,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "video_tokens": 0
+            },
+            "total_tokens": 2174
+          }
+        },
+        "raw_text": "{\"status\":\"ANSWER\",\"answer\":\"Ball is currently inside box_b (cycle_id 2)\",\"source_used\":\"observed_now\",\"confidence\":1.0,\"action\":\"none\",\"assumptions\":[\"The current_cycle_id (2) represents the present time\",\"The observed_now entry reflects the actual current state of ball\",\"Reconstructed memory from cycle 1 is historical context\"],\"explanation\":[\"The representation contains an observed_now entry for cycle_id 2 indicating that ball is inside box_b with confidence 1.0. This is the current observation. A reconstructed_memory from cycle 1 shows ball was inside box_a, but this is historical context. The future_hypotheses mention box_c being inside something but do not affect ball's current location. Therefore, based on the current observation, ball is located inside box_b.\"]}"
+      },
+      "output_tokens": 1742,
+      "parse_success": true,
+      "parsed_output": {
+        "action": "none",
+        "answer": "Ball is currently inside box_b (cycle_id 2)",
+        "assumptions": [
+          "The current_cycle_id (2) represents the present time",
+          "The observed_now entry reflects the actual current state of ball",
+          "Reconstructed memory from cycle 1 is historical context"
+        ],
+        "confidence": 1.0,
+        "explanation": [
+          "The representation contains an observed_now entry for cycle_id 2 indicating that ball is inside box_b with confidence 1.0. This is the current observation. A reconstructed_memory from cycle 1 shows ball was inside box_a, but this is historical context. The future_hypotheses mention box_c being inside something but do not affect ball's current location. Therefore, based on the current observation, ball is located inside box_b."
+        ],
+        "source_used": "observed_now",
+        "status": "ANSWER"
+      },
+      "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 1,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output": "{\"status\":\"ANSWER\",\"answer\":\"Ball is currently inside box_b (cycle_id 2)\",\"source_used\":\"observed_now\",\"confidence\":1.0,\"action\":\"none\",\"assumptions\":[\"The current_cycle_id (2) represents the present time\",\"The observed_now entry reflects the actual current state of ball\",\"Reconstructed memory from cycle 1 is historical context\"],\"explanation\":[\"The representation contains an observed_now entry for cycle_id 2 indicating that ball is inside box_b with confidence 1.0. This is the current observation. A reconstructed_memory from cycle 1 shows ball was inside box_a, but this is historical context. The future_hypotheses mention box_c being inside something but do not affect ball's current location. Therefore, based on the current observation, ball is located inside box_b.\"]}",
+      "regime": "A_EQUAL_INFORMATION",
+      "repair_retry_count": 0,
+      "repair_skipped_budget_gate": false,
+      "representation": {
+        "budget": null,
+        "budget_accounting": {
+          "budgeted_input_tokens": 463,
+          "counter": "estimate_tokens(system_instruction + newline + final_prompt)",
+          "declared_budget": null,
+          "dropped_counts": {
+            "future_hypotheses": 0,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 0,
+            "uncertainties": 0
+          },
+          "exact_tokenizer_available": false,
+          "final_input_token_estimate": 370,
+          "original_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 1,
+            "uncertainties": 0
+          },
+          "retained_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 1,
+            "uncertainties": 0
+          },
+          "retained_policy": "preserve current observation/query/source labels; trim reconstructed memories, hypotheses, assumptions, and uncertainties by existing order",
+          "safety_multiplier": 1.25,
+          "unused_budget": null
+        },
+        "condition": "N_NOWMIND_STRUCTURED",
+        "context_overflow": false,
+        "fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+        "final_input_token_estimate": 370,
+        "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+        "regime": "A_EQUAL_INFORMATION",
+        "token_estimate": 370,
+        "truncated": false
+      },
+      "same_admissible_fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+      "trial": {
+        "fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+        "family": "temporal_present_vs_stale_memory",
+        "history_cohort": "H0",
+        "seed": 20260824,
+        "split": "evaluation",
+        "task_group": "temporal_qa",
+        "trial_id": "g2_3_eval_00000_temporal_present_vs_stale_memory"
+      },
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 1,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 1,
+        "validator_rejected": 1
+      },
+      "validator": {
+        "accepted": false,
+        "final_action": null,
+        "final_answer": "",
+        "final_source_used": "none",
+        "final_status": "UNKNOWN",
+        "prevented_error": true,
+        "rejection_reason": "invalid_action"
+      }
+    },
+    {
+      "backend": "openrouter",
+      "condition": "N_NOWMIND_STRUCTURED",
+      "context_overflow": false,
+      "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"liquid/lfm-2.5-2.6b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Liquid\",\"is_byok\":false,\"provider_error_code\":\"rate_limit_exceeded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\",\"retry_after_seconds\":23,\"retry_after_seconds_raw\":23,\"headers\":{\"Retry-After\":\"23\"}}},\"user_[REDACTED]\":\"user_[REDACTED]\"}",
+      "expected": {
+        "action": null,
+        "answer": "",
+        "source_used": "none",
+        "status": "UNKNOWN"
+      },
+      "g2_3_4": {
+        "context_size": 65536,
+        "data_collection": "allow",
+        "effective_provider": "unreported_provider",
+        "json_compatibility_mode": "native_json_schema",
+        "output_schema_guard": {
+          "issues": [
+            "json_parse_failure:Expecting value: line 1 column 1 (char 0)"
+          ],
+          "passed": false
+        },
+        "pinned_provider": "liquid/fp8",
+        "price_gate": {
+          "input": "0",
+          "output": "0",
+          "passed": true
+        },
+        "privacy_relaxation_scope": "synthetic_benchmark_only",
+        "prompt_hash": "16dadb0d2703170d75286c9b2a1cd33977f8d75c0d5ba71efddb7803a1e55a18",
+        "provider_fallback_disabled": true,
+        "provider_match_required": true,
+        "reasoning_config": {
+          "exclude": true
+        },
+        "row_key": "liquid/lfm-2.5-2.6b:free|liquid/fp8|A_EQUAL_INFORMATION|g2_3_eval_00001_temporal_current_unknown_memory|N_NOWMIND_STRUCTURED",
+        "smoke_check": "current_vs_memory",
+        "synthetic_payload_guard": {
+          "forbidden_hits": [],
+          "passed": true
+        }
+      },
+      "input_tokens": 856,
+      "latency_ms": 865.5663999961689,
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "model_config": {
+        "backend": "openrouter",
+        "context_size": 65536,
+        "model": "liquid/lfm-2.5-2.6b:free",
+        "num_predict": null,
+        "response_format": "json_schema",
+        "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+        "seed": 20260823,
+        "temperature": 0.0,
+        "think": null,
+        "top_p": 1.0
+      },
+      "model_response": {
+        "backend": "openrouter",
+        "config": {
+          "allow_fallbacks": false,
+          "context_size": 65536,
+          "data_collection": "allow",
+          "model": "liquid/lfm-2.5-2.6b:free",
+          "native_json_schema": true,
+          "num_predict": 2048,
+          "provider": "liquid/fp8",
+          "reasoning": {
+            "exclude": true
+          },
+          "require_parameters": true,
+          "response_format": "json_schema",
+          "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+          "seed": 20260823,
+          "temperature": 0.0,
+          "think": null,
+          "top_p": 1.0
+        },
+        "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"liquid/lfm-2.5-2.6b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Liquid\",\"is_byok\":false,\"provider_error_code\":\"rate_limit_exceeded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\",\"retry_after_seconds\":23,\"retry_after_seconds_raw\":23,\"headers\":{\"Retry-After\":\"23\"}}},\"user_[REDACTED]\":\"user_[REDACTED]\"}",
+        "input_token_estimate": 856,
+        "latency_ms": 865.5663999961689,
+        "model": "liquid/lfm-2.5-2.6b:free",
+        "output_token_estimate": 1,
+        "provider_metadata": {
+          "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+          "error_body": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"liquid/lfm-2.5-2.6b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Liquid\",\"is_byok\":false,\"provider_error_code\":\"rate_limit_exceeded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\",\"retry_after_seconds\":23,\"retry_after_seconds_raw\":23,\"headers\":{\"Retry-After\":\"23\"}}},\"user_[REDACTED]\":\"user_[REDACTED]\"}",
+          "http_status": 429,
+          "provider_request": {
+            "allow_fallbacks": false,
+            "data_collection": "allow",
+            "only": [
+              "liquid/fp8"
+            ],
+            "order": [
+              "liquid/fp8"
+            ],
+            "require_parameters": true
+          },
+          "rate_limited": true
+        },
+        "raw_text": ""
+      },
+      "output_tokens": 1,
+      "parse_success": false,
+      "parsed_output": null,
+      "prompt_hash": "16dadb0d2703170d75286c9b2a1cd33977f8d75c0d5ba71efddb7803a1e55a18",
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0
+      },
+      "raw_output": "",
+      "regime": "A_EQUAL_INFORMATION",
+      "repair_retry_count": 0,
+      "repair_skipped_budget_gate": false,
+      "representation": {
+        "budget": null,
+        "budget_accounting": {
+          "budgeted_input_tokens": 1070,
+          "counter": "estimate_tokens(system_instruction + newline + final_prompt)",
+          "declared_budget": null,
+          "dropped_counts": {
+            "future_hypotheses": 0,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 0,
+            "uncertainties": 0
+          },
+          "exact_tokenizer_available": false,
+          "final_input_token_estimate": 856,
+          "original_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 11,
+            "uncertainties": 1
+          },
+          "retained_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 11,
+            "uncertainties": 1
+          },
+          "retained_policy": "preserve current observation/query/source labels; trim reconstructed memories, hypotheses, assumptions, and uncertainties by existing order",
+          "safety_multiplier": 1.25,
+          "unused_budget": null
+        },
+        "condition": "N_NOWMIND_STRUCTURED",
+        "context_overflow": false,
+        "fact_set_hash": "4a00f570dfb0a60c73f75658c4a8e0782b96124ab20bcc8d74c3d747258f74e0",
+        "final_input_token_estimate": 856,
+        "prompt_hash": "16dadb0d2703170d75286c9b2a1cd33977f8d75c0d5ba71efddb7803a1e55a18",
+        "regime": "A_EQUAL_INFORMATION",
+        "token_estimate": 856,
+        "truncated": false
+      },
+      "same_admissible_fact_set_hash": "4a00f570dfb0a60c73f75658c4a8e0782b96124ab20bcc8d74c3d747258f74e0",
+      "trial": {
+        "fact_set_hash": "4a00f570dfb0a60c73f75658c4a8e0782b96124ab20bcc8d74c3d747258f74e0",
+        "family": "temporal_current_unknown_memory",
+        "history_cohort": "H10",
+        "seed": 20260825,
+        "split": "evaluation",
+        "task_group": "temporal_qa",
+        "trial_id": "g2_3_eval_00001_temporal_current_unknown_memory"
+      },
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 1,
+        "current_state_correct": 1,
+        "future_query_correct": 1,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 1,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 1,
+        "validator_rejected": 1
+      },
+      "validator": {
+        "accepted": false,
+        "final_action": null,
+        "final_answer": "",
+        "final_source_used": "none",
+        "final_status": "UNKNOWN",
+        "prevented_error": true,
+        "rejection_reason": "parse_failure"
+      }
+    },
+    {
+      "backend": "openrouter",
+      "condition": "N_NOWMIND_STRUCTURED",
+      "context_overflow": false,
+      "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"liquid/lfm-2.5-2.6b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Liquid\",\"is_byok\":false,\"provider_error_code\":\"rate_limit_exceeded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\",\"retry_after_seconds\":10,\"retry_after_seconds_raw\":10,\"headers\":{\"Retry-After\":\"10\"}}},\"user_[REDACTED]\":\"user_[REDACTED]\"}",
+      "expected": {
+        "action": null,
+        "answer": "",
+        "source_used": "none",
+        "status": "UNKNOWN"
+      },
+      "g2_3_4": {
+        "context_size": 65536,
+        "data_collection": "allow",
+        "effective_provider": "unreported_provider",
+        "json_compatibility_mode": "native_json_schema",
+        "output_schema_guard": {
+          "issues": [
+            "json_parse_failure:Expecting value: line 1 column 1 (char 0)"
+          ],
+          "passed": false
+        },
+        "pinned_provider": "liquid/fp8",
+        "price_gate": {
+          "input": "0",
+          "output": "0",
+          "passed": true
+        },
+        "privacy_relaxation_scope": "synthetic_benchmark_only",
+        "prompt_hash": "16dadb0d2703170d75286c9b2a1cd33977f8d75c0d5ba71efddb7803a1e55a18",
+        "provider_fallback_disabled": true,
+        "provider_match_required": true,
+        "reasoning_config": {
+          "exclude": true
+        },
+        "row_key": "liquid/lfm-2.5-2.6b:free|liquid/fp8|A_EQUAL_INFORMATION|g2_3_eval_00001_temporal_current_unknown_memory|N_NOWMIND_STRUCTURED",
+        "smoke_check": "current_vs_memory",
+        "synthetic_payload_guard": {
+          "forbidden_hits": [],
+          "passed": true
+        }
+      },
+      "input_tokens": 856,
+      "latency_ms": 885.2198000022327,
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "model_config": {
+        "backend": "openrouter",
+        "context_size": 65536,
+        "model": "liquid/lfm-2.5-2.6b:free",
+        "num_predict": null,
+        "response_format": "json_schema",
+        "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+        "seed": 20260823,
+        "temperature": 0.0,
+        "think": null,
+        "top_p": 1.0
+      },
+      "model_response": {
+        "backend": "openrouter",
+        "config": {
+          "allow_fallbacks": false,
+          "context_size": 65536,
+          "data_collection": "allow",
+          "model": "liquid/lfm-2.5-2.6b:free",
+          "native_json_schema": true,
+          "num_predict": 2048,
+          "provider": "liquid/fp8",
+          "reasoning": {
+            "exclude": true
+          },
+          "require_parameters": true,
+          "response_format": "json_schema",
+          "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+          "seed": 20260823,
+          "temperature": 0.0,
+          "think": null,
+          "top_p": 1.0
+        },
+        "error": "HTTP 429: {\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"liquid/lfm-2.5-2.6b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Liquid\",\"is_byok\":false,\"provider_error_code\":\"rate_limit_exceeded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\",\"retry_after_seconds\":10,\"retry_after_seconds_raw\":10,\"headers\":{\"Retry-After\":\"10\"}}},\"user_[REDACTED]\":\"user_[REDACTED]\"}",
+        "input_token_estimate": 856,
+        "latency_ms": 885.2198000022327,
+        "model": "liquid/lfm-2.5-2.6b:free",
+        "output_token_estimate": 1,
+        "provider_metadata": {
+          "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+          "error_body": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"liquid/lfm-2.5-2.6b:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations\",\"provider_name\":\"Liquid\",\"is_byok\":false,\"provider_error_code\":\"rate_limit_exceeded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing\",\"retry_after_seconds\":10,\"retry_after_seconds_raw\":10,\"headers\":{\"Retry-After\":\"10\"}}},\"user_[REDACTED]\":\"user_[REDACTED]\"}",
+          "http_status": 429,
+          "provider_request": {
+            "allow_fallbacks": false,
+            "data_collection": "allow",
+            "only": [
+              "liquid/fp8"
+            ],
+            "order": [
+              "liquid/fp8"
+            ],
+            "require_parameters": true
+          },
+          "rate_limited": true
+        },
+        "raw_text": ""
+      },
+      "output_tokens": 1,
+      "parse_success": false,
+      "parsed_output": null,
+      "prompt_hash": "16dadb0d2703170d75286c9b2a1cd33977f8d75c0d5ba71efddb7803a1e55a18",
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0
+      },
+      "raw_output": "",
+      "regime": "A_EQUAL_INFORMATION",
+      "repair_retry_count": 0,
+      "repair_skipped_budget_gate": false,
+      "representation": {
+        "budget": null,
+        "budget_accounting": {
+          "budgeted_input_tokens": 1070,
+          "counter": "estimate_tokens(system_instruction + newline + final_prompt)",
+          "declared_budget": null,
+          "dropped_counts": {
+            "future_hypotheses": 0,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 0,
+            "uncertainties": 0
+          },
+          "exact_tokenizer_available": false,
+          "final_input_token_estimate": 856,
+          "original_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 11,
+            "uncertainties": 1
+          },
+          "retained_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 11,
+            "uncertainties": 1
+          },
+          "retained_policy": "preserve current observation/query/source labels; trim reconstructed memories, hypotheses, assumptions, and uncertainties by existing order",
+          "safety_multiplier": 1.25,
+          "unused_budget": null
+        },
+        "condition": "N_NOWMIND_STRUCTURED",
+        "context_overflow": false,
+        "fact_set_hash": "4a00f570dfb0a60c73f75658c4a8e0782b96124ab20bcc8d74c3d747258f74e0",
+        "final_input_token_estimate": 856,
+        "prompt_hash": "16dadb0d2703170d75286c9b2a1cd33977f8d75c0d5ba71efddb7803a1e55a18",
+        "regime": "A_EQUAL_INFORMATION",
+        "token_estimate": 856,
+        "truncated": false
+      },
+      "same_admissible_fact_set_hash": "4a00f570dfb0a60c73f75658c4a8e0782b96124ab20bcc8d74c3d747258f74e0",
+      "trial": {
+        "fact_set_hash": "4a00f570dfb0a60c73f75658c4a8e0782b96124ab20bcc8d74c3d747258f74e0",
+        "family": "temporal_current_unknown_memory",
+        "history_cohort": "H10",
+        "seed": 20260825,
+        "split": "evaluation",
+        "task_group": "temporal_qa",
+        "trial_id": "g2_3_eval_00001_temporal_current_unknown_memory"
+      },
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 1,
+        "current_state_correct": 1,
+        "future_query_correct": 1,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 1,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 1,
+        "validator_rejected": 1
+      },
+      "validator": {
+        "accepted": false,
+        "final_action": null,
+        "final_answer": "",
+        "final_source_used": "none",
+        "final_status": "UNKNOWN",
+        "prevented_error": true,
+        "rejection_reason": "parse_failure"
+      }
+    }
+  ],
+  "schema": "nowmind.g2_3_4.smoke.v1",
+  "schema_success": 1,
+  "status": "paused_rate_limit",
+  "target_checks": 4,
+  "transport_errors": 3
+}

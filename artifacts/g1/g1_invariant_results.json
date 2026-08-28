@@ -1,0 +1,85 @@
+{
+  "checks": [
+    {
+      "details": {},
+      "evidence": "tests/architecture/test_now_firewall.py::test_now_state_is_immutable",
+      "name": "NowState is immutable",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "evidence": "tests/architecture/test_now_firewall.py::test_now_state_has_no_previous_or_history_fields",
+      "name": "NowState has no previous/history/memory reference",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "evidence": "tests/architecture/test_now_firewall.py::test_fresh_now_ids_are_created_for_consecutive_cycles",
+      "name": "Each cycle creates a new now_id",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "evidence": "docs/GEOMETRIC_NOW_G1_SPEC.md section 4",
+      "name": "WorldState is distinct from NowState",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "evidence": "tests/architecture/test_reasoning_and_building_api_have_no_history_argument",
+      "name": "Perception reads current world state",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "evidence": "tests/architecture/test_world_change_rebuilds_geometry_without_stale_relation",
+      "name": "Present Geometry is rebuilt from current observation",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "evidence": "tests/scenarios/test_g1_scenarios.py::test_move_object_scenario_has_no_stale_state",
+      "name": "No stale relation survives by previous-cycle carryover",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "evidence": "tests/architecture/test_reasoning_and_building_api_have_no_history_argument",
+      "name": "Reasoner receives only current NowState plus query",
+      "status": "PASS"
+    },
+    {
+      "details": {
+        "violations": []
+      },
+      "evidence": "tests/architecture/test_runtime_modules_do_not_import_evaluation_history",
+      "name": "Runtime cognitive packages do not import evaluation history",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "evidence": "tests/architecture/test_recorder_external_and_history_deletion_equivalence",
+      "name": "ExperimentRecorder remains external to cognition",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "evidence": "tests/unit/test_geometry_relations.py::test_inverse_left_right_is_inferred",
+      "name": "Observed and inferred relations retain distinct provenance",
+      "status": "PASS"
+    },
+    {
+      "details": {},
+      "evidence": "SECOND_CODEX_TASK_G1_1.md section 13",
+      "name": "Predictions, memories, identities, Veto Gate, and LLM state are absent",
+      "status": "PASS"
+    }
+  ],
+  "generated_at": "2026-08-28T14:26:58.856697+00:00",
+  "schema": "nowmind.g1.invariant_results.v1",
+  "summary": {
+    "failed": 0,
+    "passed": 12,
+    "total": 12
+  }
+}

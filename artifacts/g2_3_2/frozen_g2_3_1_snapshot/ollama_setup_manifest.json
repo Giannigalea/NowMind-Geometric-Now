@@ -1,0 +1,66 @@
+{
+  "forced_cpu_diagnostic": {
+    "cpu_avx2_confirmed": true,
+    "gpu_libraries_skipped": true,
+    "permanent_override": false
+  },
+  "g2_3_1_resume": {
+    "architecture_changed": false,
+    "benchmark_prompts_or_scoring_changed": false,
+    "calibration_completed": true,
+    "calibration_started": true,
+    "final_evaluation_completed": true,
+    "final_evaluation_started": true,
+    "final_evaluation_valid_real_model_evidence": true,
+    "final_model": "qwen3:0.6b",
+    "final_paired_trial_count": 250,
+    "final_row_count": 2000
+  },
+  "install": {
+    "api_endpoint": "http://127.0.0.1:11434",
+    "api_locality_verified": true,
+    "executable_path": "C:\\Users\\jonat\\AppData\\Local\\Programs\\Ollama\\ollama.exe",
+    "method": "official_windows_installer",
+    "ollama_version": "0.32.15",
+    "status": "installed"
+  },
+  "installed_models": [
+    {
+      "calibration_status": "completed_50_pairs",
+      "digest": "8f68893c685c",
+      "final_failure": "failed to allocate CPU buffer of size 692725760",
+      "final_status": "failed_model_load_all_real_rows",
+      "name": "qwen3:1.7b",
+      "selection_role": "primary",
+      "size": "1.4 GB",
+      "smoke_status": "passed_under_forced_cpu_avx2_at_512_1024_2048"
+    },
+    {
+      "calibration_status": "not_selected",
+      "digest": "8648f39daa8f",
+      "final_status": "not_run",
+      "name": "gemma3:1b",
+      "selection_role": "fallback",
+      "size": "815 MB",
+      "smoke_status": "passed_under_forced_cpu_avx2_at_512_1024_2048"
+    },
+    {
+      "calibration_status": "completed_50_pairs",
+      "digest": "7df6b6e09427",
+      "final_result_claim": "valid_real_local_model_evidence_no_nowmind_over_chronology_advantage",
+      "final_status": "completed_250_pairs",
+      "name": "qwen3:0.6b",
+      "selection_role": "ultra_small_final",
+      "size": "522 MB",
+      "smoke_status": "passed_after_pagefile_at_512_1024_2048_4096"
+    }
+  ],
+  "schema": "nowmind.g2_3_1.ollama_setup_manifest.v3",
+  "storage": {
+    "active_model_files_found_on_d": true,
+    "desired_model_storage_path": "D:\\OllamaModels",
+    "diagnostic_server_used_process_local_models_env": true,
+    "user_level_environment_variable_verified": false
+  },
+  "updated_at": "2026-08-26T18:47:11.195329+00:00"
+}

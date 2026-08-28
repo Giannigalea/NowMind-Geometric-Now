@@ -1,0 +1,86 @@
+{
+  "holdout": {
+    "C_ChronologicalEpistemicPlanner": {
+      "useful_verification_rate": 0.6410256410256411,
+      "verification_action_rate": 0.01721170395869191,
+      "verification_confirmed_useful_memory_count": 250.0,
+      "verification_enabled_shorter_route_count": 0.0,
+      "verification_prevented_likely_failure_count": 0.0,
+      "verification_wasted_no_decision_change_count": 140.0,
+      "verification_wasted_safe_dominated_count": 0.0,
+      "wasted_verification_rate": 0.358974358974359
+    },
+    "N_NowMindEpistemicGeometry": {
+      "useful_verification_rate": 0.6410256410256411,
+      "verification_action_rate": 0.01721170395869191,
+      "verification_confirmed_useful_memory_count": 250.0,
+      "verification_enabled_shorter_route_count": 0.0,
+      "verification_prevented_likely_failure_count": 0.0,
+      "verification_wasted_no_decision_change_count": 140.0,
+      "verification_wasted_safe_dominated_count": 0.0,
+      "wasted_verification_rate": 0.358974358974359
+    },
+    "O_OraclePlanner": {
+      "useful_verification_rate": 0.0,
+      "verification_action_rate": 0.0,
+      "verification_confirmed_useful_memory_count": 0.0,
+      "verification_enabled_shorter_route_count": 0.0,
+      "verification_prevented_likely_failure_count": 0.0,
+      "verification_wasted_no_decision_change_count": 0.0,
+      "verification_wasted_safe_dominated_count": 0.0,
+      "wasted_verification_rate": 0.0
+    },
+    "R_ReactiveCurrentOnlyPlanner": {
+      "useful_verification_rate": 0.0,
+      "verification_action_rate": 0.0,
+      "verification_confirmed_useful_memory_count": 0.0,
+      "verification_enabled_shorter_route_count": 0.0,
+      "verification_prevented_likely_failure_count": 0.0,
+      "verification_wasted_no_decision_change_count": 0.0,
+      "verification_wasted_safe_dominated_count": 0.0,
+      "wasted_verification_rate": 0.0
+    }
+  },
+  "v1_regression": {
+    "C_ChronologicalEpistemicPlanner": {
+      "useful_verification_rate": 0.6421232876712328,
+      "verification_action_rate": 0.01719315806518091,
+      "verification_confirmed_useful_memory_count": 375.0,
+      "verification_enabled_shorter_route_count": 0.0,
+      "verification_prevented_likely_failure_count": 0.0,
+      "verification_wasted_no_decision_change_count": 209.0,
+      "verification_wasted_safe_dominated_count": 0.0,
+      "wasted_verification_rate": 0.3578767123287671
+    },
+    "N_NowMindEpistemicGeometry": {
+      "useful_verification_rate": 0.6421232876712328,
+      "verification_action_rate": 0.01719315806518091,
+      "verification_confirmed_useful_memory_count": 375.0,
+      "verification_enabled_shorter_route_count": 0.0,
+      "verification_prevented_likely_failure_count": 0.0,
+      "verification_wasted_no_decision_change_count": 209.0,
+      "verification_wasted_safe_dominated_count": 0.0,
+      "wasted_verification_rate": 0.3578767123287671
+    },
+    "O_OraclePlanner": {
+      "useful_verification_rate": 0.0,
+      "verification_action_rate": 0.0,
+      "verification_confirmed_useful_memory_count": 0.0,
+      "verification_enabled_shorter_route_count": 0.0,
+      "verification_prevented_likely_failure_count": 0.0,
+      "verification_wasted_no_decision_change_count": 0.0,
+      "verification_wasted_safe_dominated_count": 0.0,
+      "wasted_verification_rate": 0.0
+    },
+    "R_ReactiveCurrentOnlyPlanner": {
+      "useful_verification_rate": 0.0,
+      "verification_action_rate": 0.0,
+      "verification_confirmed_useful_memory_count": 0.0,
+      "verification_enabled_shorter_route_count": 0.0,
+      "verification_prevented_likely_failure_count": 0.0,
+      "verification_wasted_no_decision_change_count": 0.0,
+      "verification_wasted_safe_dominated_count": 0.0,
+      "wasted_verification_rate": 0.0
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "holdout": {
+    "C_ChronologicalEpistemicPlanner": {
+      "hidden_change_recovery_rate": 1.0,
+      "hidden_obstacle_recovery_rate": 0.8493975903614458,
+      "hidden_target_recovery_rate": 1.0,
+      "mean_cells_explored_for_reacquisition": 3.211,
+      "mean_disconfirmed_targets": 0.125,
+      "mean_invalidated_poses": 2.1135,
+      "mean_steps_to_reacquire": 1.0,
+      "target_reacquisition_attempts": 250.0,
+      "target_reacquisition_rate": 0.30830248545742994,
+      "target_reacquisition_success_rate": 1.0
+    },
+    "N_NowMindEpistemicGeometry": {
+      "hidden_change_recovery_rate": 1.0,
+      "hidden_obstacle_recovery_rate": 0.8493975903614458,
+      "hidden_target_recovery_rate": 1.0,
+      "mean_cells_explored_for_reacquisition": 3.211,
+      "mean_disconfirmed_targets": 0.125,
+      "mean_invalidated_poses": 2.1135,
+      "mean_steps_to_reacquire": 1.0,
+      "target_reacquisition_attempts": 250.0,
+      "target_reacquisition_rate": 0.30830248545742994,
+      "target_reacquisition_success_rate": 1.0
+    },
+    "O_OraclePlanner": {
+      "hidden_change_recovery_rate": 1.0,
+      "hidden_obstacle_recovery_rate": 1.0,
+      "hidden_target_recovery_rate": 1.0,
+      "mean_cells_explored_for_reacquisition": 0,
+      "mean_disconfirmed_targets": 0,
+      "mean_invalidated_poses": 0,
+      "mean_steps_to_reacquire": 0.0,
+      "target_reacquisition_attempts": 0.0,
+      "target_reacquisition_rate": 0.2085,
+      "target_reacquisition_success_rate": 0.0
+    },
+    "R_ReactiveCurrentOnlyPlanner": {
+      "hidden_change_recovery_rate": 1.0,
+      "hidden_obstacle_recovery_rate": 0.0,
+      "hidden_target_recovery_rate": 0.0,
+      "mean_cells_explored_for_reacquisition": 5.0375,
+      "mean_disconfirmed_targets": 0,
+      "mean_invalidated_poses": 0,
+      "mean_steps_to_reacquire": 0.0,
+      "target_reacquisition_attempts": 0.0,
+      "target_reacquisition_rate": 0.4114326040931546,
+      "target_reacquisition_success_rate": 0.0
+    }
+  },
+  "v1_regression": {
+    "C_ChronologicalEpistemicPlanner": {
+      "hidden_change_recovery_rate": 1.0,
+      "hidden_obstacle_recovery_rate": 0.816,
+      "hidden_target_recovery_rate": 1.0,
+      "mean_cells_explored_for_reacquisition": 3.2083333333333335,
+      "mean_disconfirmed_targets": 0.125,
+      "mean_invalidated_poses": 2.118,
+      "mean_steps_to_reacquire": 1.0,
+      "target_reacquisition_attempts": 375.0,
+      "target_reacquisition_rate": 0.30875088214537755,
+      "target_reacquisition_success_rate": 1.0
+    },
+    "N_NowMindEpistemicGeometry": {
+      "hidden_change_recovery_rate": 1.0,
+      "hidden_obstacle_recovery_rate": 0.816,
+      "hidden_target_recovery_rate": 1.0,
+      "mean_cells_explored_for_reacquisition": 3.2083333333333335,
+      "mean_disconfirmed_targets": 0.125,
+      "mean_invalidated_poses": 2.118,
+      "mean_steps_to_reacquire": 1.0,
+      "target_reacquisition_attempts": 375.0,
+      "target_reacquisition_rate": 0.30875088214537755,
+      "target_reacquisition_success_rate": 1.0
+    },
+    "O_OraclePlanner": {
+      "hidden_change_recovery_rate": 1.0,
+      "hidden_obstacle_recovery_rate": 1.0,
+      "hidden_target_recovery_rate": 1.0,
+      "mean_cells_explored_for_reacquisition": 0,
+      "mean_disconfirmed_targets": 0,
+      "mean_invalidated_poses": 0,
+      "mean_steps_to_reacquire": 0.0,
+      "target_reacquisition_attempts": 0.0,
+      "target_reacquisition_rate": 0.20833333333333334,
+      "target_reacquisition_success_rate": 0.0
+    },
+    "R_ReactiveCurrentOnlyPlanner": {
+      "hidden_change_recovery_rate": 1.0,
+      "hidden_obstacle_recovery_rate": 0.0,
+      "hidden_target_recovery_rate": 0.0,
+      "mean_cells_explored_for_reacquisition": 5.041666666666667,
+      "mean_disconfirmed_targets": 0,
+      "mean_invalidated_poses": 0,
+      "mean_steps_to_reacquire": 0.0,
+      "target_reacquisition_attempts": 0.0,
+      "target_reacquisition_rate": 0.4117647058823529,
+      "target_reacquisition_success_rate": 0.0
+    }
+  }
+}

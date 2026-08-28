@@ -1,0 +1,624 @@
+{
+  "by_history_cohort": {
+    "H0": {
+      "C_CHRONOLOGICAL": {
+        "budgeted_input_tokens": {
+          "max": 652,
+          "mean": 525.929,
+          "median": 489.0,
+          "p95": 652
+        },
+        "count": 42,
+        "dropped_counts_total": {
+          "chronological_records": 0
+        },
+        "final_input_tokens": {
+          "max": 521,
+          "mean": 420.429,
+          "median": 391.0,
+          "p95": 521
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "chronological_records": 134
+        },
+        "unused_budget": {
+          "max": 1190,
+          "mean": 1074.071,
+          "median": 1111.0,
+          "p95": 1188
+        }
+      },
+      "N_NOWMIND_STRUCTURED": {
+        "budgeted_input_tokens": {
+          "max": 647,
+          "mean": 511.381,
+          "median": 468.0,
+          "p95": 647
+        },
+        "count": 42,
+        "dropped_counts_total": {
+          "future_hypotheses": 0,
+          "planning_assumptions": 0,
+          "reconstructed_memories": 0,
+          "uncertainties": 0
+        },
+        "final_input_tokens": {
+          "max": 517,
+          "mean": 408.81,
+          "median": 374.0,
+          "p95": 517
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "future_hypotheses": 42,
+          "planning_assumptions": 12,
+          "reconstructed_memories": 42,
+          "uncertainties": 5
+        },
+        "unused_budget": {
+          "max": 1176,
+          "mean": 1088.619,
+          "median": 1132.0,
+          "p95": 1173
+        }
+      },
+      "R_CURRENT_ONLY": {
+        "budgeted_input_tokens": {
+          "max": 459,
+          "mean": 345.024,
+          "median": 310.0,
+          "p95": 459
+        },
+        "count": 42,
+        "dropped_counts_total": {},
+        "final_input_tokens": {
+          "max": 367,
+          "mean": 275.667,
+          "median": 248.0,
+          "p95": 367
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {},
+        "unused_budget": {
+          "max": 1333,
+          "mean": 1254.976,
+          "median": 1290.0,
+          "p95": 1332
+        }
+      }
+    },
+    "H10": {
+      "C_CHRONOLOGICAL": {
+        "budgeted_input_tokens": {
+          "max": 1409,
+          "mean": 1280.786,
+          "median": 1247.0,
+          "p95": 1409
+        },
+        "count": 42,
+        "dropped_counts_total": {
+          "chronological_records": 0
+        },
+        "final_input_tokens": {
+          "max": 1127,
+          "mean": 1024.31,
+          "median": 997.0,
+          "p95": 1127
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "chronological_records": 554
+        },
+        "unused_budget": {
+          "max": 432,
+          "mean": 319.214,
+          "median": 353.0,
+          "p95": 431
+        }
+      },
+      "N_NOWMIND_STRUCTURED": {
+        "budgeted_input_tokens": {
+          "max": 1292,
+          "mean": 1153.024,
+          "median": 1113.0,
+          "p95": 1292
+        },
+        "count": 42,
+        "dropped_counts_total": {
+          "future_hypotheses": 0,
+          "planning_assumptions": 0,
+          "reconstructed_memories": 0,
+          "uncertainties": 0
+        },
+        "final_input_tokens": {
+          "max": 1033,
+          "mean": 922.19,
+          "median": 890.0,
+          "p95": 1033
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "future_hypotheses": 42,
+          "planning_assumptions": 11,
+          "reconstructed_memories": 462,
+          "uncertainties": 5
+        },
+        "unused_budget": {
+          "max": 531,
+          "mean": 446.976,
+          "median": 487.0,
+          "p95": 530
+        }
+      },
+      "R_CURRENT_ONLY": {
+        "budgeted_input_tokens": {
+          "max": 459,
+          "mean": 342.857,
+          "median": 310.0,
+          "p95": 459
+        },
+        "count": 42,
+        "dropped_counts_total": {},
+        "final_input_tokens": {
+          "max": 367,
+          "mean": 273.952,
+          "median": 248.0,
+          "p95": 367
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {},
+        "unused_budget": {
+          "max": 1333,
+          "mean": 1257.143,
+          "median": 1290.0,
+          "p95": 1332
+        }
+      }
+    },
+    "H100": {
+      "C_CHRONOLOGICAL": {
+        "budgeted_input_tokens": {
+          "max": 1584,
+          "mean": 1554.476,
+          "median": 1553.0,
+          "p95": 1584
+        },
+        "count": 42,
+        "dropped_counts_total": {
+          "chronological_records": 3632
+        },
+        "final_input_tokens": {
+          "max": 1267,
+          "mean": 1243.262,
+          "median": 1242.0,
+          "p95": 1267
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "chronological_records": 701
+        },
+        "unused_budget": {
+          "max": 65,
+          "mean": 45.524,
+          "median": 47.0,
+          "p95": 65
+        }
+      },
+      "N_NOWMIND_STRUCTURED": {
+        "budgeted_input_tokens": {
+          "max": 1590,
+          "mean": 1567.714,
+          "median": 1564.0,
+          "p95": 1590
+        },
+        "count": 42,
+        "dropped_counts_total": {
+          "future_hypotheses": 0,
+          "planning_assumptions": 0,
+          "reconstructed_memories": 3513,
+          "uncertainties": 0
+        },
+        "final_input_tokens": {
+          "max": 1272,
+          "mean": 1253.905,
+          "median": 1251.0,
+          "p95": 1272
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "future_hypotheses": 42,
+          "planning_assumptions": 13,
+          "reconstructed_memories": 729,
+          "uncertainties": 5
+        },
+        "unused_budget": {
+          "max": 55,
+          "mean": 32.286,
+          "median": 36.0,
+          "p95": 55
+        }
+      },
+      "R_CURRENT_ONLY": {
+        "budgeted_input_tokens": {
+          "max": 460,
+          "mean": 344.643,
+          "median": 312.0,
+          "p95": 434
+        },
+        "count": 42,
+        "dropped_counts_total": {},
+        "final_input_tokens": {
+          "max": 368,
+          "mean": 275.357,
+          "median": 249.0,
+          "p95": 347
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {},
+        "unused_budget": {
+          "max": 1333,
+          "mean": 1255.357,
+          "median": 1288.0,
+          "p95": 1333
+        }
+      }
+    },
+    "H1000": {
+      "C_CHRONOLOGICAL": {
+        "budgeted_input_tokens": {
+          "max": 1589,
+          "mean": 1560.854,
+          "median": 1558,
+          "p95": 1589
+        },
+        "count": 41,
+        "dropped_counts_total": {
+          "chronological_records": 40445
+        },
+        "final_input_tokens": {
+          "max": 1271,
+          "mean": 1248.366,
+          "median": 1246,
+          "p95": 1271
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "chronological_records": 685
+        },
+        "unused_budget": {
+          "max": 60,
+          "mean": 39.146,
+          "median": 42,
+          "p95": 56
+        }
+      },
+      "N_NOWMIND_STRUCTURED": {
+        "budgeted_input_tokens": {
+          "max": 1592,
+          "mean": 1568.537,
+          "median": 1565,
+          "p95": 1589
+        },
+        "count": 41,
+        "dropped_counts_total": {
+          "future_hypotheses": 0,
+          "planning_assumptions": 0,
+          "reconstructed_memories": 40330,
+          "uncertainties": 0
+        },
+        "final_input_tokens": {
+          "max": 1273,
+          "mean": 1254.512,
+          "median": 1252,
+          "p95": 1271
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "future_hypotheses": 41,
+          "planning_assumptions": 12,
+          "reconstructed_memories": 711,
+          "uncertainties": 5
+        },
+        "unused_budget": {
+          "max": 53,
+          "mean": 31.463,
+          "median": 35,
+          "p95": 47
+        }
+      },
+      "R_CURRENT_ONLY": {
+        "budgeted_input_tokens": {
+          "max": 462,
+          "mean": 346.537,
+          "median": 312,
+          "p95": 435
+        },
+        "count": 41,
+        "dropped_counts_total": {},
+        "final_input_tokens": {
+          "max": 369,
+          "mean": 276.902,
+          "median": 249,
+          "p95": 348
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {},
+        "unused_budget": {
+          "max": 1332,
+          "mean": 1253.463,
+          "median": 1288,
+          "p95": 1331
+        }
+      }
+    },
+    "H50": {
+      "C_CHRONOLOGICAL": {
+        "budgeted_input_tokens": {
+          "max": 1583,
+          "mean": 1552.643,
+          "median": 1552.0,
+          "p95": 1580
+        },
+        "count": 42,
+        "dropped_counts_total": {
+          "chronological_records": 1530
+        },
+        "final_input_tokens": {
+          "max": 1266,
+          "mean": 1241.857,
+          "median": 1241.0,
+          "p95": 1264
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "chronological_records": 703
+        },
+        "unused_budget": {
+          "max": 67,
+          "mean": 47.357,
+          "median": 48.0,
+          "p95": 67
+        }
+      },
+      "N_NOWMIND_STRUCTURED": {
+        "budgeted_input_tokens": {
+          "max": 1589,
+          "mean": 1566,
+          "median": 1563.0,
+          "p95": 1588
+        },
+        "count": 42,
+        "dropped_counts_total": {
+          "future_hypotheses": 0,
+          "planning_assumptions": 0,
+          "reconstructed_memories": 1410,
+          "uncertainties": 0
+        },
+        "final_input_tokens": {
+          "max": 1271,
+          "mean": 1252.476,
+          "median": 1250.0,
+          "p95": 1270
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "future_hypotheses": 42,
+          "planning_assumptions": 11,
+          "reconstructed_memories": 732,
+          "uncertainties": 5
+        },
+        "unused_budget": {
+          "max": 56,
+          "mean": 34,
+          "median": 37.0,
+          "p95": 56
+        }
+      },
+      "R_CURRENT_ONLY": {
+        "budgeted_input_tokens": {
+          "max": 459,
+          "mean": 339.929,
+          "median": 310.0,
+          "p95": 433
+        },
+        "count": 42,
+        "dropped_counts_total": {},
+        "final_input_tokens": {
+          "max": 367,
+          "mean": 271.595,
+          "median": 248.0,
+          "p95": 346
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {},
+        "unused_budget": {
+          "max": 1333,
+          "mean": 1260.071,
+          "median": 1290.0,
+          "p95": 1333
+        }
+      }
+    },
+    "H500": {
+      "C_CHRONOLOGICAL": {
+        "budgeted_input_tokens": {
+          "max": 1588,
+          "mean": 1558.195,
+          "median": 1557,
+          "p95": 1588
+        },
+        "count": 41,
+        "dropped_counts_total": {
+          "chronological_records": 19947
+        },
+        "final_input_tokens": {
+          "max": 1270,
+          "mean": 1246.293,
+          "median": 1245,
+          "p95": 1270
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "chronological_records": 684
+        },
+        "unused_budget": {
+          "max": 62,
+          "mean": 41.805,
+          "median": 43,
+          "p95": 62
+        }
+      },
+      "N_NOWMIND_STRUCTURED": {
+        "budgeted_input_tokens": {
+          "max": 1590,
+          "mean": 1567.268,
+          "median": 1564,
+          "p95": 1590
+        },
+        "count": 41,
+        "dropped_counts_total": {
+          "future_hypotheses": 0,
+          "planning_assumptions": 0,
+          "reconstructed_memories": 19831,
+          "uncertainties": 0
+        },
+        "final_input_tokens": {
+          "max": 1272,
+          "mean": 1253.537,
+          "median": 1251,
+          "p95": 1272
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {
+          "future_hypotheses": 41,
+          "planning_assumptions": 13,
+          "reconstructed_memories": 710,
+          "uncertainties": 4
+        },
+        "unused_budget": {
+          "max": 55,
+          "mean": 32.732,
+          "median": 36,
+          "p95": 55
+        }
+      },
+      "R_CURRENT_ONLY": {
+        "budgeted_input_tokens": {
+          "max": 460,
+          "mean": 346.61,
+          "median": 312,
+          "p95": 434
+        },
+        "count": 41,
+        "dropped_counts_total": {},
+        "final_input_tokens": {
+          "max": 368,
+          "mean": 276.927,
+          "median": 249,
+          "p95": 347
+        },
+        "max_over_budget": false,
+        "retained_counts_total": {},
+        "unused_budget": {
+          "max": 1333,
+          "mean": 1253.39,
+          "median": 1288,
+          "p95": 1331
+        }
+      }
+    }
+  },
+  "counter": "estimate_tokens(system_instruction + newline + final_prompt)",
+  "declared_budget": 1600,
+  "overall": {
+    "C_CHRONOLOGICAL": {
+      "budgeted_input_tokens": {
+        "max": 1589,
+        "mean": 1337.048,
+        "median": 1550.0,
+        "p95": 1584
+      },
+      "count": 250,
+      "dropped_counts_total": {
+        "chronological_records": 65554
+      },
+      "final_input_tokens": {
+        "max": 1271,
+        "mean": 1069.34,
+        "median": 1240.0,
+        "p95": 1267
+      },
+      "max_over_budget": false,
+      "retained_counts_total": {
+        "chronological_records": 3461
+      },
+      "unused_budget": {
+        "max": 1190,
+        "mean": 262.952,
+        "median": 50.0,
+        "p95": 1115
+      }
+    },
+    "N_NOWMIND_STRUCTURED": {
+      "budgeted_input_tokens": {
+        "max": 1592,
+        "mean": 1320.356,
+        "median": 1562.0,
+        "p95": 1589
+      },
+      "count": 250,
+      "dropped_counts_total": {
+        "future_hypotheses": 0,
+        "planning_assumptions": 0,
+        "reconstructed_memories": 65084,
+        "uncertainties": 0
+      },
+      "final_input_tokens": {
+        "max": 1273,
+        "mean": 1056,
+        "median": 1249.0,
+        "p95": 1271
+      },
+      "max_over_budget": false,
+      "retained_counts_total": {
+        "future_hypotheses": 250,
+        "planning_assumptions": 72,
+        "reconstructed_memories": 3386,
+        "uncertainties": 29
+      },
+      "unused_budget": {
+        "max": 1176,
+        "mean": 279.644,
+        "median": 38.0,
+        "p95": 1136
+      }
+    },
+    "R_CURRENT_ONLY": {
+      "budgeted_input_tokens": {
+        "max": 462,
+        "mean": 344.248,
+        "median": 310.0,
+        "p95": 459
+      },
+      "count": 250,
+      "dropped_counts_total": {},
+      "final_input_tokens": {
+        "max": 369,
+        "mean": 275.052,
+        "median": 248.0,
+        "p95": 367
+      },
+      "max_over_budget": false,
+      "retained_counts_total": {},
+      "unused_budget": {
+        "max": 1333,
+        "mean": 1255.752,
+        "median": 1290.0,
+        "p95": 1332
+      }
+    }
+  },
+  "safety_multiplier": 1.25,
+  "schema": "nowmind.g2_3_2.token_metrics.v1"
+}

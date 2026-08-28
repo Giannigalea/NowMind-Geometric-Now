@@ -1,0 +1,171 @@
+{
+  "current_relation_present": true,
+  "cycle_1": {
+    "answer": {
+      "confidence": 1.0,
+      "explanation": [],
+      "issues": [],
+      "status": "true",
+      "supporting_relations": [
+        {
+          "confidence": 1.0,
+          "premise_ids": [],
+          "provenance": "observed_now",
+          "relation_id": "o0000",
+          "relation_type": "left_of",
+          "rule_id": null,
+          "source_id": "red_cube",
+          "target_id": "blue_cube",
+          "unit": null,
+          "value": null
+        }
+      ]
+    },
+    "created_at": "2026-08-28T14:26:58.856697+00:00",
+    "cycle_id": 1,
+    "entities": [
+      {
+        "attributes": {},
+        "entity_id": "blue_cube",
+        "kind": "cube",
+        "label": "blue cube"
+      },
+      {
+        "attributes": {},
+        "entity_id": "red_cube",
+        "kind": "cube",
+        "label": "red cube"
+      }
+    ],
+    "inferred_relations": [
+      {
+        "confidence": 1.0,
+        "premise_ids": [
+          "o0000"
+        ],
+        "provenance": "inferred_now",
+        "relation_id": "i0001",
+        "relation_type": "right_of",
+        "rule_id": "INVERSE_LEFT_RIGHT",
+        "source_id": "blue_cube",
+        "target_id": "red_cube",
+        "unit": null,
+        "value": null
+      }
+    ],
+    "now_id": "2510bfdc-d1de-41a5-a9dc-625cdcffaa55",
+    "observed_relations": [
+      {
+        "confidence": 1.0,
+        "premise_ids": [],
+        "provenance": "observed_now",
+        "relation_id": "o0000",
+        "relation_type": "left_of",
+        "rule_id": null,
+        "source_id": "red_cube",
+        "target_id": "blue_cube",
+        "unit": null,
+        "value": null
+      }
+    ],
+    "query": {
+      "display": "red_cube LEFT_OF blue_cube?",
+      "query_type": "relation",
+      "relation_type": "left_of",
+      "source_id": "red_cube",
+      "target_id": "blue_cube"
+    },
+    "validation": {
+      "is_valid": true,
+      "issues": []
+    },
+    "world_version": 3
+  },
+  "cycle_1_relation": "red_cube LEFT_OF blue_cube",
+  "cycle_2": {
+    "answer": {
+      "confidence": 1.0,
+      "explanation": [],
+      "issues": [],
+      "status": "true",
+      "supporting_relations": [
+        {
+          "confidence": 1.0,
+          "premise_ids": [],
+          "provenance": "observed_now",
+          "relation_id": "o0000",
+          "relation_type": "right_of",
+          "rule_id": null,
+          "source_id": "red_cube",
+          "target_id": "blue_cube",
+          "unit": null,
+          "value": null
+        }
+      ]
+    },
+    "created_at": "2026-08-28T14:26:58.857695+00:00",
+    "cycle_id": 2,
+    "entities": [
+      {
+        "attributes": {},
+        "entity_id": "blue_cube",
+        "kind": "cube",
+        "label": "blue cube"
+      },
+      {
+        "attributes": {},
+        "entity_id": "red_cube",
+        "kind": "cube",
+        "label": "red cube"
+      }
+    ],
+    "inferred_relations": [
+      {
+        "confidence": 1.0,
+        "premise_ids": [
+          "o0000"
+        ],
+        "provenance": "inferred_now",
+        "relation_id": "i0001",
+        "relation_type": "left_of",
+        "rule_id": "INVERSE_RIGHT_LEFT",
+        "source_id": "blue_cube",
+        "target_id": "red_cube",
+        "unit": null,
+        "value": null
+      }
+    ],
+    "now_id": "5112ab9f-2f00-496b-afe8-4ad7f89ac1dc",
+    "observed_relations": [
+      {
+        "confidence": 1.0,
+        "premise_ids": [],
+        "provenance": "observed_now",
+        "relation_id": "o0000",
+        "relation_type": "right_of",
+        "rule_id": null,
+        "source_id": "red_cube",
+        "target_id": "blue_cube",
+        "unit": null,
+        "value": null
+      }
+    ],
+    "query": {
+      "display": "red_cube RIGHT_OF blue_cube?",
+      "query_type": "relation",
+      "relation_type": "right_of",
+      "source_id": "red_cube",
+      "target_id": "blue_cube"
+    },
+    "validation": {
+      "is_valid": true,
+      "issues": []
+    },
+    "world_version": 4
+  },
+  "cycle_2_relation": "red_cube RIGHT_OF blue_cube",
+  "fresh_now_ids": true,
+  "schema": "nowmind.g1.stale_state_experiment.v1",
+  "stale_state_contamination": false,
+  "world_event": "move red_cube to RIGHT_OF blue_cube"
+}

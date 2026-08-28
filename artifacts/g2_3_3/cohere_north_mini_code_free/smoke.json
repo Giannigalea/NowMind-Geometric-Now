@@ -1,0 +1,404 @@
+{
+  "completed_checks": 2,
+  "created_at": "2026-08-28T11:59:42.039126+02:00",
+  "model": "cohere/north-mini-code:free",
+  "parse_success": 0,
+  "rows": [
+    {
+      "backend": "openrouter",
+      "condition": "N_NOWMIND_STRUCTURED",
+      "context_overflow": false,
+      "error": null,
+      "expected": {
+        "action": null,
+        "answer": "box_b",
+        "source_used": "observed_now",
+        "status": "ANSWER"
+      },
+      "g2_3_3": {
+        "effective_provider": "Cohere",
+        "json_compatibility_mode": "prompt_only_json",
+        "price_gate": "verified_free_by_discovery",
+        "provider_match_required": true,
+        "row_key": "cohere/north-mini-code:free|A_EQUAL_INFORMATION|g2_3_eval_00000_temporal_present_vs_stale_memory|N_NOWMIND_STRUCTURED",
+        "smoke_check": "basic_structured_json",
+        "synthetic_payload_guard": {
+          "forbidden_hits": [],
+          "passed": true
+        }
+      },
+      "input_tokens": 413,
+      "latency_ms": 1583.557899997686,
+      "model": "cohere/north-mini-code:free",
+      "model_config": {
+        "backend": "openrouter",
+        "context_size": null,
+        "model": "cohere/north-mini-code:free",
+        "num_predict": null,
+        "response_format": "prompt_only_json",
+        "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+        "seed": 20260823,
+        "temperature": 0.0,
+        "think": null,
+        "top_p": 1.0
+      },
+      "model_response": {
+        "backend": "openrouter",
+        "config": {
+          "allow_fallbacks": false,
+          "context_size": null,
+          "data_collection": "deny",
+          "model": "cohere/north-mini-code:free",
+          "native_json_schema": false,
+          "num_predict": null,
+          "provider": null,
+          "require_parameters": true,
+          "response_format": "prompt_only_json",
+          "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+          "seed": 20260823,
+          "temperature": 0.0,
+          "think": null,
+          "top_p": 1.0
+        },
+        "error": null,
+        "input_token_estimate": 413,
+        "latency_ms": 1583.557899997686,
+        "model": "cohere/north-mini-code:free",
+        "output_token_estimate": 256,
+        "provider_metadata": {
+          "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+          "finish_reason": "length",
+          "message_reasoning_omitted_from_scoring": true,
+          "message_reasoning_present": true,
+          "native_finish_reason": "max_tokens",
+          "provider": "Cohere",
+          "provider_request": {
+            "allow_fallbacks": false,
+            "data_collection": "deny",
+            "require_parameters": true
+          },
+          "response_id": "gen-1787911011-zWVyzYKZuH7mVRZa9iWf",
+          "response_model": "cohere/north-mini-code:free",
+          "usage": {
+            "completion_tokens": 256,
+            "completion_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "reasoning_tokens": 310
+            },
+            "cost": 0,
+            "cost_details": {
+              "upstream_inference_completions_cost": 0,
+              "upstream_inference_cost": 0,
+              "upstream_inference_prompt_cost": 0
+            },
+            "is_byok": false,
+            "prompt_tokens": 413,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "video_tokens": 0
+            },
+            "total_tokens": 669
+          }
+        },
+        "raw_text": "null"
+      },
+      "output_tokens": 256,
+      "parse_success": false,
+      "parsed_output": null,
+      "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0
+      },
+      "raw_output": "null",
+      "regime": "A_EQUAL_INFORMATION",
+      "repair_retry_count": 1,
+      "repair_skipped_budget_gate": false,
+      "representation": {
+        "budget": null,
+        "budget_accounting": {
+          "budgeted_input_tokens": 463,
+          "counter": "estimate_tokens(system_instruction + newline + final_prompt)",
+          "declared_budget": null,
+          "dropped_counts": {
+            "future_hypotheses": 0,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 0,
+            "uncertainties": 0
+          },
+          "exact_tokenizer_available": false,
+          "final_input_token_estimate": 370,
+          "original_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 1,
+            "uncertainties": 0
+          },
+          "retained_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 1,
+            "uncertainties": 0
+          },
+          "retained_policy": "preserve current observation/query/source labels; trim reconstructed memories, hypotheses, assumptions, and uncertainties by existing order",
+          "safety_multiplier": 1.25,
+          "unused_budget": null
+        },
+        "condition": "N_NOWMIND_STRUCTURED",
+        "context_overflow": false,
+        "fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+        "final_input_token_estimate": 370,
+        "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+        "regime": "A_EQUAL_INFORMATION",
+        "token_estimate": 370,
+        "truncated": false
+      },
+      "same_admissible_fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+      "trial": {
+        "fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+        "family": "temporal_present_vs_stale_memory",
+        "history_cohort": "H0",
+        "seed": 20260824,
+        "split": "evaluation",
+        "task_group": "temporal_qa",
+        "trial_id": "g2_3_eval_00000_temporal_present_vs_stale_memory"
+      },
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 1,
+        "validator_rejected": 1
+      },
+      "validator": {
+        "accepted": false,
+        "final_action": null,
+        "final_answer": "",
+        "final_source_used": "none",
+        "final_status": "UNKNOWN",
+        "prevented_error": true,
+        "rejection_reason": "parse_failure"
+      }
+    },
+    {
+      "backend": "openrouter",
+      "condition": "N_NOWMIND_STRUCTURED",
+      "context_overflow": false,
+      "error": null,
+      "expected": {
+        "action": null,
+        "answer": "box_b",
+        "source_used": "observed_now",
+        "status": "ANSWER"
+      },
+      "g2_3_3": {
+        "effective_provider": "Cohere",
+        "json_compatibility_mode": "prompt_only_json",
+        "price_gate": "verified_free_by_discovery",
+        "provider_match_required": true,
+        "row_key": "cohere/north-mini-code:free|A_EQUAL_INFORMATION|g2_3_eval_00000_temporal_present_vs_stale_memory|N_NOWMIND_STRUCTURED",
+        "smoke_check": "basic_structured_json",
+        "synthetic_payload_guard": {
+          "forbidden_hits": [],
+          "passed": true
+        }
+      },
+      "input_tokens": 391,
+      "latency_ms": 7118.362799999886,
+      "model": "cohere/north-mini-code:free",
+      "model_config": {
+        "backend": "openrouter",
+        "context_size": null,
+        "model": "cohere/north-mini-code:free",
+        "num_predict": null,
+        "response_format": "prompt_only_json",
+        "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+        "seed": 20260823,
+        "temperature": 0.0,
+        "think": null,
+        "top_p": 1.0
+      },
+      "model_response": {
+        "backend": "openrouter",
+        "config": {
+          "allow_fallbacks": false,
+          "context_size": null,
+          "data_collection": "deny",
+          "model": "cohere/north-mini-code:free",
+          "native_json_schema": false,
+          "num_predict": 512,
+          "provider": null,
+          "reasoning": {
+            "exclude": true
+          },
+          "require_parameters": true,
+          "response_format": "prompt_only_json",
+          "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+          "seed": 20260823,
+          "temperature": 0.0,
+          "think": null,
+          "top_p": 1.0
+        },
+        "error": null,
+        "input_token_estimate": 391,
+        "latency_ms": 7118.362799999886,
+        "model": "cohere/north-mini-code:free",
+        "output_token_estimate": 512,
+        "provider_metadata": {
+          "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+          "finish_reason": "length",
+          "message_reasoning_omitted_from_scoring": false,
+          "message_reasoning_present": false,
+          "native_finish_reason": "max_tokens",
+          "provider": "Cohere",
+          "provider_request": {
+            "allow_fallbacks": false,
+            "data_collection": "deny",
+            "require_parameters": true
+          },
+          "response_id": "gen-1787911174-BHU4761DJ8uaIRpEwWaT",
+          "response_model": "cohere/north-mini-code:free",
+          "usage": {
+            "completion_tokens": 512,
+            "completion_tokens_details": {
+              "audio_tokens": 0,
+              "image_tokens": 0,
+              "reasoning_tokens": 0
+            },
+            "cost": 0,
+            "cost_details": {
+              "upstream_inference_completions_cost": 0,
+              "upstream_inference_cost": 0,
+              "upstream_inference_prompt_cost": 0
+            },
+            "is_byok": false,
+            "prompt_tokens": 391,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "video_tokens": 0
+            },
+            "total_tokens": 903
+          }
+        },
+        "raw_text": "null"
+      },
+      "output_tokens": 512,
+      "parse_success": false,
+      "parsed_output": null,
+      "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0
+      },
+      "raw_output": "null",
+      "regime": "A_EQUAL_INFORMATION",
+      "repair_retry_count": 0,
+      "repair_skipped_budget_gate": false,
+      "representation": {
+        "budget": null,
+        "budget_accounting": {
+          "budgeted_input_tokens": 463,
+          "counter": "estimate_tokens(system_instruction + newline + final_prompt)",
+          "declared_budget": null,
+          "dropped_counts": {
+            "future_hypotheses": 0,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 0,
+            "uncertainties": 0
+          },
+          "exact_tokenizer_available": false,
+          "final_input_token_estimate": 370,
+          "original_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 1,
+            "uncertainties": 0
+          },
+          "retained_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 1,
+            "uncertainties": 0
+          },
+          "retained_policy": "preserve current observation/query/source labels; trim reconstructed memories, hypotheses, assumptions, and uncertainties by existing order",
+          "safety_multiplier": 1.25,
+          "unused_budget": null
+        },
+        "condition": "N_NOWMIND_STRUCTURED",
+        "context_overflow": false,
+        "fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+        "final_input_token_estimate": 370,
+        "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+        "regime": "A_EQUAL_INFORMATION",
+        "token_estimate": 370,
+        "truncated": false
+      },
+      "same_admissible_fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+      "trial": {
+        "fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+        "family": "temporal_present_vs_stale_memory",
+        "history_cohort": "H0",
+        "seed": 20260824,
+        "split": "evaluation",
+        "task_group": "temporal_qa",
+        "trial_id": "g2_3_eval_00000_temporal_present_vs_stale_memory"
+      },
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 1,
+        "validator_rejected": 1
+      },
+      "validator": {
+        "accepted": false,
+        "final_action": null,
+        "final_answer": "",
+        "final_source_used": "none",
+        "final_status": "UNKNOWN",
+        "prevented_error": true,
+        "rejection_reason": "parse_failure"
+      }
+    }
+  ],
+  "schema": "nowmind.g2_3_3.smoke.v1",
+  "status": "stopped_schema_invalid",
+  "target_checks": 1,
+  "transport_errors": 0,
+  "schema_success": 0
+}

@@ -1,0 +1,38 @@
+{
+  "available_backends": {
+    "mock": true,
+    "ollama": true,
+    "symbolic_reference": true
+  },
+  "local_model_runtime_prerequisite": null,
+  "ollama": {
+    "api_path": null,
+    "available": true,
+    "base_url": null,
+    "executable": "C:\\Users\\jonat\\AppData\\Local\\Programs\\Ollama\\ollama.exe",
+    "models": [
+      {
+        "error": "[WinError 5] Access is denied"
+      }
+    ],
+    "note": "No model download is performed by G2.3."
+  },
+  "selected": {
+    "backend": "mock",
+    "context_size": 100000,
+    "digest": "local-deterministic-mock",
+    "model": "mock-deterministic-g2.3",
+    "seed": 20260823,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "symbolic_reference": {
+    "backend": "symbolic",
+    "context_size": 100000,
+    "digest": "deterministic-local-symbolic",
+    "model": "symbolic-nowmind-g2.3-reference",
+    "seed": 20260823,
+    "temperature": 0.0,
+    "top_p": 1.0
+  }
+}

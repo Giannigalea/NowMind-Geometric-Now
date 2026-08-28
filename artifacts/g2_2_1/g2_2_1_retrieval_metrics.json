@@ -1,0 +1,316 @@
+{
+  "definitions": {
+    "effective_evidence_used": "planning assumptions actually used in the selected plan",
+    "index_candidates_considered": "candidate records returned by trace/reconstruction indices",
+    "legacy_evidence_items_inspected": "pre-G2.2.1 planner-side evidence counter retained for comparison",
+    "reconstructions_created": "current reconstructions supplied to planning",
+    "records_returned": "records passed to current reconstruction/planning",
+    "records_scanned": "records examined after index narrowing"
+  },
+  "holdout": {
+    "C_ChronologicalEpistemicPlanner": {
+      "mean_effective_evidence_used": 0.9375,
+      "mean_evidence_items_inspected": 86.29,
+      "mean_index_candidates_considered": 86.29,
+      "mean_legacy_evidence_items_inspected": 7.047,
+      "mean_reconstructions_created": 86.29,
+      "mean_records_returned": 86.29,
+      "mean_records_scanned": 86.29
+    },
+    "N_NowMindEpistemicGeometry": {
+      "mean_effective_evidence_used": 0.9375,
+      "mean_evidence_items_inspected": 86.29,
+      "mean_index_candidates_considered": 86.29,
+      "mean_legacy_evidence_items_inspected": 7.047,
+      "mean_reconstructions_created": 86.29,
+      "mean_records_returned": 86.29,
+      "mean_records_scanned": 86.29
+    },
+    "O_OraclePlanner": {
+      "mean_effective_evidence_used": 0,
+      "mean_evidence_items_inspected": 0,
+      "mean_index_candidates_considered": 0,
+      "mean_legacy_evidence_items_inspected": 0,
+      "mean_reconstructions_created": 0,
+      "mean_records_returned": 0,
+      "mean_records_scanned": 0
+    },
+    "R_ReactiveCurrentOnlyPlanner": {
+      "mean_effective_evidence_used": 0,
+      "mean_evidence_items_inspected": 0,
+      "mean_index_candidates_considered": 0,
+      "mean_legacy_evidence_items_inspected": 1781.43,
+      "mean_reconstructions_created": 0,
+      "mean_records_returned": 0,
+      "mean_records_scanned": 0
+    }
+  },
+  "holdout_history_scaling": {
+    "H0": {
+      "C_ChronologicalEpistemicPlanner": {
+        "mean_effective_evidence_used": 0.5029940119760479,
+        "mean_evidence_items_inspected": 0.5029940119760479,
+        "mean_index_candidates_considered": 0.5029940119760479,
+        "mean_legacy_evidence_items_inspected": 0.7514970059880239,
+        "mean_reconstructions_created": 0.5029940119760479,
+        "mean_records_returned": 0.5029940119760479,
+        "mean_records_scanned": 0.5029940119760479
+      },
+      "N_NowMindEpistemicGeometry": {
+        "mean_effective_evidence_used": 0.5029940119760479,
+        "mean_evidence_items_inspected": 0.5029940119760479,
+        "mean_index_candidates_considered": 0.5029940119760479,
+        "mean_legacy_evidence_items_inspected": 0.7514970059880239,
+        "mean_reconstructions_created": 0.5029940119760479,
+        "mean_records_returned": 0.5029940119760479,
+        "mean_records_scanned": 0.5029940119760479
+      },
+      "O_OraclePlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 0,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      },
+      "R_ReactiveCurrentOnlyPlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 0,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      }
+    },
+    "H10": {
+      "C_ChronologicalEpistemicPlanner": {
+        "mean_effective_evidence_used": 1.248502994011976,
+        "mean_evidence_items_inspected": 6.595808383233533,
+        "mean_index_candidates_considered": 6.595808383233533,
+        "mean_legacy_evidence_items_inspected": 6.589820359281437,
+        "mean_reconstructions_created": 6.595808383233533,
+        "mean_records_returned": 6.595808383233533,
+        "mean_records_scanned": 6.595808383233533
+      },
+      "N_NowMindEpistemicGeometry": {
+        "mean_effective_evidence_used": 1.248502994011976,
+        "mean_evidence_items_inspected": 6.595808383233533,
+        "mean_index_candidates_considered": 6.595808383233533,
+        "mean_legacy_evidence_items_inspected": 6.589820359281437,
+        "mean_reconstructions_created": 6.595808383233533,
+        "mean_records_returned": 6.595808383233533,
+        "mean_records_scanned": 6.595808383233533
+      },
+      "O_OraclePlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 0,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      },
+      "R_ReactiveCurrentOnlyPlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 15,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      }
+    },
+    "H100": {
+      "C_ChronologicalEpistemicPlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 25.75975975975976,
+        "mean_index_candidates_considered": 25.75975975975976,
+        "mean_legacy_evidence_items_inspected": 9.474474474474475,
+        "mean_reconstructions_created": 25.75975975975976,
+        "mean_records_returned": 25.75975975975976,
+        "mean_records_scanned": 25.75975975975976
+      },
+      "N_NowMindEpistemicGeometry": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 25.75975975975976,
+        "mean_index_candidates_considered": 25.75975975975976,
+        "mean_legacy_evidence_items_inspected": 9.474474474474475,
+        "mean_reconstructions_created": 25.75975975975976,
+        "mean_records_returned": 25.75975975975976,
+        "mean_records_scanned": 25.75975975975976
+      },
+      "O_OraclePlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 0,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      },
+      "R_ReactiveCurrentOnlyPlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 349.8498498498499,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      }
+    },
+    "H1000": {
+      "C_ChronologicalEpistemicPlanner": {
+        "mean_effective_evidence_used": 1.7447447447447448,
+        "mean_evidence_items_inspected": 309.54954954954957,
+        "mean_index_candidates_considered": 309.54954954954957,
+        "mean_legacy_evidence_items_inspected": 8.24924924924925,
+        "mean_reconstructions_created": 309.54954954954957,
+        "mean_records_returned": 309.54954954954957,
+        "mean_records_scanned": 309.54954954954957
+      },
+      "N_NowMindEpistemicGeometry": {
+        "mean_effective_evidence_used": 1.7447447447447448,
+        "mean_evidence_items_inspected": 309.54954954954957,
+        "mean_index_candidates_considered": 309.54954954954957,
+        "mean_legacy_evidence_items_inspected": 8.24924924924925,
+        "mean_reconstructions_created": 309.54954954954957,
+        "mean_records_returned": 309.54954954954957,
+        "mean_records_scanned": 309.54954954954957
+      },
+      "O_OraclePlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 0,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      },
+      "R_ReactiveCurrentOnlyPlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 8984.984984984985,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      }
+    },
+    "H50": {
+      "C_ChronologicalEpistemicPlanner": {
+        "mean_effective_evidence_used": 0.6516516516516516,
+        "mean_evidence_items_inspected": 15.09009009009009,
+        "mean_index_candidates_considered": 15.09009009009009,
+        "mean_legacy_evidence_items_inspected": 9.237237237237236,
+        "mean_reconstructions_created": 15.09009009009009,
+        "mean_records_returned": 15.09009009009009,
+        "mean_records_scanned": 15.09009009009009
+      },
+      "N_NowMindEpistemicGeometry": {
+        "mean_effective_evidence_used": 0.6516516516516516,
+        "mean_evidence_items_inspected": 15.09009009009009,
+        "mean_index_candidates_considered": 15.09009009009009,
+        "mean_legacy_evidence_items_inspected": 9.237237237237236,
+        "mean_reconstructions_created": 15.09009009009009,
+        "mean_records_returned": 15.09009009009009,
+        "mean_records_scanned": 15.09009009009009
+      },
+      "O_OraclePlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 0,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      },
+      "R_ReactiveCurrentOnlyPlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 100.15015015015015,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      }
+    },
+    "H500": {
+      "C_ChronologicalEpistemicPlanner": {
+        "mean_effective_evidence_used": 1.4774774774774775,
+        "mean_evidence_items_inspected": 160.73873873873873,
+        "mean_index_candidates_considered": 160.73873873873873,
+        "mean_legacy_evidence_items_inspected": 8,
+        "mean_reconstructions_created": 160.73873873873873,
+        "mean_records_returned": 160.73873873873873,
+        "mean_records_scanned": 160.73873873873873
+      },
+      "N_NowMindEpistemicGeometry": {
+        "mean_effective_evidence_used": 1.4774774774774775,
+        "mean_evidence_items_inspected": 160.73873873873873,
+        "mean_index_candidates_considered": 160.73873873873873,
+        "mean_legacy_evidence_items_inspected": 8,
+        "mean_reconstructions_created": 160.73873873873873,
+        "mean_records_returned": 160.73873873873873,
+        "mean_records_scanned": 160.73873873873873
+      },
+      "O_OraclePlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 0,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      },
+      "R_ReactiveCurrentOnlyPlanner": {
+        "mean_effective_evidence_used": 0,
+        "mean_evidence_items_inspected": 0,
+        "mean_index_candidates_considered": 0,
+        "mean_legacy_evidence_items_inspected": 1249.2492492492493,
+        "mean_reconstructions_created": 0,
+        "mean_records_returned": 0,
+        "mean_records_scanned": 0
+      }
+    }
+  },
+  "v1_regression": {
+    "C_ChronologicalEpistemicPlanner": {
+      "mean_effective_evidence_used": 0.9446666666666667,
+      "mean_evidence_items_inspected": 86.29466666666667,
+      "mean_index_candidates_considered": 86.29466666666667,
+      "mean_legacy_evidence_items_inspected": 7.007333333333333,
+      "mean_reconstructions_created": 86.29466666666667,
+      "mean_records_returned": 86.29466666666667,
+      "mean_records_scanned": 86.29466666666667
+    },
+    "N_NowMindEpistemicGeometry": {
+      "mean_effective_evidence_used": 0.9446666666666667,
+      "mean_evidence_items_inspected": 86.29466666666667,
+      "mean_index_candidates_considered": 86.29466666666667,
+      "mean_legacy_evidence_items_inspected": 7.007333333333333,
+      "mean_reconstructions_created": 86.29466666666667,
+      "mean_records_returned": 86.29466666666667,
+      "mean_records_scanned": 86.29466666666667
+    },
+    "O_OraclePlanner": {
+      "mean_effective_evidence_used": 0,
+      "mean_evidence_items_inspected": 0,
+      "mean_index_candidates_considered": 0,
+      "mean_legacy_evidence_items_inspected": 0,
+      "mean_reconstructions_created": 0,
+      "mean_records_returned": 0,
+      "mean_records_scanned": 0
+    },
+    "R_ReactiveCurrentOnlyPlanner": {
+      "mean_effective_evidence_used": 0,
+      "mean_evidence_items_inspected": 0,
+      "mean_index_candidates_considered": 0,
+      "mean_legacy_evidence_items_inspected": 1785.8333333333333,
+      "mean_reconstructions_created": 0,
+      "mean_records_returned": 0,
+      "mean_records_scanned": 0
+    }
+  }
+}

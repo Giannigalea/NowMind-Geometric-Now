@@ -1,0 +1,39 @@
+{
+  "cause_classification": {
+    "details": [
+      "The old trimming helper tested estimate_tokens(_prompt(representation)) instead of the final system+prompt input.",
+      "The old fairness audit subtracted an estimated system length from provider counts after sending, so it did not match the pre-send builder counter.",
+      "Ollama provider token counts use the model tokenizer and were consistently higher than the simple local estimator."
+    ],
+    "history_selection_overflow": false,
+    "inconsistent_schema_accounting": false,
+    "n_c_different_counting_paths": false,
+    "off_by_one_logic": false,
+    "primary": "template/system overhead was not included in the trimming counter",
+    "template_overhead": true,
+    "tokenizer_estimator_mismatch": true,
+    "wrapper_system_text_added_after_truncation": true
+  },
+  "corrected_method": {
+    "budget": 1600,
+    "counter": "estimate_tokens(system_instruction + newline + final_prompt)",
+    "exact_tokenizer_available": false,
+    "hard_gate": "budgeted_input_tokens <= 1600 before any Regime-B model request is sent",
+    "repair_gate": "over-budget repair prompts are skipped rather than sent",
+    "safety_multiplier": 1.25
+  },
+  "corrected_regime_b": {
+    "checked_pairs": 250,
+    "failed_pairs": 0
+  },
+  "created_at": "2026-08-27T08:32:36.934917+00:00",
+  "frozen_g2_3_1": {
+    "fixed_budget_checked_pairs": 500,
+    "fixed_budget_violating_pairs": 166,
+    "model": "qwen3:0.6b",
+    "regime_b_nc_rows": 500,
+    "rows_with_final_input_estimate_over_budget": 332,
+    "rows_with_provider_count_over_budget": 332
+  },
+  "schema": "nowmind.g2_3_2.budget_audit.v1"
+}

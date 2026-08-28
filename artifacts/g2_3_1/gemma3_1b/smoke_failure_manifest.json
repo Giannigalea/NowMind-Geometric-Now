@@ -1,0 +1,38 @@
+{
+  "schema": "nowmind.g2_3_1.smoke_failure_manifest.v1",
+  "model": "gemma3:1b",
+  "digest": "8648f39daa8fbf5b18c7b4e6a8fb4990c692751d49917417b8842ca5758e7ffc",
+  "size_bytes": 815319791,
+  "role": "fallback_after_primary_smoke_failure",
+  "storage_path": "D:\\OllamaModels",
+  "ollama_version": "0.32.15",
+  "api_endpoint": "http://127.0.0.1:11434",
+  "generation_settings_attempted": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 20260823,
+    "response_format": "json",
+    "num_predict": 64
+  },
+  "attempts": [
+    {
+      "num_ctx": 4096,
+      "elapsed_ms": 53847.67,
+      "error": "llama-server process terminated with NTSTATUS 0xe06d7363"
+    },
+    {
+      "num_ctx": 1024,
+      "elapsed_ms": 41043.76,
+      "error": "llama_init_from_model failed to initialize the context: std::bad_alloc"
+    },
+    {
+      "num_ctx": 512,
+      "elapsed_ms": 52673.6,
+      "error": "llama-server process terminated with NTSTATUS 0xe06d7363"
+    }
+  ],
+  "smoke_status": "failed",
+  "calibration_status": "not_started",
+  "final_evaluation_status": "not_started",
+  "reason": "Fallback approved model could not initialize at a context large enough for the smallest G2.3 N/C benchmark prompts."
+}

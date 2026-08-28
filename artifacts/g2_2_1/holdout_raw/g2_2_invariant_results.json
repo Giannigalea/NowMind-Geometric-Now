@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "detail": "2000",
+      "name": "G2.2-BENCH-001-minimum-trials",
+      "passed": false
+    },
+    {
+      "detail": "D1-D6 represented",
+      "name": "G2.2-BENCH-002-difficulty-bands",
+      "passed": true
+    },
+    {
+      "detail": "24",
+      "name": "G2.2-BENCH-003-family-coverage",
+      "passed": true
+    },
+    {
+      "detail": "required cohorts represented",
+      "name": "G2.2-BENCH-004-history-cohorts",
+      "passed": true
+    },
+    {
+      "detail": "N/C/R/O evaluated per trial",
+      "name": "G2.2-BENCH-005-systems",
+      "passed": true
+    },
+    {
+      "detail": "trial IDs preserved",
+      "name": "G2.2-BENCH-006-paired-trials",
+      "passed": true
+    },
+    {
+      "detail": "failure samples can be generated",
+      "name": "G2.2-BENCH-007-failures-saved",
+      "passed": true
+    },
+    {
+      "detail": "metrics derive from trial outcomes",
+      "name": "G2.2-BENCH-008-derived-metrics",
+      "passed": true
+    },
+    {
+      "detail": "memory never promoted to observation",
+      "name": "memory-not-observation",
+      "passed": true
+    },
+    {
+      "detail": "future hypotheses never promoted to current fact",
+      "name": "prediction-not-fact",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "failed": 1,
+    "passed": 9
+  }
+}

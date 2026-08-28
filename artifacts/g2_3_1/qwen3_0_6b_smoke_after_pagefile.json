@@ -1,0 +1,108 @@
+{
+  "schema": "nowmind.g2_3_1.qwen3_0_6b_smoke_after_pagefile.v1",
+  "created_at": "2026-08-24T18:37:50.2535229Z",
+  "api_endpoint": "http://127.0.0.1:11434/api/chat",
+  "smoke_prompt": "What is the capital of France?",
+  "minimal_schema": {
+    "type": "object",
+    "properties": {
+      "answer": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "answer"
+    ]
+  },
+  "attempts": [
+    {
+      "model": "qwen3:0.6b",
+      "num_ctx": 512,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "seed": 20260823,
+      "think": false,
+      "http_success": true,
+      "elapsed_ms": 15376.86,
+      "message_content": "{\n  \"answer\": \"Paris\"\n}",
+      "parse_success": true,
+      "schema_valid": true,
+      "answer_semantically_paris": true,
+      "error": null,
+      "prompt_eval_count": 36,
+      "eval_count": 10,
+      "total_duration": 15080013100,
+      "load_duration": 14286203100
+    },
+    {
+      "model": "qwen3:0.6b",
+      "num_ctx": 1024,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "seed": 20260823,
+      "think": false,
+      "http_success": true,
+      "elapsed_ms": 7257.06,
+      "message_content": "{\n  \"answer\": \"Paris\"\n}",
+      "parse_success": true,
+      "schema_valid": true,
+      "answer_semantically_paris": true,
+      "error": null,
+      "prompt_eval_count": 36,
+      "eval_count": 10,
+      "total_duration": 7238444700,
+      "load_duration": 6368312300
+    },
+    {
+      "model": "qwen3:0.6b",
+      "num_ctx": 2048,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "seed": 20260823,
+      "think": false,
+      "http_success": true,
+      "elapsed_ms": 8657.06,
+      "message_content": "{\n  \"answer\": \"Paris\"\n}",
+      "parse_success": true,
+      "schema_valid": true,
+      "answer_semantically_paris": true,
+      "error": null,
+      "prompt_eval_count": 36,
+      "eval_count": 10,
+      "total_duration": 8638906300,
+      "load_duration": 7652302200
+    },
+    {
+      "model": "qwen3:0.6b",
+      "num_ctx": 4096,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "seed": 20260823,
+      "think": false,
+      "http_success": true,
+      "elapsed_ms": 9490.29,
+      "message_content": "{\n  \"answer\": \"Paris\"\n}",
+      "parse_success": true,
+      "schema_valid": true,
+      "answer_semantically_paris": true,
+      "error": null,
+      "prompt_eval_count": 36,
+      "eval_count": 10,
+      "total_duration": 9449326900,
+      "load_duration": 8525547000
+    }
+  ],
+  "summary": {
+    "pulled": true,
+    "after_pagefile_restart": true,
+    "context_sequence_attempted": [
+      512,
+      1024,
+      2048,
+      4096
+    ],
+    "all_attempted_contexts_passed": true,
+    "any_context_passed": true,
+    "highest_successful_context": 4096
+  }
+}

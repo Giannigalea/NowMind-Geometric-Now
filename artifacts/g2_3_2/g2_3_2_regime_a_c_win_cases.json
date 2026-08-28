@@ -1,0 +1,1289 @@
+[
+  {
+    "c_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "move_east",
+        "answer": "The action to move east is recommended. The next move is to move east from the current position. The goal is to reach the target safely, and the selection policy is complete chronological record.",
+        "assumptions": [
+          "reconstructed_memory"
+        ],
+        "confidence": 0.82,
+        "explanation": [
+          "The action to move east is recommended. The next move is to move east from the current position. The goal is to reach the target safely, and the selection policy is complete chronological record."
+        ],
+        "source_used": "reconstructed_memory",
+        "status": "ACTION"
+      },
+      "proposal_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 1,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 1,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{ \"status\": \"ACTION\", \"answer\": \"The action to move east is recommended. The next move is to move east from the current position. The goal is to reach the target safely, and the selection policy is complete chronological record.\", \"source_used\": \"reconstructed_memory\", \"confidence\": 0.82, \"action\": \"move_east\", \"assumptions\": [\"reconstructed_memory\"], \"explanation\": [\"The action to move east is recommended. The next move is to move east from the current position. The goal is to reach the target ",
+      "validated_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "move_east",
+        "final_answer": "The action to move east is recommended. The next move is to move east from the current position. The goal is to reach the target safely, and the selection policy is complete chronological record.",
+        "final_source_used": "reconstructed_memory",
+        "final_status": "ACTION",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "c_prompt_tokens": 2050,
+    "c_source_used": "reconstructed_memory",
+    "c_status": "ACTION",
+    "c_structure": {
+      "chronological_records": 53
+    },
+    "categories": [
+      "B",
+      "C",
+      "D",
+      "F",
+      "G"
+    ],
+    "chronology_preserved_useful_sequence": true,
+    "expected": {
+      "action": "move_east",
+      "answer": "move_east",
+      "source_used": "observed_now",
+      "status": "ACTION"
+    },
+    "exposes_fairness_or_implementation_bug": false,
+    "family": "action_choose_next_move",
+    "history_cohort": "H50",
+    "n_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "move_east",
+        "answer": "The current observation is that cell:0,2 is at the box_c. The future hypothesis is that cell:0,2 will be at box_c. The current cycle is 52, and the assumptions are that cell:2,2 is free.",
+        "assumptions": [
+          "assume_cell_2_2_free"
+        ],
+        "confidence": 0.82,
+        "explanation": [
+          "The current observation indicates that cell:0,2 is at box_c. The future hypothesis suggests that cell:0,2 will be at box_c. The current cycle is 52, and the assumptions are that cell:2,2 is free."
+        ],
+        "source_used": "hypothetical_future",
+        "status": "CONTRADICTORY"
+      },
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 1,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{\n  \"status\": \"CONTRADICTORY\",\n  \"answer\": \"The current observation is that cell:0,2 is at the box_c. The future hypothesis is that cell:0,2 will be at box_c. The current cycle is 52, and the assumptions are that cell:2,2 is free.\",\n  \"source_used\": \"hypothetical_future\",\n  \"confidence\": 0.82,\n  \"action\": \"move_east\",\n  \"assumptions\": [\n    \"assume_cell_2_2_free\"\n  ],\n  \"explanation\": [\n    \"The current observation indicates that cell:0,2 is at box_c. The future hypothesis suggests that cell:0,2",
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "move_east",
+        "final_answer": "The current observation is that cell:0,2 is at the box_c. The future hypothesis is that cell:0,2 will be at box_c. The current cycle is 52, and the assumptions are that cell:2,2 is free.",
+        "final_source_used": "hypothetical_future",
+        "final_status": "CONTRADICTORY",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "n_prompt_tokens": 3768,
+    "n_source_used": "hypothetical_future",
+    "n_status": "CONTRADICTORY",
+    "n_structure": {
+      "future_hypotheses": 1,
+      "inferred_now": 0,
+      "observed_now": 1,
+      "planning_assumptions": 1,
+      "reconstructed_memories": 51,
+      "uncertainties": 0
+    },
+    "nowmind_fragmented_causal_sequence": true,
+    "omitted_relevant_information": false,
+    "semantic_parsing_action_failure": "N selected the right action but wrong status/source, so scoring treated it as incorrect.",
+    "task_group": "action_choice",
+    "tiny_model_source_label_misunderstanding": true,
+    "trial_id": "g2_3_eval_00044_action_choose_next_move",
+    "verbosity": "N prompt/provider count was much larger than C in this case."
+  },
+  {
+    "c_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "scan",
+        "answer": "The action is to scan the cell at position (0,2) safely. The scan is recommended and valid. The goal is to reach the target safely, and the selection policy is complete chronological record.",
+        "assumptions": [
+          "assume_cell_2_2_free"
+        ],
+        "confidence": 1.0,
+        "explanation": [
+          "The action is to scan the cell at position (0,2) safely. The scan is recommended and valid. The goal is to reach the target safely, and the selection policy is complete chronological record."
+        ],
+        "source_used": "mixed",
+        "status": "ACTION"
+      },
+      "proposal_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 1,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{ \"status\": \"ACTION\", \"answer\": \"The action is to scan the cell at position (0,2) safely. The scan is recommended and valid. The goal is to reach the target safely, and the selection policy is complete chronological record.\", \"source_used\": \"mixed\", \"confidence\": 1.0, \"action\": \"scan\", \"assumptions\": [\"assume_cell_2_2_free\"], \"explanation\": [\n    \"The action is to scan the cell at position (0,2) safely. The scan is recommended and valid. The goal is to reach the target safely, and the selection ",
+      "validated_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 1,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "scan",
+        "final_answer": "The action is to scan the cell at position (0,2) safely. The scan is recommended and valid. The goal is to reach the target safely, and the selection policy is complete chronological record.",
+        "final_source_used": "mixed",
+        "final_status": "ACTION",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "c_prompt_tokens": 2050,
+    "c_source_used": "mixed",
+    "c_status": "ACTION",
+    "c_structure": {
+      "chronological_records": 53
+    },
+    "categories": [
+      "B",
+      "C",
+      "D",
+      "F",
+      "G"
+    ],
+    "chronology_preserved_useful_sequence": true,
+    "expected": {
+      "action": "scan",
+      "answer": "scan",
+      "source_used": "mixed",
+      "status": "ACTION"
+    },
+    "exposes_fairness_or_implementation_bug": false,
+    "family": "action_safe_vs_conditional_route",
+    "history_cohort": "H50",
+    "n_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "scan",
+        "answer": "The current observation is that cell:0,2 is at the box_c cycle_id 52. The future hypothesis suggests that cell:0,2 is inside box_c cycle_id 52 with a high confidence of 0.82. The observed_now and inferred_now are consistent with the current state.",
+        "assumptions": [
+          "assume_cell_2_2_free"
+        ],
+        "confidence": 0.82,
+        "explanation": [
+          "The scan action is recommended based on the assumption that cell:2,2 is free, which supports the current state.",
+          "The action is valid and supported by the reconstructed memory."
+        ],
+        "source_used": "hypothetical_future",
+        "status": "CONTRADICTORY"
+      },
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 1,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{\n  \"status\": \"CONTRADICTORY\",\n  \"answer\": \"The current observation is that cell:0,2 is at the box_c cycle_id 52. The future hypothesis suggests that cell:0,2 is inside box_c cycle_id 52 with a high confidence of 0.82. The observed_now and inferred_now are consistent with the current state.\",\n  \"source_used\": \"hypothetical_future\",\n  \"confidence\": 0.82,\n  \"action\": \"scan\",\n  \"assumptions\": [\n    \"assume_cell_2_2_free\"\n  ],\n  \"explanation\": [\n    \"The scan action is recommended based on the assum",
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "scan",
+        "final_answer": "The current observation is that cell:0,2 is at the box_c cycle_id 52. The future hypothesis suggests that cell:0,2 is inside box_c cycle_id 52 with a high confidence of 0.82. The observed_now and inferred_now are consistent with the current state.",
+        "final_source_used": "hypothetical_future",
+        "final_status": "CONTRADICTORY",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "n_prompt_tokens": 3787,
+    "n_source_used": "hypothetical_future",
+    "n_status": "CONTRADICTORY",
+    "n_structure": {
+      "future_hypotheses": 1,
+      "inferred_now": 0,
+      "observed_now": 1,
+      "planning_assumptions": 1,
+      "reconstructed_memories": 51,
+      "uncertainties": 0
+    },
+    "nowmind_fragmented_causal_sequence": true,
+    "omitted_relevant_information": false,
+    "semantic_parsing_action_failure": "N selected the right action but wrong status/source, so scoring treated it as incorrect.",
+    "task_group": "action_choice",
+    "tiny_model_source_label_misunderstanding": true,
+    "trial_id": "g2_3_eval_00062_action_safe_vs_conditional_route",
+    "verbosity": "N prompt/provider count was much larger than C in this case."
+  },
+  {
+    "c_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "scan",
+        "answer": "The action scan was performed, and the result is that the cell at position (0,2) is safe. The action move east was not recommended, as it may not be the optimal path. The goal of reaching the target safely was achieved through the action scan.",
+        "assumptions": [
+          "assume_cell_2_2_free"
+        ],
+        "confidence": 1.0,
+        "explanation": [
+          "The action scan was performed, and the result is that the cell at position (0,2) is safe. The action move east was not recommended, as it may not be the optimal path. The goal of reaching the target safely was achieved through the action scan."
+        ],
+        "source_used": "mixed",
+        "status": "ACTION"
+      },
+      "proposal_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 1,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{\"status\": \"ACTION\", \"answer\": \"The action scan was performed, and the result is that the cell at position (0,2) is safe. The action move east was not recommended, as it may not be the optimal path. The goal of reaching the target safely was achieved through the action scan.\",\"source_used\": \"mixed\", \"confidence\": 1.0, \"action\": \"scan\", \"assumptions\": [\"assume_cell_2_2_free\"], \"explanation\": [\"The action scan was performed, and the result is that the cell at position (0,2) is safe. The action mov",
+      "validated_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 1,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "scan",
+        "final_answer": "The action scan was performed, and the result is that the cell at position (0,2) is safe. The action move east was not recommended, as it may not be the optimal path. The goal of reaching the target safely was achieved through the action scan.",
+        "final_source_used": "mixed",
+        "final_status": "ACTION",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "c_prompt_tokens": 2050,
+    "c_source_used": "mixed",
+    "c_status": "ACTION",
+    "c_structure": {
+      "chronological_records": 53
+    },
+    "categories": [
+      "B",
+      "C",
+      "D",
+      "F",
+      "G"
+    ],
+    "chronology_preserved_useful_sequence": true,
+    "expected": {
+      "action": "scan",
+      "answer": "scan",
+      "source_used": "mixed",
+      "status": "ACTION"
+    },
+    "exposes_fairness_or_implementation_bug": false,
+    "family": "action_verify_scan_vs_act",
+    "history_cohort": "H50",
+    "n_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "scan",
+        "answer": "The current observation is that cell:0,2 is at the box_c cycle_id 52. The future hypothesis is that cell:0,2 is inside box_c cycle_id 52 with a confidence of 0.82. The action to take is 'scan' with assumptions 'assume_cell_2_2_free' from the 'mixed' source.",
+        "assumptions": [
+          "assume_cell_2_2_free"
+        ],
+        "confidence": 0.82,
+        "explanation": [
+          "The current observation indicates that cell:0,2 is at box_c cycle_id 52. The future hypothesis suggests that cell:0,2 is inside box_c cycle_id 52 with high confidence. The scan action is recommended based on the assumptions provided."
+        ],
+        "source_used": "hypothetical_future",
+        "status": "CONTRADICTORY"
+      },
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 1,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{\n  \"status\": \"CONTRADICTORY\",\n  \"answer\": \"The current observation is that cell:0,2 is at the box_c cycle_id 52. The future hypothesis is that cell:0,2 is inside box_c cycle_id 52 with a confidence of 0.82. The action to take is 'scan' with assumptions 'assume_cell_2_2_free' from the 'mixed' source.\",\n  \"source_used\": \"hypothetical_future\",\n  \"confidence\": 0.82,\n  \"action\": \"scan\",\n  \"assumptions\": [\n    \"assume_cell_2_2_free\"\n  ],\n  \"explanation\": [\n    \"The current observation indicates that ",
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "scan",
+        "final_answer": "The current observation is that cell:0,2 is at the box_c cycle_id 52. The future hypothesis is that cell:0,2 is inside box_c cycle_id 52 with a confidence of 0.82. The action to take is 'scan' with assumptions 'assume_cell_2_2_free' from the 'mixed' source.",
+        "final_source_used": "hypothetical_future",
+        "final_status": "CONTRADICTORY",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "n_prompt_tokens": 3786,
+    "n_source_used": "hypothetical_future",
+    "n_status": "CONTRADICTORY",
+    "n_structure": {
+      "future_hypotheses": 1,
+      "inferred_now": 0,
+      "observed_now": 1,
+      "planning_assumptions": 1,
+      "reconstructed_memories": 51,
+      "uncertainties": 0
+    },
+    "nowmind_fragmented_causal_sequence": true,
+    "omitted_relevant_information": false,
+    "semantic_parsing_action_failure": "N selected the right action but wrong status/source, so scoring treated it as incorrect.",
+    "task_group": "action_choice",
+    "tiny_model_source_label_misunderstanding": true,
+    "trial_id": "g2_3_eval_00080_action_verify_scan_vs_act",
+    "verbosity": "N prompt/provider count was much larger than C in this case."
+  },
+  {
+    "c_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "move_north",
+        "answer": "The current cycle is 52, with the action 'move_north' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record.",
+        "assumptions": [
+          "observed_now",
+          "cell:0,2"
+        ],
+        "confidence": 1.0,
+        "explanation": [
+          "The current cycle is 52, with the action 'move_north' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record."
+        ],
+        "source_used": "reconstructed_memory",
+        "status": "ACTION"
+      },
+      "proposal_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 1,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 1,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{ \"status\": \"ACTION\", \"answer\": \"The current cycle is 52, with the action 'move_north' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record.\", \"source_used\": \"reconstructed_memory\", \"confidence\": 1.0, \"action\": \"move_north\", \"assumptions\": [\"observed_now\", \"cell:0,2\"], \"explanation\": [\"The current cycle is 52, with the action 'move_north' recommended. The goal is to reach the target safely, and the selection policy is complete chronologic",
+      "validated_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "move_north",
+        "final_answer": "The current cycle is 52, with the action 'move_north' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record.",
+        "final_source_used": "reconstructed_memory",
+        "final_status": "ACTION",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "c_prompt_tokens": 2050,
+    "c_source_used": "reconstructed_memory",
+    "c_status": "ACTION",
+    "c_structure": {
+      "chronological_records": 54
+    },
+    "categories": [
+      "B",
+      "C",
+      "D",
+      "F",
+      "G"
+    ],
+    "chronology_preserved_useful_sequence": true,
+    "expected": {
+      "action": "move_north",
+      "answer": "move_north",
+      "source_used": "observed_now",
+      "status": "ACTION"
+    },
+    "exposes_fairness_or_implementation_bug": false,
+    "family": "action_after_hidden_change_observed",
+    "history_cohort": "H50",
+    "n_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "move_north",
+        "answer": "The current observation shows that cell:0,2 is occupied, and cell:2,2 is at a location. The future hypothesis suggests that cell:2,2 will be moved to a new position inside the box_c. The current cycle is at 52, and the assumptions are that cell:2,2 is free.",
+        "assumptions": [
+          "assume_cell_2_2_free"
+        ],
+        "confidence": 0.82,
+        "explanation": [
+          "The current observation indicates that cell:2,2 is occupied, and cell:0,2 is at a location. The future hypothesis suggests that cell:2,2 will be moved to a new position inside the box_c. The current cycle is at 52, and the assumptions are that cell:2,2 is free."
+        ],
+        "source_used": "hypothetical_future",
+        "status": "CONTRADICTORY"
+      },
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 1,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{\n  \"status\": \"CONTRADICTORY\",\n  \"answer\": \"The current observation shows that cell:0,2 is occupied, and cell:2,2 is at a location. The future hypothesis suggests that cell:2,2 will be moved to a new position inside the box_c. The current cycle is at 52, and the assumptions are that cell:2,2 is free.\",\n  \"source_used\": \"hypothetical_future\",\n  \"confidence\": 0.82,\n  \"action\": \"move_north\",\n  \"assumptions\": [\n    \"assume_cell_2_2_free\"\n  ],\n  \"explanation\": [\n    \"The current observation indicates",
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "move_north",
+        "final_answer": "The current observation shows that cell:0,2 is occupied, and cell:2,2 is at a location. The future hypothesis suggests that cell:2,2 will be moved to a new position inside the box_c. The current cycle is at 52, and the assumptions are that cell:2,2 is free.",
+        "final_source_used": "hypothetical_future",
+        "final_status": "CONTRADICTORY",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "n_prompt_tokens": 3837,
+    "n_source_used": "hypothetical_future",
+    "n_status": "CONTRADICTORY",
+    "n_structure": {
+      "future_hypotheses": 1,
+      "inferred_now": 0,
+      "observed_now": 2,
+      "planning_assumptions": 1,
+      "reconstructed_memories": 51,
+      "uncertainties": 0
+    },
+    "nowmind_fragmented_causal_sequence": true,
+    "omitted_relevant_information": false,
+    "semantic_parsing_action_failure": "N selected the right action but wrong status/source, so scoring treated it as incorrect.",
+    "task_group": "action_choice",
+    "tiny_model_source_label_misunderstanding": true,
+    "trial_id": "g2_3_eval_00098_action_after_hidden_change_observed",
+    "verbosity": "N prompt/provider count was much larger than C in this case."
+  },
+  {
+    "c_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "move_east",
+        "answer": "The current cycle is 52, with the action 'move_east' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record.",
+        "assumptions": [
+          "reconstructed_memory"
+        ],
+        "confidence": 1.0,
+        "explanation": [
+          "The current cycle is 52, with the action 'move_east' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record."
+        ],
+        "source_used": "reconstructed_memory",
+        "status": "ACTION"
+      },
+      "proposal_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 1,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 1,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{ \"status\": \"ACTION\", \"answer\": \"The current cycle is 52, with the action 'move_east' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record.\", \"source_used\": \"reconstructed_memory\",\"confidence\": 1.0, \"action\": \"move_east\", \"assumptions\": [\"reconstructed_memory\"], \"explanation\": [\"The current cycle is 52, with the action 'move_east' recommended. The goal is to reach the target safely, and the selection policy is complete chronological recor",
+      "validated_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "move_east",
+        "final_answer": "The current cycle is 52, with the action 'move_east' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record.",
+        "final_source_used": "reconstructed_memory",
+        "final_status": "ACTION",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "c_prompt_tokens": 2050,
+    "c_source_used": "reconstructed_memory",
+    "c_status": "ACTION",
+    "c_structure": {
+      "chronological_records": 53
+    },
+    "categories": [
+      "B",
+      "C",
+      "D",
+      "F",
+      "G"
+    ],
+    "chronology_preserved_useful_sequence": true,
+    "expected": {
+      "action": "move_east",
+      "answer": "move_east",
+      "source_used": "observed_now",
+      "status": "ACTION"
+    },
+    "exposes_fairness_or_implementation_bug": false,
+    "family": "action_choose_next_move",
+    "history_cohort": "H50",
+    "n_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "move_east",
+        "answer": "The current observation is that the cell:0,2 is at the box_c. The future hypothesis is that the cell:0,2 will be moved to the box_c. The current cycle is at 52, and the cell:0,2 is at the box_c. The uncertainty is empty.",
+        "assumptions": [
+          "assume_cell_2_2_free"
+        ],
+        "confidence": 0.82,
+        "explanation": [
+          "The cell:0,2 is at the box_c, and the future hypothesis suggests that it will be moved there. The current observation confirms the position, and there are no uncertainties."
+        ],
+        "source_used": "hypothetical_future",
+        "status": "CONTRADICTORY"
+      },
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 1,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{\n  \"status\": \"CONTRADICTORY\",\n  \"answer\": \"The current observation is that the cell:0,2 is at the box_c. The future hypothesis is that the cell:0,2 will be moved to the box_c. The current cycle is at 52, and the cell:0,2 is at the box_c. The uncertainty is empty.\",\n  \"source_used\": \"hypothetical_future\",\n  \"confidence\": 0.82,\n  \"action\": \"move_east\",\n  \"assumptions\": [\n    \"assume_cell_2_2_free\"\n  ],\n  \"explanation\": [\n    \"The cell:0,2 is at the box_c, and the future hypothesis suggests that i",
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "move_east",
+        "final_answer": "The current observation is that the cell:0,2 is at the box_c. The future hypothesis is that the cell:0,2 will be moved to the box_c. The current cycle is at 52, and the cell:0,2 is at the box_c. The uncertainty is empty.",
+        "final_source_used": "hypothetical_future",
+        "final_status": "CONTRADICTORY",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "n_prompt_tokens": 3768,
+    "n_source_used": "hypothetical_future",
+    "n_status": "CONTRADICTORY",
+    "n_structure": {
+      "future_hypotheses": 1,
+      "inferred_now": 0,
+      "observed_now": 1,
+      "planning_assumptions": 1,
+      "reconstructed_memories": 51,
+      "uncertainties": 0
+    },
+    "nowmind_fragmented_causal_sequence": true,
+    "omitted_relevant_information": false,
+    "semantic_parsing_action_failure": "N selected the right action but wrong status/source, so scoring treated it as incorrect.",
+    "task_group": "action_choice",
+    "tiny_model_source_label_misunderstanding": true,
+    "trial_id": "g2_3_eval_00146_action_choose_next_move",
+    "verbosity": "N prompt/provider count was much larger than C in this case."
+  },
+  {
+    "c_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "scan",
+        "answer": "The action scan has been completed successfully. The scan has reached the target cell: 0,2 with a confidence level of 0.82. The action is valid and recommended. The goal of reaching the target safely has been achieved.",
+        "assumptions": [
+          "assume_cell_2_2_free"
+        ],
+        "confidence": 0.82,
+        "explanation": [
+          "The action scan has been completed successfully. The scan has reached the target cell: 0,2 with a confidence level of 0.82. The action is valid and recommended. The goal of reaching the target safely has been achieved."
+        ],
+        "source_used": "mixed",
+        "status": "ACTION"
+      },
+      "proposal_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 1,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{\"status\": \"ACTION\", \"answer\": \"The action scan has been completed successfully. The scan has reached the target cell: 0,2 with a confidence level of 0.82. The action is valid and recommended. The goal of reaching the target safely has been achieved.\",\"source_used\": \"mixed\", \"confidence\": 0.82, \"action\": \"scan\", \"assumptions\": [\"assume_cell_2_2_free\"], \"explanation\": [\"The action scan has been completed successfully. The scan has reached the target cell: 0,2 with a confidence level of 0.82. The ",
+      "validated_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 1,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "scan",
+        "final_answer": "The action scan has been completed successfully. The scan has reached the target cell: 0,2 with a confidence level of 0.82. The action is valid and recommended. The goal of reaching the target safely has been achieved.",
+        "final_source_used": "mixed",
+        "final_status": "ACTION",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "c_prompt_tokens": 2050,
+    "c_source_used": "mixed",
+    "c_status": "ACTION",
+    "c_structure": {
+      "chronological_records": 53
+    },
+    "categories": [
+      "B",
+      "C",
+      "D",
+      "F",
+      "G"
+    ],
+    "chronology_preserved_useful_sequence": true,
+    "expected": {
+      "action": "scan",
+      "answer": "scan",
+      "source_used": "mixed",
+      "status": "ACTION"
+    },
+    "exposes_fairness_or_implementation_bug": false,
+    "family": "action_verify_scan_vs_act",
+    "history_cohort": "H50",
+    "n_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "scan",
+        "answer": "The current observation is that cell:0,2 is at the box_c cycle_id 52. The future hypothesis suggests that cell:0,2 is inside box_c cycle_id 52 with a confidence of 0.82. The action to reach the target is to scan the cell:0,2.",
+        "assumptions": [
+          "assume_cell_2_2_free"
+        ],
+        "confidence": 0.82,
+        "explanation": [
+          "The current observation indicates that cell:0,2 is at the box_c cycle_id 52. The future hypothesis suggests that cell:0,2 is inside box_c cycle_id 52 with a confidence of 0.82."
+        ],
+        "source_used": "hypothetical_future",
+        "status": "CONTRADICTORY"
+      },
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 1,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{\n  \"status\": \"CONTRADICTORY\",\n  \"answer\": \"The current observation is that cell:0,2 is at the box_c cycle_id 52. The future hypothesis suggests that cell:0,2 is inside box_c cycle_id 52 with a confidence of 0.82. The action to reach the target is to scan the cell:0,2.\",\n  \"source_used\": \"hypothetical_future\",\n  \"confidence\": 0.82,\n  \"action\": \"scan\",\n  \"assumptions\": [\n    \"assume_cell_2_2_free\"\n  ],\n  \"explanation\": [\n    \"The current observation indicates that cell:0,2 is at the box_c cycle_i",
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "scan",
+        "final_answer": "The current observation is that cell:0,2 is at the box_c cycle_id 52. The future hypothesis suggests that cell:0,2 is inside box_c cycle_id 52 with a confidence of 0.82. The action to reach the target is to scan the cell:0,2.",
+        "final_source_used": "hypothetical_future",
+        "final_status": "CONTRADICTORY",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "n_prompt_tokens": 3786,
+    "n_source_used": "hypothetical_future",
+    "n_status": "CONTRADICTORY",
+    "n_structure": {
+      "future_hypotheses": 1,
+      "inferred_now": 0,
+      "observed_now": 1,
+      "planning_assumptions": 1,
+      "reconstructed_memories": 51,
+      "uncertainties": 0
+    },
+    "nowmind_fragmented_causal_sequence": true,
+    "omitted_relevant_information": false,
+    "semantic_parsing_action_failure": "N selected the right action but wrong status/source, so scoring treated it as incorrect.",
+    "task_group": "action_choice",
+    "tiny_model_source_label_misunderstanding": true,
+    "trial_id": "g2_3_eval_00182_action_verify_scan_vs_act",
+    "verbosity": "N prompt/provider count was much larger than C in this case."
+  },
+  {
+    "c_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "move_north",
+        "answer": "The current cycle is 52, with the action 'move_north' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record.",
+        "assumptions": [
+          "reconstructed_memory"
+        ],
+        "confidence": 0.82,
+        "explanation": [
+          "The current cycle is 52, with the action 'move_north' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record."
+        ],
+        "source_used": "reconstructed_memory",
+        "status": "ACTION"
+      },
+      "proposal_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 1,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 1,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{ \"status\": \"ACTION\", \"answer\": \"The current cycle is 52, with the action 'move_north' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record.\", \"source_used\": \"reconstructed_memory\", \"confidence\": 0.82, \"action\": \"move_north\", \"assumptions\": [\"reconstructed_memory\"], \"explanation\": [\"The current cycle is 52, with the action 'move_north' recommended. The goal is to reach the target safely, and the selection policy is complete chronological ",
+      "validated_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "move_north",
+        "final_answer": "The current cycle is 52, with the action 'move_north' recommended. The goal is to reach the target safely, and the selection policy is complete chronological record.",
+        "final_source_used": "reconstructed_memory",
+        "final_status": "ACTION",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "c_prompt_tokens": 2050,
+    "c_source_used": "reconstructed_memory",
+    "c_status": "ACTION",
+    "c_structure": {
+      "chronological_records": 54
+    },
+    "categories": [
+      "B",
+      "C",
+      "D",
+      "F",
+      "G"
+    ],
+    "chronology_preserved_useful_sequence": true,
+    "expected": {
+      "action": "move_north",
+      "answer": "move_north",
+      "source_used": "observed_now",
+      "status": "ACTION"
+    },
+    "exposes_fairness_or_implementation_bug": false,
+    "family": "action_after_hidden_change_observed",
+    "history_cohort": "H50",
+    "n_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "move_north",
+        "answer": "The current observation shows that cell:0,2 is occupied, and cell:2,2 is at a location. The future hypothesis suggests that cell:2,2 will be moved to the box_c. The current cycle is at 52, and the assumptions are that cell:2,2 is free.",
+        "assumptions": [
+          "assume_cell_2_2_free"
+        ],
+        "confidence": 0.82,
+        "explanation": [
+          "The current observation indicates that cell:2,2 is occupied, and cell:2,2 is at a location. The future hypothesis suggests that cell:2,2 will be moved to the box_c. The current cycle is at 52, and the assumptions are that cell:2,2 is free."
+        ],
+        "source_used": "hypothetical_future",
+        "status": "CONTRADICTORY"
+      },
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 1,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{\n  \"status\": \"CONTRADICTORY\",\n  \"answer\": \"The current observation shows that cell:0,2 is occupied, and cell:2,2 is at a location. The future hypothesis suggests that cell:2,2 will be moved to the box_c. The current cycle is at 52, and the assumptions are that cell:2,2 is free.\",\n  \"source_used\": \"hypothetical_future\",\n  \"confidence\": 0.82,\n  \"action\": \"move_north\",\n  \"assumptions\": [\n    \"assume_cell_2_2_free\"\n  ],\n  \"explanation\": [\n    \"The current observation indicates that cell:2,2 is occu",
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "move_north",
+        "final_answer": "The current observation shows that cell:0,2 is occupied, and cell:2,2 is at a location. The future hypothesis suggests that cell:2,2 will be moved to the box_c. The current cycle is at 52, and the assumptions are that cell:2,2 is free.",
+        "final_source_used": "hypothetical_future",
+        "final_status": "CONTRADICTORY",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "n_prompt_tokens": 3837,
+    "n_source_used": "hypothetical_future",
+    "n_status": "CONTRADICTORY",
+    "n_structure": {
+      "future_hypotheses": 1,
+      "inferred_now": 0,
+      "observed_now": 2,
+      "planning_assumptions": 1,
+      "reconstructed_memories": 51,
+      "uncertainties": 0
+    },
+    "nowmind_fragmented_causal_sequence": true,
+    "omitted_relevant_information": false,
+    "semantic_parsing_action_failure": "N selected the right action but wrong status/source, so scoring treated it as incorrect.",
+    "task_group": "action_choice",
+    "tiny_model_source_label_misunderstanding": true,
+    "trial_id": "g2_3_eval_00200_action_after_hidden_change_observed",
+    "verbosity": "N prompt/provider count was much larger than C in this case."
+  },
+  {
+    "c_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "move_east",
+        "answer": "The action to take is 'move_east' as it is recommended and valid. The goal is to reach the target safely, and the selection policy is complete chronological.",
+        "assumptions": [],
+        "confidence": 0.82,
+        "explanation": [],
+        "source_used": "reconstructed_memory",
+        "status": "ACTION"
+      },
+      "proposal_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 0,
+        "false_memory_as_current": 1,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 1,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{ \"status\": \"ACTION\", \"answer\": \"The action to take is 'move_east' as it is recommended and valid. The goal is to reach the target safely, and the selection policy is complete chronological.\", \"source_used\": \"reconstructed_memory\", \"confidence\": 0.82, \"action\": \"move_east\", \"assumptions\": [], \"explanation\": [] }",
+      "validated_score": {
+        "action_choice_correct": 1,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 1,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "move_east",
+        "final_answer": "The action to take is 'move_east' as it is recommended and valid. The goal is to reach the target safely, and the selection policy is complete chronological.",
+        "final_source_used": "reconstructed_memory",
+        "final_status": "ACTION",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "c_prompt_tokens": 2050,
+    "c_source_used": "reconstructed_memory",
+    "c_status": "ACTION",
+    "c_structure": {
+      "chronological_records": 53
+    },
+    "categories": [
+      "B",
+      "C",
+      "D",
+      "F",
+      "G"
+    ],
+    "chronology_preserved_useful_sequence": true,
+    "expected": {
+      "action": "move_east",
+      "answer": "move_east",
+      "source_used": "observed_now",
+      "status": "ACTION"
+    },
+    "exposes_fairness_or_implementation_bug": false,
+    "family": "action_choose_next_move",
+    "history_cohort": "H50",
+    "n_answer": {
+      "parse_success": true,
+      "parsed_output": {
+        "action": "move_east",
+        "answer": "The current observation is that the cell:0,2 is at the box_c. The future hypothesis is that the cell:0,2 will be moved to the box_c. The current cycle is 52, and the cell:0,2 is at the box_c with a high confidence.",
+        "assumptions": [
+          "assume_cell_2_2_free",
+          "cell:0,2 is at box_c"
+        ],
+        "confidence": 0.82,
+        "explanation": [
+          "The current observation shows that cell:0,2 is at box_c. The future hypothesis suggests that cell:0,2 will be moved to box_c. The current cycle is 52, and the cell:0,2 is at box_c with high confidence."
+        ],
+        "source_used": "hypothetical_future",
+        "status": "CONTRADICTORY"
+      },
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 1,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output_prefix": "{\n  \"status\": \"CONTRADICTORY\",\n  \"answer\": \"The current observation is that the cell:0,2 is at the box_c. The future hypothesis is that the cell:0,2 will be moved to the box_c. The current cycle is 52, and the cell:0,2 is at the box_c with a high confidence.\",\n  \"source_used\": \"hypothetical_future\",\n  \"confidence\": 0.82,\n  \"action\": \"move_east\",\n  \"assumptions\": [\n    \"assume_cell_2_2_free\",\n    \"cell:0,2 is at box_c\"\n  ],\n  \"explanation\": [\n    \"The current observation shows that cell:0,2 is at",
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": "move_east",
+        "final_answer": "The current observation is that the cell:0,2 is at the box_c. The future hypothesis is that the cell:0,2 will be moved to the box_c. The current cycle is 52, and the cell:0,2 is at the box_c with a high confidence.",
+        "final_source_used": "hypothetical_future",
+        "final_status": "CONTRADICTORY",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    "n_prompt_tokens": 3768,
+    "n_source_used": "hypothetical_future",
+    "n_status": "CONTRADICTORY",
+    "n_structure": {
+      "future_hypotheses": 1,
+      "inferred_now": 0,
+      "observed_now": 1,
+      "planning_assumptions": 1,
+      "reconstructed_memories": 51,
+      "uncertainties": 0
+    },
+    "nowmind_fragmented_causal_sequence": true,
+    "omitted_relevant_information": false,
+    "semantic_parsing_action_failure": "N selected the right action but wrong status/source, so scoring treated it as incorrect.",
+    "task_group": "action_choice",
+    "tiny_model_source_label_misunderstanding": true,
+    "trial_id": "g2_3_eval_00248_action_choose_next_move",
+    "verbosity": "N prompt/provider count was much larger than C in this case."
+  }
+]

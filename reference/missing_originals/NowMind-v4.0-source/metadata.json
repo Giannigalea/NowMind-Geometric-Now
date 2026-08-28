@@ -1,0 +1,8 @@
+{
+  "name": "NowMind v4.0",
+  "description": "Artificial cognitive architecture implementing Present Consciousness Theory and Metabolic Architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

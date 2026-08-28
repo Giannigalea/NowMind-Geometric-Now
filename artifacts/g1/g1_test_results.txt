@@ -1,0 +1,10 @@
+Command: D:\Documents\Codex Projects\NowMind-Geometric-Now\.venv\Scripts\python.exe -m pytest
+Return code: 0
+
+STDOUT:
+........................................................................ [ 52%]
+..................................................................       [100%]
+138 passed in 220.40s (0:03:40)
+
+
+STDERR:

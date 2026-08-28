@@ -1,0 +1,134 @@
+{
+  "failed_samples": [
+    {
+      "c_representation_tokens": 1895,
+      "c_tokens": 1988,
+      "model": "qwen3:0.6b",
+      "n_representation_tokens": 1955,
+      "n_tokens": 2048,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00002_temporal_future_vs_current",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1890,
+      "c_tokens": 1983,
+      "model": "qwen3:0.6b",
+      "n_representation_tokens": 1949,
+      "n_tokens": 2042,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00003_temporal_false_memory",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1893,
+      "c_tokens": 1986,
+      "model": "qwen3:0.6b",
+      "n_representation_tokens": 1962,
+      "n_tokens": 2055,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00004_temporal_contradictory_present",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1926,
+      "c_tokens": 2019,
+      "model": "qwen3:0.6b",
+      "n_representation_tokens": 1964,
+      "n_tokens": 2057,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00005_temporal_long_history_source_confusion",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1893,
+      "c_tokens": 1986,
+      "model": "qwen3:0.6b",
+      "n_representation_tokens": 1953,
+      "n_tokens": 2046,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00008_spatial_reachability",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1900,
+      "c_tokens": 1993,
+      "model": "qwen3:0.6b",
+      "n_representation_tokens": 1959,
+      "n_tokens": 2052,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00009_spatial_obstacle_state",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1911,
+      "c_tokens": 2004,
+      "model": "qwen3:0.6b",
+      "n_representation_tokens": 1923,
+      "n_tokens": 2016,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00010_action_choose_next_move",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1859,
+      "c_tokens": 1952,
+      "model": "qwen3:0.6b",
+      "n_representation_tokens": 1945,
+      "n_tokens": 2038,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00011_action_safe_vs_conditional_route",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1887,
+      "c_tokens": 1980,
+      "model": "qwen3:0.6b",
+      "n_representation_tokens": 1947,
+      "n_tokens": 2040,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00014_explain_identify_evidence_source",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 2046,
+      "c_tokens": 2139,
+      "model": "qwen3:0.6b",
+      "n_representation_tokens": 1973,
+      "n_tokens": 2066,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00015_explain_memory_not_current",
+      "within_fixed_budget": false
+    }
+  ],
+  "forbidden_prompt_terms": [
+    "expected_status",
+    "expected_answer",
+    "oracle",
+    "ground_truth"
+  ],
+  "summary": {
+    "checked_pairs": 500,
+    "failed": 166
+  }
+}

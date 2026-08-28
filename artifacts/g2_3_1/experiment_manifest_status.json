@@ -1,0 +1,91 @@
+{
+  "architecture_changed": false,
+  "backend_transport_change": "OllamaBackend uses /api/chat with native JSON schema format and Qwen3 think:false.",
+  "backend_transport_changed": true,
+  "benchmark_changed": false,
+  "calibration": {
+    "artifact": "artifacts/g2_3_1/qwen3_1_7b/calibration_results.json",
+    "completed": true,
+    "model": "qwen3:1.7b",
+    "paired_trial_count": 50,
+    "row_count": 400,
+    "wall_clock_seconds": 15975.324
+  },
+  "conclusion": "qwen3:0.6b completed the real local G2.3.1 final run after pagefile expansion, but results do not support a NowMind-over-chronology advantage and the fixed-budget fairness invariant failed.",
+  "final_evaluation": {
+    "artifact": "artifacts/g2_3_1/qwen3_0_6b/evaluation_results.json",
+    "completed_paired_trial_count": 250,
+    "context_overflow_count": 248,
+    "error_count": 248,
+    "frozen_manifest_written": true,
+    "invariant_summary": {
+      "failed": 1,
+      "passed": 5
+    },
+    "model": "qwen3:0.6b",
+    "model_call_count": 1500,
+    "pairwise_n_vs_c": {
+      "qwen3:0.6b|A_EQUAL_INFORMATION|proposal": {
+        "c_better": 8,
+        "n_better": 0,
+        "tied": 242
+      },
+      "qwen3:0.6b|A_EQUAL_INFORMATION|validated": {
+        "c_better": 8,
+        "n_better": 0,
+        "tied": 242
+      },
+      "qwen3:0.6b|B_FIXED_BUDGET|proposal": {
+        "c_better": 0,
+        "n_better": 12,
+        "tied": 238
+      },
+      "qwen3:0.6b|B_FIXED_BUDGET|validated": {
+        "c_better": 0,
+        "n_better": 0,
+        "tied": 250
+      }
+    },
+    "prompt_fairness_summary": {
+      "checked_pairs": 500,
+      "failed": 166
+    },
+    "row_count": 2000,
+    "selected_paired_trial_count": 250,
+    "valid_real_model_result_evidence": true
+  },
+  "forced_cpu_avx2": {
+    "confirmed": true,
+    "permanent_override": false,
+    "temporary": true
+  },
+  "pagefile_workaround": {
+    "after_restart": true,
+    "applied_by_user": true,
+    "enabled_qwen3_0_6b_load": true
+  },
+  "prompts_changed": false,
+  "schema": "nowmind.g2_3_1.experiment_manifest_status.v3",
+  "status": "completed_after_pagefile_qwen3_0_6b_final",
+  "ultra_small_calibration": {
+    "artifact": "artifacts/g2_3_1/qwen3_0_6b/calibration_results.json",
+    "completed": true,
+    "model": "qwen3:0.6b",
+    "paired_trial_count": 50,
+    "row_count": 400,
+    "wall_clock_seconds": 8707.57
+  },
+  "ultra_small_smoke": {
+    "artifact": "artifacts/g2_3_1/qwen3_0_6b_smoke_after_pagefile.json",
+    "contexts_passed": [
+      512,
+      1024,
+      2048,
+      4096
+    ],
+    "model": "qwen3:0.6b",
+    "passed": true,
+    "pulled": true
+  },
+  "updated_at": "2026-08-26T18:47:11.195329+00:00"
+}

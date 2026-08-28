@@ -1,0 +1,17 @@
+{
+  "model": "dots-studio/dots-3-note-preview:free",
+  "pinned_provider": "atlas-cloud/fp8",
+  "provider_counts": {},
+  "provider_request": {
+    "allow_fallbacks": false,
+    "data_collection": "allow",
+    "only": [
+      "atlas-cloud/fp8"
+    ],
+    "order": [
+      "atlas-cloud/fp8"
+    ],
+    "require_parameters": true
+  },
+  "schema": "nowmind.g2_3_4.provider_manifest.v1"
+}

@@ -1,0 +1,134 @@
+{
+  "failed_samples": [
+    {
+      "c_representation_tokens": 1602,
+      "c_tokens": 1695,
+      "model": "qwen3:1.7b",
+      "n_representation_tokens": 1601,
+      "n_tokens": 1694,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00002_temporal_future_vs_current",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1592,
+      "c_tokens": 1685,
+      "model": "qwen3:1.7b",
+      "n_representation_tokens": 1607,
+      "n_tokens": 1700,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00004_temporal_contradictory_present",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1607,
+      "c_tokens": 1700,
+      "model": "qwen3:1.7b",
+      "n_representation_tokens": 1600,
+      "n_tokens": 1693,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00005_temporal_long_history_source_confusion",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1604,
+      "c_tokens": 1697,
+      "model": "qwen3:1.7b",
+      "n_representation_tokens": 1602,
+      "n_tokens": 1695,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00008_spatial_reachability",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1601,
+      "c_tokens": 1694,
+      "model": "qwen3:1.7b",
+      "n_representation_tokens": 1600,
+      "n_tokens": 1693,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00009_spatial_obstacle_state",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1611,
+      "c_tokens": 1704,
+      "model": "qwen3:1.7b",
+      "n_representation_tokens": 1584,
+      "n_tokens": 1677,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00010_action_choose_next_move",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1571,
+      "c_tokens": 1664,
+      "model": "qwen3:1.7b",
+      "n_representation_tokens": 1605,
+      "n_tokens": 1698,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00011_action_safe_vs_conditional_route",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1600,
+      "c_tokens": 1693,
+      "model": "qwen3:1.7b",
+      "n_representation_tokens": 1618,
+      "n_tokens": 1711,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00015_explain_memory_not_current",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1596,
+      "c_tokens": 1689,
+      "model": "qwen3:1.7b",
+      "n_representation_tokens": 1621,
+      "n_tokens": 1714,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00016_explain_conditional_assumptions",
+      "within_fixed_budget": false
+    },
+    {
+      "c_representation_tokens": 1606,
+      "c_tokens": 1699,
+      "model": "qwen3:1.7b",
+      "n_representation_tokens": 1599,
+      "n_tokens": 1692,
+      "regime": "B_FIXED_BUDGET",
+      "same_fact_set_hash": true,
+      "same_model_config": true,
+      "trial_id": "g2_3_eval_00017_temporal_present_vs_stale_memory",
+      "within_fixed_budget": false
+    }
+  ],
+  "forbidden_prompt_terms": [
+    "expected_status",
+    "expected_answer",
+    "oracle",
+    "ground_truth"
+  ],
+  "summary": {
+    "checked_pairs": 500,
+    "failed": 138
+  }
+}

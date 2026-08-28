@@ -1,0 +1,20 @@
+{
+  "N_NowMindEpistemicGeometry_vs_C_ChronologicalEpistemicPlanner": {
+    "nowmind_better_goal_count": 0,
+    "other_better_efficiency_count": 0,
+    "other_better_goal_count": 0,
+    "tied_goal_count": 2000
+  },
+  "N_NowMindEpistemicGeometry_vs_O_OraclePlanner": {
+    "nowmind_better_goal_count": 0,
+    "other_better_efficiency_count": 1666,
+    "other_better_goal_count": 109,
+    "tied_goal_count": 1891
+  },
+  "N_NowMindEpistemicGeometry_vs_R_ReactiveCurrentOnlyPlanner": {
+    "nowmind_better_goal_count": 557,
+    "other_better_efficiency_count": 166,
+    "other_better_goal_count": 83,
+    "tied_goal_count": 1360
+  }
+}

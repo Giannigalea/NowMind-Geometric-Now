@@ -1,0 +1,33 @@
+{
+  "benchmark_version": "g2_temporal_source_benchmark_v1",
+  "difficulty": {
+    "distractors": "family-specific",
+    "memory_confidence": "0.85-0.99 for confidence inversion; otherwise fixed",
+    "observation_confidence": "0.55-0.75 for confidence inversion; otherwise fixed",
+    "sequence_length": "5 for F14, family-specific elsewhere"
+  },
+  "families": [
+    "F1_stale_memory_after_update",
+    "F2_false_memory",
+    "F3_confidence_inversion",
+    "F4_no_current_visibility",
+    "F5_future_conflict",
+    "F6_multiple_future_hypotheses",
+    "F7_multiple_old_memories",
+    "F8_distractors",
+    "F9_contradictory_current_evidence",
+    "F10_nested_containment_over_time",
+    "F11_spatial_direction_changes",
+    "F12_memory_age",
+    "F13_hypothesis_matches_past",
+    "F14_multiple_moves",
+    "F15_inferred_present_vs_memory",
+    "F16_occlusion",
+    "F17_prediction_later_confirmed",
+    "F18_prediction_later_falsified"
+  ],
+  "family_count": 18,
+  "schema": "nowmind.g2.seed_and_config.v1",
+  "seed": 20260823,
+  "trial_count": 1000
+}

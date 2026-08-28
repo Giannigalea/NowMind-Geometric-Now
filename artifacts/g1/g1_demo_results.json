@@ -1,0 +1,946 @@
+{
+  "generated_at": "2026-08-28T14:26:58.767544+00:00",
+  "scenarios": [
+    {
+      "additional_queries": [
+        {
+          "answer": {
+            "confidence": 0.0,
+            "explanation": [],
+            "issues": [],
+            "status": "unknown",
+            "supporting_relations": []
+          },
+          "cycle_id": 2,
+          "query": {
+            "display": "red_cube LEFT_OF blue_cube?",
+            "query_type": "relation",
+            "relation_type": "left_of",
+            "source_id": "red_cube",
+            "target_id": "blue_cube"
+          }
+        }
+      ],
+      "cycles": [
+        {
+          "answer": {
+            "confidence": 1.0,
+            "explanation": [],
+            "issues": [],
+            "status": "true",
+            "supporting_relations": [
+              {
+                "confidence": 1.0,
+                "premise_ids": [],
+                "provenance": "observed_now",
+                "relation_id": "o0000",
+                "relation_type": "left_of",
+                "rule_id": null,
+                "source_id": "red_cube",
+                "target_id": "blue_cube",
+                "unit": null,
+                "value": null
+              }
+            ]
+          },
+          "created_at": "2026-08-28T14:26:58.761553+00:00",
+          "cycle_id": 1,
+          "entities": [
+            {
+              "attributes": {},
+              "entity_id": "blue_cube",
+              "kind": "cube",
+              "label": "blue cube"
+            },
+            {
+              "attributes": {},
+              "entity_id": "red_cube",
+              "kind": "cube",
+              "label": "red cube"
+            }
+          ],
+          "inferred_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "o0000"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0001",
+              "relation_type": "right_of",
+              "rule_id": "INVERSE_LEFT_RIGHT",
+              "source_id": "blue_cube",
+              "target_id": "red_cube",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "now_id": "2fe28062-3312-4133-8b87-f351fa9b5914",
+          "observed_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [],
+              "provenance": "observed_now",
+              "relation_id": "o0000",
+              "relation_type": "left_of",
+              "rule_id": null,
+              "source_id": "red_cube",
+              "target_id": "blue_cube",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "query": {
+            "display": "red_cube LEFT_OF blue_cube?",
+            "query_type": "relation",
+            "relation_type": "left_of",
+            "source_id": "red_cube",
+            "target_id": "blue_cube"
+          },
+          "validation": {
+            "is_valid": true,
+            "issues": []
+          },
+          "world_version": 3
+        },
+        {
+          "answer": {
+            "confidence": 1.0,
+            "explanation": [],
+            "issues": [],
+            "status": "true",
+            "supporting_relations": [
+              {
+                "confidence": 1.0,
+                "premise_ids": [],
+                "provenance": "observed_now",
+                "relation_id": "o0000",
+                "relation_type": "right_of",
+                "rule_id": null,
+                "source_id": "red_cube",
+                "target_id": "blue_cube",
+                "unit": null,
+                "value": null
+              }
+            ]
+          },
+          "created_at": "2026-08-28T14:26:58.761553+00:00",
+          "cycle_id": 2,
+          "entities": [
+            {
+              "attributes": {},
+              "entity_id": "blue_cube",
+              "kind": "cube",
+              "label": "blue cube"
+            },
+            {
+              "attributes": {},
+              "entity_id": "red_cube",
+              "kind": "cube",
+              "label": "red cube"
+            }
+          ],
+          "inferred_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "o0000"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0001",
+              "relation_type": "left_of",
+              "rule_id": "INVERSE_RIGHT_LEFT",
+              "source_id": "blue_cube",
+              "target_id": "red_cube",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "now_id": "51a8c669-0f7a-4340-95e9-badff7f0f35c",
+          "observed_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [],
+              "provenance": "observed_now",
+              "relation_id": "o0000",
+              "relation_type": "right_of",
+              "rule_id": null,
+              "source_id": "red_cube",
+              "target_id": "blue_cube",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "query": {
+            "display": "red_cube RIGHT_OF blue_cube?",
+            "query_type": "relation",
+            "relation_type": "right_of",
+            "source_id": "red_cube",
+            "target_id": "blue_cube"
+          },
+          "validation": {
+            "is_valid": true,
+            "issues": []
+          },
+          "world_version": 4
+        }
+      ],
+      "expected_contradictions": [],
+      "expected_inferences": [
+        {
+          "description": "Cycle 2 infers blue_cube LEFT_OF red_cube",
+          "passed": true
+        }
+      ],
+      "expected_queries": [
+        {
+          "actual_status": "true",
+          "expected_status": "true",
+          "passed": true,
+          "query": "red_cube LEFT_OF blue_cube?"
+        },
+        {
+          "actual_status": "true",
+          "expected_status": "true",
+          "passed": true,
+          "query": "red_cube RIGHT_OF blue_cube?"
+        },
+        {
+          "actual_status": "unknown",
+          "expected_status": "unknown",
+          "passed": true,
+          "query": "red_cube LEFT_OF blue_cube?"
+        }
+      ],
+      "external_history": [
+        {
+          "answer_status": "true",
+          "cycle_id": 1,
+          "now_id": "2fe28062-3312-4133-8b87-f351fa9b5914",
+          "query": "relation",
+          "relation_count": 2,
+          "validation_issue_count": 0
+        },
+        {
+          "answer_status": "true",
+          "cycle_id": 2,
+          "now_id": "51a8c669-0f7a-4340-95e9-badff7f0f35c",
+          "query": "relation",
+          "relation_count": 2,
+          "validation_issue_count": 0
+        }
+      ],
+      "scenario_id": "fresh_now_stale_state",
+      "title": "Fresh Now / stale-state test"
+    },
+    {
+      "cycles": [
+        {
+          "answer": {
+            "confidence": 1.0,
+            "explanation": [
+              {
+                "conclusion": "i0004",
+                "premises": [
+                  "o0000",
+                  "o0001"
+                ],
+                "rule_id": "LEFT_TRANSITIVE"
+              }
+            ],
+            "issues": [],
+            "status": "true",
+            "supporting_relations": [
+              {
+                "confidence": 1.0,
+                "premise_ids": [],
+                "provenance": "observed_now",
+                "relation_id": "o0000",
+                "relation_type": "left_of",
+                "rule_id": null,
+                "source_id": "a",
+                "target_id": "b",
+                "unit": null,
+                "value": null
+              },
+              {
+                "confidence": 1.0,
+                "premise_ids": [],
+                "provenance": "observed_now",
+                "relation_id": "o0001",
+                "relation_type": "left_of",
+                "rule_id": null,
+                "source_id": "b",
+                "target_id": "c",
+                "unit": null,
+                "value": null
+              },
+              {
+                "confidence": 1.0,
+                "premise_ids": [
+                  "o0000",
+                  "o0001"
+                ],
+                "provenance": "inferred_now",
+                "relation_id": "i0004",
+                "relation_type": "left_of",
+                "rule_id": "LEFT_TRANSITIVE",
+                "source_id": "a",
+                "target_id": "c",
+                "unit": null,
+                "value": null
+              }
+            ]
+          },
+          "created_at": "2026-08-28T14:26:58.763552+00:00",
+          "cycle_id": 1,
+          "entities": [
+            {
+              "attributes": {},
+              "entity_id": "a",
+              "kind": "object",
+              "label": "A"
+            },
+            {
+              "attributes": {},
+              "entity_id": "b",
+              "kind": "object",
+              "label": "B"
+            },
+            {
+              "attributes": {},
+              "entity_id": "c",
+              "kind": "object",
+              "label": "C"
+            }
+          ],
+          "inferred_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "o0000"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0002",
+              "relation_type": "right_of",
+              "rule_id": "INVERSE_LEFT_RIGHT",
+              "source_id": "b",
+              "target_id": "a",
+              "unit": null,
+              "value": null
+            },
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "o0001"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0003",
+              "relation_type": "right_of",
+              "rule_id": "INVERSE_LEFT_RIGHT",
+              "source_id": "c",
+              "target_id": "b",
+              "unit": null,
+              "value": null
+            },
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "o0000",
+                "o0001"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0004",
+              "relation_type": "left_of",
+              "rule_id": "LEFT_TRANSITIVE",
+              "source_id": "a",
+              "target_id": "c",
+              "unit": null,
+              "value": null
+            },
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "i0003",
+                "i0002"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0005",
+              "relation_type": "right_of",
+              "rule_id": "RIGHT_TRANSITIVE",
+              "source_id": "c",
+              "target_id": "a",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "now_id": "6d96b38c-2bd4-4199-9a66-094a42f5cb1b",
+          "observed_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [],
+              "provenance": "observed_now",
+              "relation_id": "o0000",
+              "relation_type": "left_of",
+              "rule_id": null,
+              "source_id": "a",
+              "target_id": "b",
+              "unit": null,
+              "value": null
+            },
+            {
+              "confidence": 1.0,
+              "premise_ids": [],
+              "provenance": "observed_now",
+              "relation_id": "o0001",
+              "relation_type": "left_of",
+              "rule_id": null,
+              "source_id": "b",
+              "target_id": "c",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "query": {
+            "display": "a LEFT_OF c?",
+            "query_type": "explain",
+            "relation_type": "left_of",
+            "source_id": "a",
+            "target_id": "c"
+          },
+          "validation": {
+            "is_valid": true,
+            "issues": []
+          },
+          "world_version": 5
+        }
+      ],
+      "expected_contradictions": [],
+      "expected_inferences": [
+        {
+          "description": "A LEFT_OF C uses LEFT_TRANSITIVE",
+          "passed": true
+        }
+      ],
+      "expected_queries": [
+        {
+          "actual_status": "true",
+          "expected_status": "true",
+          "passed": true,
+          "query": "a LEFT_OF c?"
+        }
+      ],
+      "scenario_id": "geometric_inference",
+      "title": "Geometric inference"
+    },
+    {
+      "cycles": [
+        {
+          "answer": {
+            "confidence": 1.0,
+            "explanation": [
+              {
+                "conclusion": "i0004",
+                "premises": [
+                  "o0001",
+                  "o0000"
+                ],
+                "rule_id": "INSIDE_TRANSITIVE"
+              }
+            ],
+            "issues": [],
+            "status": "true",
+            "supporting_relations": [
+              {
+                "confidence": 1.0,
+                "premise_ids": [],
+                "provenance": "observed_now",
+                "relation_id": "o0001",
+                "relation_type": "inside",
+                "rule_id": null,
+                "source_id": "key",
+                "target_id": "box",
+                "unit": null,
+                "value": null
+              },
+              {
+                "confidence": 1.0,
+                "premise_ids": [],
+                "provenance": "observed_now",
+                "relation_id": "o0000",
+                "relation_type": "inside",
+                "rule_id": null,
+                "source_id": "box",
+                "target_id": "cabinet",
+                "unit": null,
+                "value": null
+              },
+              {
+                "confidence": 1.0,
+                "premise_ids": [
+                  "o0001",
+                  "o0000"
+                ],
+                "provenance": "inferred_now",
+                "relation_id": "i0004",
+                "relation_type": "inside",
+                "rule_id": "INSIDE_TRANSITIVE",
+                "source_id": "key",
+                "target_id": "cabinet",
+                "unit": null,
+                "value": null
+              }
+            ]
+          },
+          "created_at": "2026-08-28T14:26:58.764549+00:00",
+          "cycle_id": 1,
+          "entities": [
+            {
+              "attributes": {},
+              "entity_id": "box",
+              "kind": "container",
+              "label": "box"
+            },
+            {
+              "attributes": {},
+              "entity_id": "cabinet",
+              "kind": "container",
+              "label": "cabinet"
+            },
+            {
+              "attributes": {},
+              "entity_id": "key",
+              "kind": "object",
+              "label": "key"
+            }
+          ],
+          "inferred_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "o0000"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0002",
+              "relation_type": "contains",
+              "rule_id": "INVERSE_INSIDE_CONTAINS",
+              "source_id": "cabinet",
+              "target_id": "box",
+              "unit": null,
+              "value": null
+            },
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "o0001"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0003",
+              "relation_type": "contains",
+              "rule_id": "INVERSE_INSIDE_CONTAINS",
+              "source_id": "box",
+              "target_id": "key",
+              "unit": null,
+              "value": null
+            },
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "o0001",
+                "o0000"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0004",
+              "relation_type": "inside",
+              "rule_id": "INSIDE_TRANSITIVE",
+              "source_id": "key",
+              "target_id": "cabinet",
+              "unit": null,
+              "value": null
+            },
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "i0002",
+                "i0003"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0005",
+              "relation_type": "contains",
+              "rule_id": "CONTAINS_TRANSITIVE",
+              "source_id": "cabinet",
+              "target_id": "key",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "now_id": "b0d3e549-f50d-42c4-aedb-9fe664a3984f",
+          "observed_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [],
+              "provenance": "observed_now",
+              "relation_id": "o0000",
+              "relation_type": "inside",
+              "rule_id": null,
+              "source_id": "box",
+              "target_id": "cabinet",
+              "unit": null,
+              "value": null
+            },
+            {
+              "confidence": 1.0,
+              "premise_ids": [],
+              "provenance": "observed_now",
+              "relation_id": "o0001",
+              "relation_type": "inside",
+              "rule_id": null,
+              "source_id": "key",
+              "target_id": "box",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "query": {
+            "display": "key INSIDE cabinet?",
+            "query_type": "explain",
+            "relation_type": "inside",
+            "source_id": "key",
+            "target_id": "cabinet"
+          },
+          "validation": {
+            "is_valid": true,
+            "issues": []
+          },
+          "world_version": 5
+        }
+      ],
+      "expected_contradictions": [],
+      "expected_inferences": [
+        {
+          "description": "key INSIDE cabinet uses INSIDE_TRANSITIVE",
+          "passed": true
+        }
+      ],
+      "expected_queries": [
+        {
+          "actual_status": "true",
+          "expected_status": "true",
+          "passed": true,
+          "query": "key INSIDE cabinet?"
+        }
+      ],
+      "scenario_id": "nested_containment",
+      "title": "Nested containment"
+    },
+    {
+      "cycles": [
+        {
+          "answer": {
+            "confidence": 0.0,
+            "explanation": [],
+            "issues": [
+              {
+                "issue_type": "contradiction",
+                "message": "Current geometry contains incompatible simultaneous facts: left_of(red_cube, blue_cube) and right_of(red_cube, blue_cube)",
+                "relation_ids": [
+                  "o0000",
+                  "o0001"
+                ],
+                "relation_types": [
+                  "left_of",
+                  "right_of"
+                ],
+                "source_id": "red_cube",
+                "target_id": "blue_cube"
+              },
+              {
+                "issue_type": "contradiction",
+                "message": "Current geometry contains incompatible simultaneous facts: left_of(blue_cube, red_cube) and right_of(blue_cube, red_cube)",
+                "relation_ids": [
+                  "i0003",
+                  "i0002"
+                ],
+                "relation_types": [
+                  "left_of",
+                  "right_of"
+                ],
+                "source_id": "blue_cube",
+                "target_id": "red_cube"
+              }
+            ],
+            "status": "contradictory",
+            "supporting_relations": []
+          },
+          "created_at": "2026-08-28T14:26:58.765544+00:00",
+          "cycle_id": 1,
+          "entities": [
+            {
+              "attributes": {},
+              "entity_id": "blue_cube",
+              "kind": "cube",
+              "label": "blue cube"
+            },
+            {
+              "attributes": {},
+              "entity_id": "red_cube",
+              "kind": "cube",
+              "label": "red cube"
+            }
+          ],
+          "inferred_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "o0000"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0002",
+              "relation_type": "right_of",
+              "rule_id": "INVERSE_LEFT_RIGHT",
+              "source_id": "blue_cube",
+              "target_id": "red_cube",
+              "unit": null,
+              "value": null
+            },
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "o0001"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0003",
+              "relation_type": "left_of",
+              "rule_id": "INVERSE_RIGHT_LEFT",
+              "source_id": "blue_cube",
+              "target_id": "red_cube",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "now_id": "3771f03c-4522-4d40-95c1-5c2f6a6496ec",
+          "observed_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [],
+              "provenance": "observed_now",
+              "relation_id": "o0000",
+              "relation_type": "left_of",
+              "rule_id": null,
+              "source_id": "red_cube",
+              "target_id": "blue_cube",
+              "unit": null,
+              "value": null
+            },
+            {
+              "confidence": 1.0,
+              "premise_ids": [],
+              "provenance": "observed_now",
+              "relation_id": "o0001",
+              "relation_type": "right_of",
+              "rule_id": null,
+              "source_id": "red_cube",
+              "target_id": "blue_cube",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "query": {
+            "display": "red_cube LEFT_OF blue_cube?",
+            "query_type": "relation",
+            "relation_type": "left_of",
+            "source_id": "red_cube",
+            "target_id": "blue_cube"
+          },
+          "validation": {
+            "is_valid": false,
+            "issues": [
+              {
+                "issue_type": "contradiction",
+                "message": "Current geometry contains incompatible simultaneous facts: left_of(red_cube, blue_cube) and right_of(red_cube, blue_cube)",
+                "relation_ids": [
+                  "o0000",
+                  "o0001"
+                ],
+                "relation_types": [
+                  "left_of",
+                  "right_of"
+                ],
+                "source_id": "red_cube",
+                "target_id": "blue_cube"
+              },
+              {
+                "issue_type": "contradiction",
+                "message": "Current geometry contains incompatible simultaneous facts: left_of(blue_cube, red_cube) and right_of(blue_cube, red_cube)",
+                "relation_ids": [
+                  "i0003",
+                  "i0002"
+                ],
+                "relation_types": [
+                  "left_of",
+                  "right_of"
+                ],
+                "source_id": "blue_cube",
+                "target_id": "red_cube"
+              }
+            ]
+          },
+          "world_version": 4
+        }
+      ],
+      "expected_contradictions": [
+        {
+          "description": "Conflicting current facts produce structured contradiction",
+          "passed": true
+        }
+      ],
+      "expected_inferences": [],
+      "expected_queries": [
+        {
+          "actual_status": "contradictory",
+          "expected_status": "contradictory",
+          "passed": true,
+          "query": "red_cube LEFT_OF blue_cube?"
+        }
+      ],
+      "scenario_id": "current_contradiction",
+      "title": "Current contradiction"
+    },
+    {
+      "answer_after_history_delete": {
+        "confidence": 1.0,
+        "explanation": [],
+        "issues": [],
+        "status": "true",
+        "supporting_relations": [
+          {
+            "confidence": 1.0,
+            "premise_ids": [],
+            "provenance": "observed_now",
+            "relation_id": "o0000",
+            "relation_type": "right_of",
+            "rule_id": null,
+            "source_id": "red_cube",
+            "target_id": "blue_cube",
+            "unit": null,
+            "value": null
+          }
+        ]
+      },
+      "cycles": [
+        {
+          "answer": {
+            "confidence": 1.0,
+            "explanation": [],
+            "issues": [],
+            "status": "true",
+            "supporting_relations": [
+              {
+                "confidence": 1.0,
+                "premise_ids": [],
+                "provenance": "observed_now",
+                "relation_id": "o0000",
+                "relation_type": "right_of",
+                "rule_id": null,
+                "source_id": "red_cube",
+                "target_id": "blue_cube",
+                "unit": null,
+                "value": null
+              }
+            ]
+          },
+          "created_at": "2026-08-28T14:26:58.766539+00:00",
+          "cycle_id": 1,
+          "entities": [
+            {
+              "attributes": {},
+              "entity_id": "blue_cube",
+              "kind": "cube",
+              "label": "blue cube"
+            },
+            {
+              "attributes": {},
+              "entity_id": "red_cube",
+              "kind": "cube",
+              "label": "red cube"
+            }
+          ],
+          "inferred_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [
+                "o0000"
+              ],
+              "provenance": "inferred_now",
+              "relation_id": "i0001",
+              "relation_type": "left_of",
+              "rule_id": "INVERSE_RIGHT_LEFT",
+              "source_id": "blue_cube",
+              "target_id": "red_cube",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "now_id": "ed64b5d8-c732-4995-b66f-df21b77fca84",
+          "observed_relations": [
+            {
+              "confidence": 1.0,
+              "premise_ids": [],
+              "provenance": "observed_now",
+              "relation_id": "o0000",
+              "relation_type": "right_of",
+              "rule_id": null,
+              "source_id": "red_cube",
+              "target_id": "blue_cube",
+              "unit": null,
+              "value": null
+            }
+          ],
+          "query": {
+            "display": "red_cube RIGHT_OF blue_cube?",
+            "query_type": "relation",
+            "relation_type": "right_of",
+            "source_id": "red_cube",
+            "target_id": "blue_cube"
+          },
+          "validation": {
+            "is_valid": true,
+            "issues": []
+          },
+          "world_version": 3
+        }
+      ],
+      "expected_contradictions": [],
+      "expected_inferences": [],
+      "expected_queries": [
+        {
+          "actual_status": "true",
+          "expected_status": "true",
+          "passed": true,
+          "query": "red_cube RIGHT_OF blue_cube?"
+        },
+        {
+          "actual_status": "true",
+          "expected_status": "true",
+          "passed": true,
+          "query": "red_cube RIGHT_OF blue_cube?"
+        }
+      ],
+      "history_after_delete": [],
+      "history_before_delete": [
+        {
+          "answer_status": "true",
+          "cycle_id": 1,
+          "now_id": "ed64b5d8-c732-4995-b66f-df21b77fca84",
+          "query": "relation",
+          "relation_count": 2,
+          "validation_issue_count": 0
+        }
+      ],
+      "message": "Current reasoning is unchanged because external experiment history is not a cognitive input.",
+      "scenario_id": "history_firewall",
+      "title": "History firewall"
+    }
+  ],
+  "schema": "nowmind.g1.demo_results.v1"
+}

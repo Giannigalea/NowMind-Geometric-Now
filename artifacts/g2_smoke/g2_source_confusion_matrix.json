@@ -1,0 +1,55 @@
+{
+  "ChronologicalRecordReasoner": {
+    "hypothetical_future": {
+      "hypothetical_future": 4
+    },
+    "inferred_now": {
+      "inferred_now": 4
+    },
+    "none": {
+      "none": 4
+    },
+    "observed_now": {
+      "observed_now": 22
+    },
+    "reconstructed_memory": {
+      "reconstructed_memory": 2
+    }
+  },
+  "NaivePersistentState": {
+    "hypothetical_future": {
+      "hypothetical_future": 4
+    },
+    "inferred_now": {
+      "inferred_now": 4
+    },
+    "none": {
+      "reconstructed_memory": 4
+    },
+    "observed_now": {
+      "hypothetical_future": 6,
+      "observed_now": 2,
+      "reconstructed_memory": 14
+    },
+    "reconstructed_memory": {
+      "reconstructed_memory": 2
+    }
+  },
+  "NowMindTemporalGeometry": {
+    "hypothetical_future": {
+      "hypothetical_future": 4
+    },
+    "inferred_now": {
+      "inferred_now": 4
+    },
+    "none": {
+      "none": 4
+    },
+    "observed_now": {
+      "observed_now": 22
+    },
+    "reconstructed_memory": {
+      "reconstructed_memory": 2
+    }
+  }
+}

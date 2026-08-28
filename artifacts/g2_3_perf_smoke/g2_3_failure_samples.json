@@ -1,0 +1,410 @@
+{
+  "mock-deterministic-g2.3|A_EQUAL_INFORMATION|R_CURRENT_ONLY": [
+    {
+      "backend": "mock",
+      "condition": "R_CURRENT_ONLY",
+      "context_overflow": false,
+      "error": null,
+      "expected": {
+        "action": null,
+        "answer": "true",
+        "source_used": "hypothetical_future",
+        "status": "TRUE"
+      },
+      "input_tokens": 248,
+      "latency_ms": 0.02720000338740647,
+      "model": "mock-deterministic-g2.3",
+      "model_config": {
+        "backend": "mock",
+        "model": "mock-deterministic-g2.3",
+        "seed": 20260823,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "output_tokens": 43,
+      "parse_success": true,
+      "parsed_output": {
+        "action": null,
+        "answer": "",
+        "assumptions": [],
+        "confidence": 0.2,
+        "explanation": [
+          "Used only supplied labeled evidence."
+        ],
+        "source_used": "none",
+        "status": "UNKNOWN"
+      },
+      "prompt_hash": "6c83cb080d1fff6047fa2390aae61597c2d944a118259e154bc1284e5a744cd9",
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output": "{\"action\": null, \"answer\": \"\", \"assumptions\": [], \"confidence\": 0.2, \"explanation\": [\"Used only supplied labeled evidence.\"], \"source_used\": \"none\", \"status\": \"UNKNOWN\"}",
+      "regime": "A_EQUAL_INFORMATION",
+      "repair_retry_count": 0,
+      "representation": {
+        "budget": null,
+        "condition": "R_CURRENT_ONLY",
+        "context_overflow": false,
+        "fact_set_hash": "e9f4776bcdb9e35ef7c2fbeab6a4c43d315a39e84e8173134621dc1c3af17acb",
+        "prompt_hash": "6c83cb080d1fff6047fa2390aae61597c2d944a118259e154bc1284e5a744cd9",
+        "regime": "A_EQUAL_INFORMATION",
+        "token_estimate": 248,
+        "truncated": false
+      },
+      "same_admissible_fact_set_hash": "e9f4776bcdb9e35ef7c2fbeab6a4c43d315a39e84e8173134621dc1c3af17acb",
+      "trial": {
+        "fact_set_hash": "e9f4776bcdb9e35ef7c2fbeab6a4c43d315a39e84e8173134621dc1c3af17acb",
+        "family": "temporal_future_vs_current",
+        "history_cohort": "H50",
+        "seed": 20260826,
+        "split": "evaluation",
+        "task_group": "temporal_qa",
+        "trial_id": "g2_3_eval_00002_temporal_future_vs_current"
+      },
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": null,
+        "final_answer": "",
+        "final_source_used": "none",
+        "final_status": "UNKNOWN",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    {
+      "backend": "mock",
+      "condition": "R_CURRENT_ONLY",
+      "context_overflow": false,
+      "error": null,
+      "expected": {
+        "action": null,
+        "answer": "true",
+        "source_used": "hypothetical_future",
+        "status": "TRUE"
+      },
+      "input_tokens": 248,
+      "latency_ms": 0.026599998818710446,
+      "model": "mock-deterministic-g2.3",
+      "model_config": {
+        "backend": "mock",
+        "model": "mock-deterministic-g2.3",
+        "seed": 20260823,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "output_tokens": 43,
+      "parse_success": true,
+      "parsed_output": {
+        "action": null,
+        "answer": "",
+        "assumptions": [],
+        "confidence": 0.2,
+        "explanation": [
+          "Used only supplied labeled evidence."
+        ],
+        "source_used": "none",
+        "status": "UNKNOWN"
+      },
+      "prompt_hash": "456d78c6728cc8bc93fdd2845bb109c83d0aa99a7452d8c02143ba1dce428da2",
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output": "{\"action\": null, \"answer\": \"\", \"assumptions\": [], \"confidence\": 0.2, \"explanation\": [\"Used only supplied labeled evidence.\"], \"source_used\": \"none\", \"status\": \"UNKNOWN\"}",
+      "regime": "A_EQUAL_INFORMATION",
+      "repair_retry_count": 0,
+      "representation": {
+        "budget": null,
+        "condition": "R_CURRENT_ONLY",
+        "context_overflow": false,
+        "fact_set_hash": "1b2e1c9042db4c3c2d4010b6ebeaf9e77feacaf16135e4f89b7cbdc37659c355",
+        "prompt_hash": "456d78c6728cc8bc93fdd2845bb109c83d0aa99a7452d8c02143ba1dce428da2",
+        "regime": "A_EQUAL_INFORMATION",
+        "token_estimate": 248,
+        "truncated": false
+      },
+      "same_admissible_fact_set_hash": "1b2e1c9042db4c3c2d4010b6ebeaf9e77feacaf16135e4f89b7cbdc37659c355",
+      "trial": {
+        "fact_set_hash": "1b2e1c9042db4c3c2d4010b6ebeaf9e77feacaf16135e4f89b7cbdc37659c355",
+        "family": "temporal_future_vs_current",
+        "history_cohort": "H10",
+        "seed": 20260843,
+        "split": "evaluation",
+        "task_group": "temporal_qa",
+        "trial_id": "g2_3_eval_00019_temporal_future_vs_current"
+      },
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": null,
+        "final_answer": "",
+        "final_source_used": "none",
+        "final_status": "UNKNOWN",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    }
+  ],
+  "mock-deterministic-g2.3|B_FIXED_BUDGET|R_CURRENT_ONLY": [
+    {
+      "backend": "mock",
+      "condition": "R_CURRENT_ONLY",
+      "context_overflow": false,
+      "error": null,
+      "expected": {
+        "action": null,
+        "answer": "true",
+        "source_used": "hypothetical_future",
+        "status": "TRUE"
+      },
+      "input_tokens": 248,
+      "latency_ms": 0.025599991204217076,
+      "model": "mock-deterministic-g2.3",
+      "model_config": {
+        "backend": "mock",
+        "model": "mock-deterministic-g2.3",
+        "seed": 20260823,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "output_tokens": 43,
+      "parse_success": true,
+      "parsed_output": {
+        "action": null,
+        "answer": "",
+        "assumptions": [],
+        "confidence": 0.2,
+        "explanation": [
+          "Used only supplied labeled evidence."
+        ],
+        "source_used": "none",
+        "status": "UNKNOWN"
+      },
+      "prompt_hash": "6c83cb080d1fff6047fa2390aae61597c2d944a118259e154bc1284e5a744cd9",
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output": "{\"action\": null, \"answer\": \"\", \"assumptions\": [], \"confidence\": 0.2, \"explanation\": [\"Used only supplied labeled evidence.\"], \"source_used\": \"none\", \"status\": \"UNKNOWN\"}",
+      "regime": "B_FIXED_BUDGET",
+      "repair_retry_count": 0,
+      "representation": {
+        "budget": 1600,
+        "condition": "R_CURRENT_ONLY",
+        "context_overflow": false,
+        "fact_set_hash": "e9f4776bcdb9e35ef7c2fbeab6a4c43d315a39e84e8173134621dc1c3af17acb",
+        "prompt_hash": "6c83cb080d1fff6047fa2390aae61597c2d944a118259e154bc1284e5a744cd9",
+        "regime": "B_FIXED_BUDGET",
+        "token_estimate": 248,
+        "truncated": false
+      },
+      "same_admissible_fact_set_hash": "e9f4776bcdb9e35ef7c2fbeab6a4c43d315a39e84e8173134621dc1c3af17acb",
+      "trial": {
+        "fact_set_hash": "e9f4776bcdb9e35ef7c2fbeab6a4c43d315a39e84e8173134621dc1c3af17acb",
+        "family": "temporal_future_vs_current",
+        "history_cohort": "H50",
+        "seed": 20260826,
+        "split": "evaluation",
+        "task_group": "temporal_qa",
+        "trial_id": "g2_3_eval_00002_temporal_future_vs_current"
+      },
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": null,
+        "final_answer": "",
+        "final_source_used": "none",
+        "final_status": "UNKNOWN",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    },
+    {
+      "backend": "mock",
+      "condition": "R_CURRENT_ONLY",
+      "context_overflow": false,
+      "error": null,
+      "expected": {
+        "action": null,
+        "answer": "true",
+        "source_used": "hypothetical_future",
+        "status": "TRUE"
+      },
+      "input_tokens": 248,
+      "latency_ms": 0.02820001100189984,
+      "model": "mock-deterministic-g2.3",
+      "model_config": {
+        "backend": "mock",
+        "model": "mock-deterministic-g2.3",
+        "seed": 20260823,
+        "temperature": 0.0,
+        "top_p": 1.0
+      },
+      "output_tokens": 43,
+      "parse_success": true,
+      "parsed_output": {
+        "action": null,
+        "answer": "",
+        "assumptions": [],
+        "confidence": 0.2,
+        "explanation": [
+          "Used only supplied labeled evidence."
+        ],
+        "source_used": "none",
+        "status": "UNKNOWN"
+      },
+      "prompt_hash": "456d78c6728cc8bc93fdd2845bb109c83d0aa99a7452d8c02143ba1dce428da2",
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "explanation_grounded": 1,
+        "false_memory_as_current": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "prediction_as_fact": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "stale_memory_as_current": 0,
+        "unsupported_certainty": 0
+      },
+      "raw_output": "{\"action\": null, \"answer\": \"\", \"assumptions\": [], \"confidence\": 0.2, \"explanation\": [\"Used only supplied labeled evidence.\"], \"source_used\": \"none\", \"status\": \"UNKNOWN\"}",
+      "regime": "B_FIXED_BUDGET",
+      "repair_retry_count": 0,
+      "representation": {
+        "budget": 1600,
+        "condition": "R_CURRENT_ONLY",
+        "context_overflow": false,
+        "fact_set_hash": "1b2e1c9042db4c3c2d4010b6ebeaf9e77feacaf16135e4f89b7cbdc37659c355",
+        "prompt_hash": "456d78c6728cc8bc93fdd2845bb109c83d0aa99a7452d8c02143ba1dce428da2",
+        "regime": "B_FIXED_BUDGET",
+        "token_estimate": 248,
+        "truncated": false
+      },
+      "same_admissible_fact_set_hash": "1b2e1c9042db4c3c2d4010b6ebeaf9e77feacaf16135e4f89b7cbdc37659c355",
+      "trial": {
+        "fact_set_hash": "1b2e1c9042db4c3c2d4010b6ebeaf9e77feacaf16135e4f89b7cbdc37659c355",
+        "family": "temporal_future_vs_current",
+        "history_cohort": "H10",
+        "seed": 20260843,
+        "split": "evaluation",
+        "task_group": "temporal_qa",
+        "trial_id": "g2_3_eval_00019_temporal_future_vs_current"
+      },
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 0,
+        "validator_rejected": 0
+      },
+      "validator": {
+        "accepted": true,
+        "final_action": null,
+        "final_answer": "",
+        "final_source_used": "none",
+        "final_status": "UNKNOWN",
+        "prevented_error": false,
+        "rejection_reason": null
+      }
+    }
+  ]
+}

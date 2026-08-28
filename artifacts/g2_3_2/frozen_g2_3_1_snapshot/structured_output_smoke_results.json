@@ -1,0 +1,132 @@
+{
+  "schema": "nowmind.g2_3_1.structured_output_smoke_results.v1",
+  "created_at": "2026-08-23T22:24:35+02:00",
+  "api_endpoint": "http://127.0.0.1:11434/api/chat",
+  "smoke_prompt": "What is the capital of France?",
+  "minimal_schema": {
+    "type": "object",
+    "properties": {
+      "answer": {
+        "type": "string"
+      }
+    },
+    "required": ["answer"]
+  },
+  "attempts": [
+    {
+      "model": "qwen3:1.7b",
+      "mode": "format_json_schema",
+      "think": false,
+      "num_ctx": 2048,
+      "num_predict": 64,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "seed": 20260823,
+      "http_success": false,
+      "elapsed_ms": 24422.09,
+      "message_content": null,
+      "message_thinking_present": false,
+      "parse_success": false,
+      "schema_valid": false,
+      "answer_semantically_paris": false,
+      "error": "HTTP 500: failed to allocate CPU buffer of size 159383552; failed to allocate buffer for kv cache"
+    },
+    {
+      "model": "qwen3:1.7b",
+      "mode": "format_json_schema",
+      "think": false,
+      "num_ctx": 512,
+      "num_predict": 64,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "seed": 20260823,
+      "http_success": false,
+      "elapsed_ms": 39759.87,
+      "message_content": null,
+      "message_thinking_present": false,
+      "parse_success": false,
+      "schema_valid": false,
+      "answer_semantically_paris": false,
+      "error": "HTTP 500: llama-server process terminated with NTSTATUS 0xe06d7363"
+    },
+    {
+      "model": "qwen3:1.7b",
+      "mode": "format_json_fallback",
+      "think": false,
+      "num_ctx": 512,
+      "num_predict": 64,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "seed": 20260823,
+      "http_success": false,
+      "elapsed_ms": 50855.27,
+      "message_content": null,
+      "message_thinking_present": false,
+      "parse_success": false,
+      "schema_valid": false,
+      "answer_semantically_paris": false,
+      "error": "HTTP 500: llama-server process terminated with NTSTATUS 0xe06d7363"
+    },
+    {
+      "model": "gemma3:1b",
+      "mode": "format_json_schema",
+      "think": null,
+      "num_ctx": 2048,
+      "num_predict": 64,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "seed": 20260823,
+      "http_success": false,
+      "elapsed_ms": 38085.0,
+      "message_content": null,
+      "message_thinking_present": false,
+      "parse_success": false,
+      "schema_valid": false,
+      "answer_semantically_paris": false,
+      "error": "HTTP 500: llama-server process terminated with NTSTATUS 0xe06d7363"
+    },
+    {
+      "model": "gemma3:1b",
+      "mode": "format_json_schema",
+      "think": null,
+      "num_ctx": 512,
+      "num_predict": 64,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "seed": 20260823,
+      "http_success": false,
+      "elapsed_ms": 38577.14,
+      "message_content": null,
+      "message_thinking_present": false,
+      "parse_success": false,
+      "schema_valid": false,
+      "answer_semantically_paris": false,
+      "error": "HTTP 500: llama-server process terminated with NTSTATUS 0xe06d7363"
+    },
+    {
+      "model": "gemma3:1b",
+      "mode": "format_json_fallback",
+      "think": null,
+      "num_ctx": 512,
+      "num_predict": 64,
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "seed": 20260823,
+      "http_success": false,
+      "elapsed_ms": 47583.48,
+      "message_content": null,
+      "message_thinking_present": false,
+      "parse_success": false,
+      "schema_valid": false,
+      "answer_semantically_paris": false,
+      "error": "HTTP 500: llama-server process terminated with NTSTATUS 0xe06d7363"
+    }
+  ],
+  "summary": {
+    "qwen_structured_smoke_passed": false,
+    "gemma_structured_smoke_passed": false,
+    "any_model_ready_for_calibration": false,
+    "calibration_started": false,
+    "final_evaluation_started": false
+  }
+}

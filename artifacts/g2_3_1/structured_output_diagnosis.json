@@ -1,0 +1,49 @@
+{
+  "schema": "nowmind.g2_3_1.structured_output_diagnosis.v1",
+  "created_at": "2026-08-23T22:24:35+02:00",
+  "backend_fix": {
+    "implemented": true,
+    "endpoint": "POST http://127.0.0.1:11434/api/chat",
+    "stream": false,
+    "format": "json_schema",
+    "canonical_schema": "nowmind.modeling.backend.MODEL_PROPOSAL_JSON_SCHEMA",
+    "parse_field": "message.content",
+    "thinking_policy": "Qwen3 uses think:false; message.thinking is metadata only and is not used for scoring."
+  },
+  "original_failure_classification": {
+    "qwen3:1.7b": {
+      "http_api_error": true,
+      "process_model_load_failure": true,
+      "timeout": false,
+      "out_of_memory": true,
+      "empty_message_content": false,
+      "content_in_message_thinking": false,
+      "malformed_json": false,
+      "valid_json_wrong_schema": false,
+      "correct_schema_wrong_answer": false,
+      "context_allocation_failure": true,
+      "parser_bug": false,
+      "summary": "Original failures were model initialization/KV-cache allocation failures before content generation."
+    },
+    "gemma3:1b": {
+      "http_api_error": true,
+      "process_model_load_failure": true,
+      "timeout": false,
+      "out_of_memory": true,
+      "empty_message_content": false,
+      "content_in_message_thinking": false,
+      "malformed_json": false,
+      "valid_json_wrong_schema": false,
+      "correct_schema_wrong_answer": false,
+      "context_allocation_failure": true,
+      "parser_bug": false,
+      "summary": "Original failures were model worker termination/std::bad_alloc before content generation."
+    }
+  },
+  "resume_decision": {
+    "structured_smoke_passed": false,
+    "calibration_started": false,
+    "final_evaluation_started": false,
+    "reason": "No approved model reached message.content under native structured-output smoke testing."
+  }
+}

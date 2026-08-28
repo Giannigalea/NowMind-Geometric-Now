@@ -1,0 +1,45 @@
+{
+  "available_backends": {
+    "mock": true,
+    "ollama": true,
+    "symbolic_reference": true
+  },
+  "local_model_runtime_prerequisite": null,
+  "ollama": {
+    "api_path": "/api/chat",
+    "available": true,
+    "base_url": "http://127.0.0.1:11434",
+    "executable": "ollama.exe",
+    "models": [
+      {
+        "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+        "name": "qwen3:1.7b"
+      }
+    ],
+    "note": "Temporary CPU/AVX2 diagnostic server; no cloud backend."
+  },
+  "selected": {
+    "api_path": "/api/chat",
+    "backend": "ollama",
+    "base_url": "http://127.0.0.1:11434",
+    "context_size": 2048,
+    "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+    "model": "qwen3:1.7b",
+    "num_predict": 256,
+    "response_format": "json_schema",
+    "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+    "seed": 20260823,
+    "temperature": 0.0,
+    "think": false,
+    "top_p": 1.0
+  },
+  "symbolic_reference": {
+    "backend": "symbolic",
+    "context_size": 100000,
+    "digest": "deterministic-local-symbolic",
+    "model": "symbolic-nowmind-g2.3-reference",
+    "seed": 20260823,
+    "temperature": 0.0,
+    "top_p": 1.0
+  }
+}

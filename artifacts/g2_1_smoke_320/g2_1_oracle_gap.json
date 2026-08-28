@@ -1,0 +1,19 @@
+{
+  "C_ChronologicalGeometricPlanner": {
+    "optimality_gap_vs_oracle": 0.5971223021582733,
+    "path_efficiency": 0.9686808252411092
+  },
+  "N_NowMindPossibilityGeometry": {
+    "optimality_gap_vs_oracle": 0.60431654676259,
+    "path_efficiency": 0.9684238879338122
+  },
+  "O_OraclePlanner": {
+    "optimality_gap_vs_oracle": -0.04285714285714286,
+    "path_efficiency": 0.9935513793502515
+  },
+  "R_ReactiveCurrentOnlyPlanner": {
+    "optimality_gap_vs_oracle": 0.60431654676259,
+    "path_efficiency": 0.9684238879338122
+  },
+  "trial_count": 320
+}

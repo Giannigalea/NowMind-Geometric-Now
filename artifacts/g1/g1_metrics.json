@@ -1,0 +1,19 @@
+{
+  "contradiction_detection_rate": 1.0,
+  "definitions": {
+    "contradiction_detection_rate": "Contradiction scenarios returning structured contradiction divided by contradiction expectation count.",
+    "inference_accuracy": "Expected inference-rule/evidence checks passed divided by inference expectation count.",
+    "query_accuracy": "Expected query statuses matched divided by expected query count.",
+    "scenario_count": "Number of canonical G1.1 scenarios executed.",
+    "stale_state_contamination_count": "Focused stale-state experiment count where a cycle-1-only relation survived in cycle 2.",
+    "stale_state_contamination_rate": "stale_state_contamination_count divided by one focused stale-state experiment.",
+    "unknown_guess_count": "Expected UNKNOWN/CONTRADICTORY queries that were incorrectly returned as TRUE/FALSE."
+  },
+  "inference_accuracy": 1.0,
+  "query_accuracy": 1.0,
+  "scenario_count": 5,
+  "schema": "nowmind.g1.metrics.v1",
+  "stale_state_contamination_count": 0,
+  "stale_state_contamination_rate": 0.0,
+  "unknown_guess_count": 0
+}

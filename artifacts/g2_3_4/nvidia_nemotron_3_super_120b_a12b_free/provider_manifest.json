@@ -1,0 +1,19 @@
+{
+  "model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "pinned_provider": "nvidia",
+  "provider_counts": {
+    "Nvidia": 7
+  },
+  "provider_request": {
+    "allow_fallbacks": false,
+    "data_collection": "allow",
+    "only": [
+      "nvidia"
+    ],
+    "order": [
+      "nvidia"
+    ],
+    "require_parameters": true
+  },
+  "schema": "nowmind.g2_3_4.provider_manifest.v1"
+}

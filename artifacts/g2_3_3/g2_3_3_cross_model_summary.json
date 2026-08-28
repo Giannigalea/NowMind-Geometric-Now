@@ -1,0 +1,326 @@
+{
+  "created_at": "2026-08-28T10:11:24.601141+00:00",
+  "local_baseline": {
+    "model": "qwen3:0.6b",
+    "regime_a": {
+      "c_better": 8,
+      "n_better": 0,
+      "tied": 242
+    },
+    "regime_b": {
+      "c_better": 0,
+      "n_better": 0,
+      "tied": 250
+    },
+    "regime_b_fairness_failures": 0
+  },
+  "models": [
+    {
+      "metrics": {},
+      "model": "z-ai/glm-5.2:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "z-ai/glm-5.2:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "nvidia/nemotron-3-super-120b-a12b:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "nvidia/nemotron-3-super-120b-a12b:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "google/gemma-4-26b-a4b-it:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "google/gemma-4-26b-a4b-it:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "minimax/minimax-m3:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "minimax/minimax-m3:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "minimax/minimax-m2.7:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "minimax/minimax-m2.7:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "dots-studio/dots-3-note-preview:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "dots-studio/dots-3-note-preview:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "liquid/lfm-2.5-2.6b:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "liquid/lfm-2.5-2.6b:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "google/gemma-4-31b-it:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "google/gemma-4-31b-it:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "cohere/north-mini-code:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "cohere/north-mini-code:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "inclusionai/ling-3.0-flash-fin:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "inclusionai/ling-3.0-flash-fin:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "nvidia/nemotron-3.5-content-safety:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "nvidia/nemotron-3.5-content-safety:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "poolside/laguna-s-2.1:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "poolside/laguna-s-2.1:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "poolside/laguna-xs-2.1:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "poolside/laguna-xs-2.1:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "thinkingmachines/inkling:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "thinkingmachines/inkling:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    },
+    {
+      "metrics": {},
+      "model": "thinkingmachines/inkling-small:free",
+      "pairwise": {},
+      "provider_manifest": {
+        "model": "thinkingmachines/inkling-small:free",
+        "note": "If OpenRouter does not report actual provider, rows use unreported_provider_fallback_disabled.",
+        "paired_provider_mismatches": 0,
+        "provider_counts": {},
+        "provider_request": {
+          "allow_fallbacks": false,
+          "data_collection": "deny",
+          "require_parameters": true
+        },
+        "schema": "nowmind.g2_3_3.provider_manifest.v1"
+      }
+    }
+  ],
+  "schema": "nowmind.g2_3_3.cross_model_summary.v1"
+}

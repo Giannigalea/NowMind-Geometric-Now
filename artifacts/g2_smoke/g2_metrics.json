@@ -1,0 +1,53 @@
+{
+  "ChronologicalRecordReasoner": {
+    "contradiction_detection_rate": 1.0,
+    "correct_unknown_rate": 1.0,
+    "current_state_accuracy": 1.0,
+    "false_memory_contamination_count": 0,
+    "false_memory_contamination_rate": 0.0,
+    "future_query_accuracy": 1.0,
+    "overall_query_accuracy": 1.0,
+    "past_state_accuracy": 1.0,
+    "prediction_as_fact_count": 0,
+    "prediction_as_fact_rate": 0.0,
+    "stale_memory_as_current_count": 0,
+    "stale_memory_as_current_rate": 0.0,
+    "temporal_source_classification_accuracy": 1.0,
+    "unsupported_current_claim_count": 0,
+    "unsupported_current_claim_rate": 0.0
+  },
+  "NaivePersistentState": {
+    "contradiction_detection_rate": 0.0,
+    "correct_unknown_rate": 0.0,
+    "current_state_accuracy": 0.2,
+    "false_memory_contamination_count": 2,
+    "false_memory_contamination_rate": 0.05555555555555555,
+    "future_query_accuracy": 1.0,
+    "overall_query_accuracy": 0.3333333333333333,
+    "past_state_accuracy": 1.0,
+    "prediction_as_fact_count": 6,
+    "prediction_as_fact_rate": 0.16666666666666666,
+    "stale_memory_as_current_count": 18,
+    "stale_memory_as_current_rate": 0.5,
+    "temporal_source_classification_accuracy": 0.3333333333333333,
+    "unsupported_current_claim_count": 4,
+    "unsupported_current_claim_rate": 0.1111111111111111
+  },
+  "NowMindTemporalGeometry": {
+    "contradiction_detection_rate": 1.0,
+    "correct_unknown_rate": 1.0,
+    "current_state_accuracy": 1.0,
+    "false_memory_contamination_count": 0,
+    "false_memory_contamination_rate": 0.0,
+    "future_query_accuracy": 1.0,
+    "overall_query_accuracy": 1.0,
+    "past_state_accuracy": 1.0,
+    "prediction_as_fact_count": 0,
+    "prediction_as_fact_rate": 0.0,
+    "stale_memory_as_current_count": 0,
+    "stale_memory_as_current_rate": 0.0,
+    "temporal_source_classification_accuracy": 1.0,
+    "unsupported_current_claim_count": 0,
+    "unsupported_current_claim_rate": 0.0
+  }
+}

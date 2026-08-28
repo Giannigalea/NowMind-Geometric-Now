@@ -1,0 +1,13 @@
+{
+  "failed_samples": [],
+  "forbidden_prompt_terms": [
+    "expected_status",
+    "expected_answer",
+    "oracle",
+    "ground_truth"
+  ],
+  "summary": {
+    "checked_pairs": 2000,
+    "failed": 0
+  }
+}

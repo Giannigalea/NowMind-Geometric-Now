@@ -1,0 +1,189 @@
+{
+  "completed_checks": 1,
+  "created_at": "2026-08-28T10:06:20.603089+00:00",
+  "model": "thinkingmachines/inkling:free",
+  "parse_success": 0,
+  "rows": [
+    {
+      "backend": "openrouter",
+      "condition": "N_NOWMIND_STRUCTURED",
+      "context_overflow": false,
+      "error": "HTTP 403: {\"error\":{\"message\":\"thinkingmachines/inkling:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":403}}",
+      "expected": {
+        "action": null,
+        "answer": "box_b",
+        "source_used": "observed_now",
+        "status": "ANSWER"
+      },
+      "g2_3_3": {
+        "effective_provider": "unreported_provider_fallback_disabled",
+        "json_compatibility_mode": "prompt_only_json",
+        "output_schema_guard": {
+          "issues": [
+            "missing_parsed_output"
+          ],
+          "passed": false
+        },
+        "price_gate": "verified_free_by_discovery",
+        "provider_match_required": true,
+        "row_key": "thinkingmachines/inkling:free|A_EQUAL_INFORMATION|g2_3_eval_00000_temporal_present_vs_stale_memory|N_NOWMIND_STRUCTURED",
+        "smoke_check": "basic_structured_json",
+        "synthetic_payload_guard": {
+          "forbidden_hits": [],
+          "passed": true
+        }
+      },
+      "input_tokens": 370,
+      "latency_ms": 452.5479000003543,
+      "model": "thinkingmachines/inkling:free",
+      "model_config": {
+        "backend": "openrouter",
+        "context_size": null,
+        "model": "thinkingmachines/inkling:free",
+        "num_predict": null,
+        "response_format": "prompt_only_json",
+        "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+        "seed": 20260823,
+        "temperature": 0.0,
+        "think": null,
+        "top_p": 1.0
+      },
+      "model_response": {
+        "backend": "openrouter",
+        "config": {
+          "allow_fallbacks": false,
+          "context_size": null,
+          "data_collection": "deny",
+          "model": "thinkingmachines/inkling:free",
+          "native_json_schema": false,
+          "num_predict": 512,
+          "provider": null,
+          "reasoning": {
+            "exclude": true
+          },
+          "require_parameters": true,
+          "response_format": "prompt_only_json",
+          "response_schema_hash": "45eb03bdbc3ae3bf1579f57ee70cf27dcfad0885f6ba367f58fe68c4028cc80f",
+          "seed": 20260823,
+          "temperature": 0.0,
+          "think": null,
+          "top_p": 1.0
+        },
+        "error": "HTTP 403: {\"error\":{\"message\":\"thinkingmachines/inkling:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":403}}",
+        "input_token_estimate": 370,
+        "latency_ms": 452.5479000003543,
+        "model": "thinkingmachines/inkling:free",
+        "output_token_estimate": 1,
+        "provider_metadata": {
+          "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+          "error_body": "{\"error\":{\"message\":\"thinkingmachines/inkling:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app listed on https://openrouter.ai/apps\",\"code\":403}}",
+          "http_status": 403,
+          "provider_request": {
+            "allow_fallbacks": false,
+            "data_collection": "deny",
+            "require_parameters": true
+          },
+          "rate_limited": false
+        },
+        "raw_text": ""
+      },
+      "output_tokens": 1,
+      "parse_success": false,
+      "parsed_output": null,
+      "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+      "proposal_score": {
+        "action_choice_correct": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0
+      },
+      "raw_output": "",
+      "regime": "A_EQUAL_INFORMATION",
+      "repair_retry_count": 0,
+      "repair_skipped_budget_gate": false,
+      "representation": {
+        "budget": null,
+        "budget_accounting": {
+          "budgeted_input_tokens": 463,
+          "counter": "estimate_tokens(system_instruction + newline + final_prompt)",
+          "declared_budget": null,
+          "dropped_counts": {
+            "future_hypotheses": 0,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 0,
+            "uncertainties": 0
+          },
+          "exact_tokenizer_available": false,
+          "final_input_token_estimate": 370,
+          "original_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 1,
+            "uncertainties": 0
+          },
+          "retained_counts": {
+            "future_hypotheses": 1,
+            "planning_assumptions": 0,
+            "reconstructed_memories": 1,
+            "uncertainties": 0
+          },
+          "retained_policy": "preserve current observation/query/source labels; trim reconstructed memories, hypotheses, assumptions, and uncertainties by existing order",
+          "safety_multiplier": 1.25,
+          "unused_budget": null
+        },
+        "condition": "N_NOWMIND_STRUCTURED",
+        "context_overflow": false,
+        "fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+        "final_input_token_estimate": 370,
+        "prompt_hash": "969e701bc0dda1f876e8920467f27b5226cb64bfff07d6d7ef1455b24a020e03",
+        "regime": "A_EQUAL_INFORMATION",
+        "token_estimate": 370,
+        "truncated": false
+      },
+      "same_admissible_fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+      "trial": {
+        "fact_set_hash": "adf633251cbd7d501729e196c9a9c70f69dfcafe68577e1e57eae95c18d7981f",
+        "family": "temporal_present_vs_stale_memory",
+        "history_cohort": "H0",
+        "seed": 20260824,
+        "split": "evaluation",
+        "task_group": "temporal_qa",
+        "trial_id": "g2_3_eval_00000_temporal_present_vs_stale_memory"
+      },
+      "validated_score": {
+        "action_choice_correct": 0,
+        "collision_proposal": 0,
+        "contradiction_detected": 0,
+        "correct": 0,
+        "correct_unknown": 0,
+        "current_state_correct": 0,
+        "future_query_correct": 0,
+        "invalid_action": 0,
+        "past_query_correct": 0,
+        "source_correct": 0,
+        "spatial_reasoning_correct": 0,
+        "validator_prevented_error": 1,
+        "validator_rejected": 1
+      },
+      "validator": {
+        "accepted": false,
+        "final_action": null,
+        "final_answer": "",
+        "final_source_used": "none",
+        "final_status": "UNKNOWN",
+        "prevented_error": true,
+        "rejection_reason": "parse_failure"
+      }
+    }
+  ],
+  "schema": "nowmind.g2_3_3.smoke.v1",
+  "schema_success": 0,
+  "status": "stopped_error",
+  "target_checks": 1,
+  "transport_errors": 1
+}

@@ -1,0 +1,41 @@
+{
+  "models": {
+    "dots-studio/dots-3-note-preview:free": {
+      "detail": "Smoke stopped on basic_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T10:54:52.379749+00:00"
+    },
+    "google/gemma-4-26b-a4b-it:free": {
+      "detail": "Smoke stopped on basic_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T10:55:11.984458+00:00"
+    },
+    "liquid/lfm-2.5-2.6b:free": {
+      "detail": "Smoke stopped on current_vs_memory",
+      "status": "paused_rate_limit",
+      "updated_at": "2026-08-28T10:51:50.434412+00:00"
+    },
+    "minimax/minimax-m3:free": {
+      "detail": "Smoke stopped on basic_json: HTTP 404: {\"error\":{\"message\":\"No endpoints found that can handle the requested parameters. To learn more about provider routing, visit: https://openrouter.ai/docs/guides/routing/provider-selection\",\"code\":404}}",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T10:54:31.236079+00:00"
+    },
+    "nvidia/nemotron-3-super-120b-a12b:free": {
+      "detail": "json_parse_failure:Expecting property name enclosed in double quotes: line 2 column 1 (char 2)",
+      "status": "stopped_schema_invalid",
+      "updated_at": "2026-08-28T10:47:08.517322+00:00"
+    },
+    "nvidia/nemotron-3-ultra-550b-a55b:free": {
+      "detail": "Smoke stopped on basic_json: provider_mismatch: pinned=nvidia effective=unreported_provider",
+      "status": "stopped_error",
+      "updated_at": "2026-08-28T10:52:12.130645+00:00"
+    },
+    "z-ai/glm-5.2:free": {
+      "detail": "Smoke stopped on basic_json",
+      "status": "paused_rate_limit",
+      "updated_at": "2026-08-28T10:54:10.456411+00:00"
+    }
+  },
+  "schema": "nowmind.g2_3_4.run_state.v1",
+  "updated_at": "2026-08-28T10:55:11.984458+00:00"
+}
