@@ -104,4 +104,5 @@ Files placed under `reference/` are research/source material. Treat them as read
 When source material and this specification appear inconsistent:
 - do not silently overwrite the theory;
 - record the conflict in `docs/OPEN_QUESTIONS.md`;
-- follow the authority order in `00_READ_ME_FIRST.md`.
+- follow the authority order in this file and the authoritative documents under
+  `docs/`.

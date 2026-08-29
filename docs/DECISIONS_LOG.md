@@ -50,18 +50,6 @@ Experiments need exact historical ground truth. It must remain outside the runti
 Reason:
 No defined falsifiable quantum mechanism is required for Present Geometry. Keep speculative/metaphysical claims separate from engineering.
 
-## Template for future entries
-
-### D-XXX — Title
-**Date:**
-**Status:** Proposed / Accepted / Rejected / Superseded
-
-**Decision:**
-
-**Reason:**
-
-**Consequences:**
-
 ### D-009 - G1 implemented as a small local Python package
 **Date:** 2026-08-22
 **Status:** Accepted
@@ -171,19 +159,20 @@ do not import evaluation history.
 
 ### D-016 - PCT book moved to canonical reference path
 **Date:** 2026-08-22
-**Status:** Accepted
+**Status:** Superseded by D-056
 
 **Decision:**
-Move the recovered PCT book from `reference/missing_originals/` to
-`reference/PCT_Book_Latest.pdf` and update `reference/SOURCE_INDEX.md`.
+Previously moved a recovered PCT book PDF into the reference tree and indexed
+it as philosophical source material.
 
 **Reason:**
-`reference/missing_originals/` is intended for placeholders, not recovered source
-material.
+At the time, recovered source material was being separated from missing-source
+provenance notes.
 
 **Consequences:**
-The full book is now indexed as a recovered philosophical source. G1 software
-behavior remains governed by the root project authority order.
+This was superseded once the public repository status was clarified: the PCT
+book is separately published and commercially distributed, so the full book is
+not distributed through this repository.
 
 ### D-017 - Visual clarity pass remains presentation-only
 **Date:** 2026-08-22
@@ -740,7 +729,7 @@ initialization/resource failures rather than JSON parsing.
 
 **Decision:**
 Use `OLLAMA_LLM_LIBRARY=cpu_avx2`, `OLLAMA_DEBUG=1`,
-`OLLAMA_MODELS=D:\OllamaModels`, and localhost binding only as temporary
+local model-disk storage, and localhost binding only as temporary
 process-local diagnostics. Do not make the override permanent in the NowMind
 architecture or benchmark.
 
@@ -780,7 +769,7 @@ artifacts from this machine.
 
 **Decision:**
 Treat the post-pagefile `qwen3:0.6b` run as the completed real local G2.3.1
-final evaluation for this machine. Keep the CPU/AVX2 and `D:\OllamaModels`
+final evaluation for this machine. Keep the CPU/AVX2 and local model-storage
 settings as temporary runtime diagnostics, not NowMind architecture.
 
 **Reason:**
@@ -841,12 +830,11 @@ NowMind benchmark. A resumable protocol is required because free quotas may be
 too small for a complete 250-pair run in one day.
 
 **Consequences:**
-The OpenRouter key was migrated to `OPENROUTER_API_KEY` and the plaintext source
-file was deleted. Live discovery found exact `$0/$0` free candidates, but no
-exact Qwen-family free model. The first minimal smoke request paused on
-rate-limit/quota before any completed model row, so G2.3.3 currently has
-transport/discovery evidence but no cross-model reasoning result. The frozen
-G2.3.2 local baseline remains unchanged.
+Live discovery found exact `$0/$0` free candidates, but no exact Qwen-family
+free model. The first minimal smoke request paused on rate-limit/quota before
+any completed model row, so G2.3.3 currently has transport/discovery evidence
+but no cross-model reasoning result. The frozen G2.3.2 local baseline remains
+unchanged.
 
 ### D-052 - G2.3.3 smoke allows prompt-only JSON compatibility but requires schema-valid rows
 **Date:** 2026-08-28
@@ -925,21 +913,18 @@ non-claims, and reproduction path inspectable in one place.
 
 **Consequences:**
 Full-G adds reviewer documentation, benchmark summary tables, a local browser
-reviewer mode, reproducibility instructions, and Git status documentation.
-Git metadata was initialized but moved to
-`tmp/git_disabled_due_codex_refresh_20260828_full_g/` because an active `.git/`
-directory caused Codex desktop setup-refresh failures on this machine. After
-local Git identity was configured, the Full-G baseline commit was created as
-`8f4ef9742a90fbb11301d1f66b4d65e5a4efb78e`. Later cleanup commits may be
-added on top without rewriting or squashing that baseline.
+reviewer mode, reproducibility instructions, and Git provenance documentation.
+The Full-G baseline commit was created as
+`8f4ef9742a90fbb11301d1f66b4d65e5a4efb78e`. Later cleanup commits may be added
+on top without rewriting or squashing that baseline.
 
-### D-055 - Archive historical Codex tasks outside the repository root
+### D-055 - Archive historical task specifications outside the repository root
 **Date:** 2026-08-29
 **Status:** Accepted
 
 **Decision:**
-Move historical Codex task specifications and obsolete setup/task notes from
-the repository root into `docs/development_history/codex_tasks/`, while keeping
+Move historical task specifications and obsolete setup/task notes from the
+repository root into `docs/development_history/codex_tasks/`, while keeping
 current reviewer and reproduction entry points in the root.
 
 **Reason:**
@@ -953,3 +938,25 @@ development-history folder. Internal references in current root/reviewer docs
 were updated where needed. The Full-G baseline commit
 `8f4ef9742a90fbb11301d1f66b4d65e5a4efb78e` is preserved unchanged; this cleanup
 is committed separately on top of it.
+
+### D-056 - Public repository copyright and reviewer cleanup
+**Date:** 2026-08-29
+**Status:** Accepted
+
+**Decision:**
+Remove the commercially published PCT book PDF from the public repository and
+purge that file from reachable Git history. Add an all-rights-reserved
+copyright notice, keep the project non-open-source, archive internal workflow
+notes under `docs/development_history/`, refresh the README as a Full-G reviewer
+entry point, and add a reviewer-facing artifact manifest.
+
+**Reason:**
+The repository is public for technical review and citation, but the PCT book is
+a separately published commercial work and must not be redistributed through the
+repository. The reviewer-facing tree should emphasize research, evidence,
+negative results, and reproduction rather than development workflow history.
+
+**Consequences:**
+History rewrite is allowed only for removing the book PDF. Scientific code,
+benchmarks, prompts, scoring, validators, artifacts, and conclusions remain
+unchanged.

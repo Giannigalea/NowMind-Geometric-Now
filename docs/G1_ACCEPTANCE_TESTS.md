@@ -1,6 +1,6 @@
 # G1 Acceptance Tests
 
-Codex must implement automated tests covering these invariants.
+Automated tests must cover these invariants.
 
 ## A. Now lifecycle
 
@@ -112,7 +112,7 @@ Conflicting current inputs -> CONTRADICTORY/invalid, not a fabricated answer.
 
 ## Required final command
 
-Codex should document a single command equivalent to:
+The project should document a single command equivalent to:
 
 ```text
 python -m pytest

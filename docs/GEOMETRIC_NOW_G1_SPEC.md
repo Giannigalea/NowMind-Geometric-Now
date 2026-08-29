@@ -92,7 +92,8 @@ tests/
   scenarios/
 ```
 
-Codex may adjust filenames if necessary, but conceptual boundaries must remain.
+Implementers may adjust filenames if necessary, but conceptual boundaries must
+remain.
 
 ## 4. Domain objects
 

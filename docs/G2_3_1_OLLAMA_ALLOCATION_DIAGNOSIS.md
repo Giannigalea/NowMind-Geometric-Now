@@ -10,7 +10,7 @@ schema transport.
 
 The default Ollama server selected Vulkan on the discrete Radeon 520 GPU. A
 temporary diagnostic server forced `OLLAMA_LLM_LIBRARY=cpu_avx2`, used
-`OLLAMA_MODELS=D:\OllamaModels`, and remained bound to `127.0.0.1:11434`.
+project-local/model-disk storage, and remained bound to `127.0.0.1:11434`.
 Logs confirmed GPU libraries were skipped at user request and that model
 runners reported CPU AVX2 support.
 
@@ -35,7 +35,7 @@ Temporary process environment:
 ```text
 OLLAMA_LLM_LIBRARY=cpu_avx2
 OLLAMA_DEBUG=1
-OLLAMA_MODELS=D:\OllamaModels
+OLLAMA_MODELS=<local-model-storage-path>
 OLLAMA_HOST=127.0.0.1:11434
 ```
 
@@ -101,7 +101,7 @@ real-model representation-effect claim.
 
 ## Ultra-Small Model Failure
 
-`qwen3:0.6b` was pulled under `D:\OllamaModels` and tested at `num_ctx=512`.
+`qwen3:0.6b` was pulled under local model storage and tested at `num_ctx=512`.
 It also failed before `message.content`.
 
 Server memory/load evidence:

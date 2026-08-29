@@ -14,7 +14,7 @@
 From PowerShell:
 
 ```powershell
-cd "D:\Documents\Codex Projects\NowMind-Geometric-Now"
+cd path\to\NowMind-Geometric-Now
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -e ".[test]"
 ```
@@ -103,4 +103,3 @@ Files:
 - `unknown_guess_count`: expected `UNKNOWN` or `CONTRADICTORY` queries incorrectly returned as `TRUE` or `FALSE`.
 
 The deterministic G1 target for stale-state contamination rate is `0.0`.
-

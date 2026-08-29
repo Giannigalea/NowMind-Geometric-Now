@@ -56,9 +56,9 @@ Two non-architecture issues were handled during G1.1:
 - Pytest's default Windows temp/cache locations could be blocked on the user's
   machine. The test suite now disables pytest cache writes and uses a project-local
   temp directory for the recorder test.
-- The actual PCT book PDF was found under `reference/missing_originals/`. It was
-  moved to `reference/PCT_Book_Latest.pdf` and `reference/SOURCE_INDEX.md` was
-  updated.
+- Reference-source provenance was updated as source material was clarified. The
+  full commercially published PCT book is not distributed through this public
+  repository.
 
 ## Relevant Tests
 
@@ -76,4 +76,3 @@ G1 remains a fresh-current-state architecture. The G1.1 demonstrator and evidenc
 runner are external presentation/evaluation layers and do not introduce memory,
 prediction, identity, Veto Gate, LLM integration, or a route from experiment
 history back into runtime reasoning.
-

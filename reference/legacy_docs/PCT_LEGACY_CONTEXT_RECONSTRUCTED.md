@@ -3,7 +3,8 @@
 **Status:** Reconstructed contextual document.  
 **Not a substitute for the original PCT book.**
 
-This document captures PCT ideas repeatedly established in prior work so Codex has broader conceptual context while the original book is unavailable.
+This document captures PCT ideas repeatedly established in prior work as broader
+conceptual context for the software project.
 
 ## 1. Present-bound consciousness
 
@@ -137,4 +138,5 @@ It explicitly discusses:
 - dream-created history;
 - responsibility despite momentary-self framing.
 
-The full original PCT book remains missing from the currently accessible file store.
+The full PCT book is separately published and is not distributed through this
+repository.

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you cite this research package, please cite it using this metadata."
+title: "NowMind Geometric Now"
+authors:
+  - family-names: "Galea"
+    given-names: "Jonathan"
+date-released: "2026-08-29"
+copyright: "Copyright (c) 2026 Jonathan Galea. All rights reserved."

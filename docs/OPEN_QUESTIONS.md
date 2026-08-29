@@ -1,6 +1,6 @@
 # Open Questions
 
-Codex may add questions here when implementation exposes a genuine ambiguity.
+Add questions here when implementation exposes a genuine ambiguity.
 
 Do not use this file as an excuse to block ordinary engineering decisions.
 
@@ -20,7 +20,7 @@ Formalization belongs to G3.
 Deferred to G2.
 Need to decide how lossy/fuzzy encoding and reconstruction will work without allowing raw historical NowState replay.
 
-## Q-004 — Relationship to Sophontic-style latent geometry
+## Q-004 — Relationship to latent/internal model geometry
 Do not assume equivalence.
 A future research note should compare explicit state geometry with learned latent reasoning geometry.
 
@@ -32,9 +32,9 @@ Need a separate document distinguishing:
 - empirical physical claim.
 
 ## Q-006 — PCT book claim strength vs G1 research language
-The recovered PDF under `reference/PCT_Book_Latest.pdf`
-contains Appendix E/F NowMind material that uses stronger AGI/consciousness
-language and includes memory, prediction, and ethical-veto mechanisms.
+The separately published PCT book contains NowMind material that uses stronger
+AGI/consciousness language and includes memory, prediction, and ethical-veto
+mechanisms. The full book is not distributed through this repository.
 
 Current G1 position:
 - keep `AGENTS.md`, `PCT_COMPUTATIONAL_RULES.md`, and

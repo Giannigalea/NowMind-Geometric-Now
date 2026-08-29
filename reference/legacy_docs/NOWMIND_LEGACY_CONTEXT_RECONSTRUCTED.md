@@ -181,6 +181,6 @@ The following historical items were discussed but their exact source/code is not
 - exact old memory/prediction module interfaces;
 - any old benchmark numbers.
 
-Codex must not fabricate these.
+Implementation work must not fabricate these.
 
 If original files are later added, update `reference/SOURCE_INDEX.md` and prefer the originals.
