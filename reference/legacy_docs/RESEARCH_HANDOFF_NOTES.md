@@ -12,28 +12,25 @@ This folder therefore distinguishes:
 - **RECONSTRUCTED** context;
 - **MISSING ORIGINALS**.
 
-Never blur those categories.
+These provenance categories are distinct and not interchangeable.
 
-## Use during G1
+## Role in the completed package
 
-G1 may proceed using the root project specifications.
+G1 was implemented from the computational specifications under `docs/`.
+Reconstructed files supply broader design history; they are not evidence of
+features absent from the implemented stages.
 
-Use the reconstructed files to understand the wider research direction, but do not implement later-stage features from them.
+## Separately held originals
 
-## When originals are consulted
+Commercially published material is not included in this repository. Original
+book or code material, if consulted privately, remains separate. The source
+index records neutral bibliographic and provenance notes; conceptual conflicts
+with reconstructions belong in `docs/OPEN_QUESTIONS.md` and do not silently
+change the implemented architecture.
 
-If original book/code material is later consulted privately:
+## Research claim boundaries
 
-1. do not add commercially published material to the public repository;
-2. inspect it separately;
-3. update the source index only with neutral bibliographic/provenance notes;
-4. record any conflict with the reconstructed summary;
-5. do not silently rewrite G1 architecture;
-6. raise conceptual conflicts in `docs/OPEN_QUESTIONS.md`.
-
-## Research credibility rule
-
-When preparing public/research material, distinguish:
+The research package distinguishes:
 - what PCT proposes philosophically;
 - what NowMind implements computationally;
 - what experiments actually demonstrate;

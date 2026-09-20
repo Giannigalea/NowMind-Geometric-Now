@@ -92,8 +92,8 @@ tests/
   scenarios/
 ```
 
-Implementers may adjust filenames if necessary, but conceptual boundaries must
-remain.
+The file layout is illustrative; the G1 conceptual boundaries remain part of
+the architecture.
 
 ## 4. Domain objects
 

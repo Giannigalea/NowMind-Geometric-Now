@@ -1,6 +1,6 @@
 # G1 Acceptance Tests
 
-Automated tests must cover these invariants.
+The automated acceptance suite covers these invariants.
 
 ## A. Now lifecycle
 
