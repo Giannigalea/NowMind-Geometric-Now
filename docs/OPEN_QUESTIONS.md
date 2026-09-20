@@ -1,8 +1,7 @@
 # Open Questions
 
-Add questions here when implementation exposes a genuine ambiguity.
-
-Do not use this file as an excuse to block ordinary engineering decisions.
+This document records unresolved research questions, limitations, and possible
+experimental directions beyond the evaluated Full-G milestone.
 
 ## Q-001 — Exact formal meaning of "geometry"
 G1 operational definition:
@@ -14,19 +13,19 @@ Future work may explore manifolds, embeddings, geometric algebra, topology, or l
 Current position:
 stable constraints/anchors may persist, but identity at a given Now is constructed in the present and is not reducible to memory.
 
-Formalization belongs to G3.
+Formalization remains a possible G3 research direction.
 
 ## Q-003 — Memory trace representation
-Deferred to G2.
-Need to decide how lossy/fuzzy encoding and reconstruction will work without allowing raw historical NowState replay.
+G2 implements compact proposition traces and deterministic cue retrieval while
+excluding replay of previous `NowState` objects. Richer lossy or fuzzy encoding
+and reconstruction remain open research directions.
 
 ## Q-004 — Relationship to latent/internal model geometry
-Do not assume equivalence.
-A future research note should compare explicit state geometry with learned latent reasoning geometry.
+Equivalence has not been established. A future comparison could examine
+explicit state geometry and learned latent reasoning geometry.
 
 ## Q-005 — Quantum aspects of PCT
-No G1 mechanism.
-Need a separate document distinguishing:
+Full-G implements no testable quantum mechanism. A future account could distinguish:
 - metaphor/analogy;
 - mathematical formalism;
 - empirical physical claim.
@@ -36,13 +35,12 @@ The separately published PCT book contains NowMind material that uses stronger
 AGI/consciousness language and includes memory, prediction, and ethical-veto
 mechanisms. The full book is not distributed through this repository.
 
-Current G1 position:
-- keep `PCT_COMPUTATIONAL_RULES.md` and `GEOMETRIC_NOW_G1_SPEC.md`
-  authoritative for G1 implementation;
-- treat memory/prediction/veto content as later-generation context;
-- do not describe G1 test success as evidence of consciousness, sentience, or
-  AGI.
+G1 research boundary:
+- `PCT_COMPUTATIONAL_RULES.md` and `GEOMETRIC_NOW_G1_SPEC.md` define G1
+  computational behavior;
+- memory and prediction appear in later stages, while L3 Veto Gate remains
+  outside Full-G;
+- G1 test success is not evidence of consciousness, sentience, or AGI.
 
-Future work should decide how public/research language should reconcile the
-book's stronger philosophical claims with the software project's stricter
-empirical wording.
+An open communication question is how to reconcile the book's stronger
+philosophical claims with the software project's stricter empirical wording.

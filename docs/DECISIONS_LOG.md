@@ -924,7 +924,7 @@ on top without rewriting or squashing that baseline.
 
 **Decision:**
 Move historical task specifications and obsolete setup/task notes from the
-repository root into `docs/development_history/codex_tasks/`, while keeping
+repository root into `docs/development_history/`, while keeping
 current reviewer and reproduction entry points in the root.
 
 **Reason:**

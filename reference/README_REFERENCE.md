@@ -27,17 +27,18 @@ The following original source files were referenced in prior work but could not 
 
 Do **not** infer that these missing originals are present.
 
-## Can G1 start without them?
+## Role in the completed package
 
-Yes.
+G1 was implemented and validated without these missing originals. The Full-G
+package includes later stages through G2.3.4.
 
 The G1 computational architecture is documented by:
 - `docs/PCT_COMPUTATIONAL_RULES.md`
 - `docs/GEOMETRIC_NOW_G1_SPEC.md`
 - `docs/G1_ACCEPTANCE_TESTS.md`
 
-The reconstructed legacy context is sufficient to preserve the broader design
-direction while G1 is built.
+The reconstructed legacy context preserves the broader design history; it is
+not a dependency for the implemented stages.
 
 For future private review or later-stage work, the separately published PCT book
 and latest legacy NowMind code may be consulted if available, but the full book
