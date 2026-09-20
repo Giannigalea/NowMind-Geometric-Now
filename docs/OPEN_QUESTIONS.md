@@ -37,8 +37,8 @@ AGI/consciousness language and includes memory, prediction, and ethical-veto
 mechanisms. The full book is not distributed through this repository.
 
 Current G1 position:
-- keep `AGENTS.md`, `PCT_COMPUTATIONAL_RULES.md`, and
-  `GEOMETRIC_NOW_G1_SPEC.md` authoritative for implementation;
+- keep `PCT_COMPUTATIONAL_RULES.md` and `GEOMETRIC_NOW_G1_SPEC.md`
+  authoritative for G1 implementation;
 - treat memory/prediction/veto content as later-generation context;
 - do not describe G1 test success as evidence of consciousness, sentience, or
   AGI.

@@ -31,8 +31,7 @@ Do **not** infer that these missing originals are present.
 
 Yes.
 
-The G1 computational architecture is already governed by:
-- `AGENTS.md`
+The G1 computational architecture is documented by:
 - `docs/PCT_COMPUTATIONAL_RULES.md`
 - `docs/GEOMETRIC_NOW_G1_SPEC.md`
 - `docs/G1_ACCEPTANCE_TESTS.md`
@@ -46,7 +45,7 @@ is not distributed in this public repository.
 
 ## Authority
 
-For implementation, follow the authority order in `AGENTS.md` and the
-authoritative specification documents under `docs/`.
+For implemented G1 behavior, consult the computational rules and specifications
+under `docs/`.
 
 Reconstructed files are **context**, not authoritative replacements for originals.

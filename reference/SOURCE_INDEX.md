@@ -59,14 +59,14 @@ distinguished during review.
 
 ---
 
-## Implementation authority reminder
+## G1 specification authority
 
-For G1 software behavior, the root repository documents remain authoritative:
+For implemented G1 software behavior, consult these repository documents:
 
-1. latest explicit task from Jonathan;
-2. `AGENTS.md`;
-3. `docs/PCT_COMPUTATIONAL_RULES.md`;
-4. `docs/GEOMETRIC_NOW_G1_SPEC.md`;
-5. separately published PCT book, when directly supplied for private review;
-6. legacy/reconstructed context;
-7. documented implementation assumptions.
+1. `docs/PCT_COMPUTATIONAL_RULES.md`;
+2. `docs/GEOMETRIC_NOW_G1_SPEC.md`;
+3. `docs/G1_ACCEPTANCE_TESTS.md`;
+4. `docs/DECISIONS_LOG.md` for documented implementation decisions.
+
+The separately published PCT book and reconstructed legacy material provide
+context, not a substitute for the implemented computational specifications.
